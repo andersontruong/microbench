@@ -1,0 +1,7 @@
+In file included from bench.c:2:
+../common.h:43:1: warning: non-void function does not return a value [-Wreturn-type]
+   43 | }
+      | ^
+bench.c:9:16: warning: unknown attribute 'optimize' ignored [-Wunknown-attributes]
+    9 | __attribute__((optimize("no-unroll-loops")))
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~

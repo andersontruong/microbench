@@ -1,0 +1,58 @@
+module attributes {dlti.dl_spec = #dlti.dl_spec<#dlti.dl_entry<!llvm.ptr<271>, dense<32> : vector<4xi32>>, #dlti.dl_entry<!llvm.ptr<270>, dense<32> : vector<4xi32>>, #dlti.dl_entry<f128, dense<128> : vector<2xi32>>, #dlti.dl_entry<f64, dense<64> : vector<2xi32>>, #dlti.dl_entry<f16, dense<16> : vector<2xi32>>, #dlti.dl_entry<f80, dense<128> : vector<2xi32>>, #dlti.dl_entry<i64, dense<64> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr<272>, dense<64> : vector<4xi32>>, #dlti.dl_entry<i1, dense<8> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr, dense<64> : vector<4xi32>>, #dlti.dl_entry<i32, dense<32> : vector<2xi32>>, #dlti.dl_entry<i16, dense<16> : vector<2xi32>>, #dlti.dl_entry<i8, dense<8> : vector<2xi32>>, #dlti.dl_entry<"dlti.endianness", "little">, #dlti.dl_entry<"dlti.stack_alignment", 128 : i32>>, llvm.data_layout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128", llvm.target_triple = "x86_64-unknown-linux-gnu", "polygeist.target-cpu" = "x86-64", "polygeist.target-features" = "+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87", "polygeist.tune-cpu" = "generic"} {
+  llvm.mlir.global internal constant @str0("_ticks: %llu\0A\00") {addr_space = 0 : i32}
+  llvm.func @printf(!llvm.ptr, ...) -> i32
+  memref.global @arrA : memref<1024xf32> = uninitialized
+  func.func @loop(%arg0: i32) -> f32 attributes {llvm.linkage = #llvm.linkage<external>} {
+    %c4 = arith.constant 4 : index
+    %c1 = arith.constant 1 : index
+    %c1024 = arith.constant 1024 : index
+    %cst = arith.constant 3.200000e+00 : f64
+    %0 = llvm.mlir.undef : f32
+    %1 = arith.index_cast %arg0 : i32 to index
+    %2 = memref.get_global @arrA : memref<1024xf32>
+    %3 = memref.get_global @arrA : memref<1024xf32>
+    %4 = scf.for %arg1 = %1 to %c4 step %c1 iter_args(%arg2 = %0) -> (f32) {
+      scf.for %arg3 = %1 to %c1024 step %c1 {
+        %7 = memref.load %2[%arg3] : memref<1024xf32>
+        %8 = arith.extf %7 : f32 to f64
+        %9 = arith.mulf %8, %cst : f64
+        %10 = arith.truncf %9 : f64 to f32
+        memref.store %10, %2[%arg3] : memref<1024xf32>
+      }
+      %5 = affine.load %3[1023] : memref<1024xf32>
+      %6 = arith.addf %arg2, %5 : f32
+      scf.yield %6 : f32
+    }
+    return %4 : f32
+  }
+  func.func @main(%arg0: i32, %arg1: memref<?xmemref<?xi8>>) -> i32 attributes {llvm.linkage = #llvm.linkage<external>} {
+    %c0_i64 = arith.constant 0 : i64
+    %cst = arith.constant 3.200000e+00 : f64
+    %c1024 = arith.constant 1024 : index
+    %c1 = arith.constant 1 : index
+    %c4 = arith.constant 4 : index
+    %c10000_i32 = arith.constant 10000 : i32
+    %0 = llvm.mlir.undef : i32
+    %1 = arith.andi %arg0, %c10000_i32 : i32
+    %2 = llvm.mlir.undef : f32
+    %3 = arith.index_cast %1 : i32 to index
+    %4 = memref.get_global @arrA : memref<1024xf32>
+    %5 = memref.get_global @arrA : memref<1024xf32>
+    %6 = scf.for %arg2 = %3 to %c4 step %c1 iter_args(%arg3 = %2) -> (f32) {
+      scf.for %arg4 = %3 to %c1024 step %c1 {
+        %12 = memref.load %4[%arg4] : memref<1024xf32>
+        %13 = arith.extf %12 : f32 to f64
+        %14 = arith.mulf %13, %cst : f64
+        %15 = arith.truncf %14 : f64 to f32
+        memref.store %15, %4[%arg4] : memref<1024xf32>
+      }
+      %10 = affine.load %5[1023] : memref<1024xf32>
+      %11 = arith.addf %arg3, %10 : f32
+      scf.yield %11 : f32
+    }
+    %7 = llvm.mlir.addressof @str0 : !llvm.ptr
+    %8 = llvm.getelementptr %7[0, 0] : (!llvm.ptr) -> !llvm.ptr, !llvm.array<14 x i8>
+    %9 = llvm.call @printf(%8, %c0_i64) vararg(!llvm.func<i32 (ptr, ...)>) : (!llvm.ptr, i64) -> i32
+    return %0 : i32
+  }
+}

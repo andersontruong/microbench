@@ -1,0 +1,4 @@
+bench.c:9:16: warning: unknown attribute 'optimize' ignored [-Wunknown-attributes]
+    9 | __attribute__((optimize("no-unroll-loops")))
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.

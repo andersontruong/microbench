@@ -1,0 +1,1081 @@
+/usr/include/bits/stdlib-bsearch.h:21:17: error: unexpected error: failed to legalize operation 'll.cell_init' that was explicitly marked illegal
+         __compar_fn_t __compar)
+                       ^
+/usr/include/bits/stdlib-bsearch.h:21:17: error: unexpected note: see current operation: %15 = "ll.cell_init"(%14, %arg4) : (!hl.lvalue<!hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>>, !hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>) -> !hl.ptr<!hl.ptr<!core.fn<(!hl.ptr<!hl.ptr<ui8>>, !hl.ptr<!hl.ptr<ui8>>) -> (si32)>>>
+         __compar_fn_t __compar)
+                       ^
+// -----// IR Dump After LowerValueCategories Failed (vast-lower-value-categories) //----- //
+"core.module"() <{sym_name = "/home/ando/projects/mlir-df/microbench/ML2_BW_ldst/bench.c"}> ({
+  "ll.func"() <{function_type = !core.fn<(si64, si64) -> (si64)>, linkage = #core.global_linkage_kind<external>, sym_name = "__builtin_expect", sym_visibility = "private"}> ({
+  }) {hl.builtin = #hl.builtin<528>, hl.const = #hl.const, hl.nothrow = #hl.nothrow} : () -> ()
+  "hl.struct"() ({
+  ^bb0:
+  }) {sym_name = "_IO_FILE"} : () -> ()
+  "hl.struct"() ({
+  ^bb0:
+  }) {sym_name = "_IO_FILE"} : () -> ()
+  "hl.struct"() ({
+  ^bb0:
+  }) {sym_name = "_IO_FILE"} : () -> ()
+  "hl.struct"() ({
+  ^bb0:
+  }) {sym_name = "_IO_marker"} : () -> ()
+  "hl.struct"() ({
+  ^bb0:
+  }) {sym_name = "_IO_codecvt"} : () -> ()
+  "hl.struct"() ({
+  ^bb0:
+  }) {sym_name = "_IO_wide_data"} : () -> ()
+  "hl.struct"() ({
+    "hl.field"() {sym_name = "_flags", type = si32} : () -> ()
+    "hl.field"() {sym_name = "_IO_read_ptr", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_read_end", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_read_base", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_write_base", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_write_ptr", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_write_end", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_buf_base", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_buf_end", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_save_base", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_backup_base", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_IO_save_end", type = !hl.ptr<si8>} : () -> ()
+    "hl.field"() {sym_name = "_markers", type = !hl.ptr<!hl.record<@_IO_marker>>} : () -> ()
+    "hl.field"() {sym_name = "_chain", type = !hl.ptr<!hl.record<@_IO_FILE>>} : () -> ()
+    "hl.field"() {sym_name = "_fileno", type = si32} : () -> ()
+    "hl.field"() {sym_name = "_flags2", type = si32} : () -> ()
+    "hl.field"() {sym_name = "_old_offset", type = si64} : () -> ()
+    "hl.field"() {sym_name = "_cur_column", type = ui16} : () -> ()
+    "hl.field"() {sym_name = "_vtable_offset", type = si8} : () -> ()
+    "hl.field"() {sym_name = "_shortbuf", type = !hl.array<1, si8>} : () -> ()
+    "hl.field"() {sym_name = "_lock", type = !hl.ptr<ui8>} : () -> ()
+    "hl.field"() {sym_name = "_offset", type = si64} : () -> ()
+    "hl.field"() {sym_name = "_codecvt", type = !hl.ptr<!hl.record<@_IO_codecvt>>} : () -> ()
+    "hl.field"() {sym_name = "_wide_data", type = !hl.ptr<!hl.record<@_IO_wide_data>>} : () -> ()
+    "hl.field"() {sym_name = "_freeres_list", type = !hl.ptr<!hl.record<@_IO_FILE>>} : () -> ()
+    "hl.field"() {sym_name = "_freeres_buf", type = !hl.ptr<ui8>} : () -> ()
+    "hl.field"() {sym_name = "_prevchain", type = !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>} : () -> ()
+    "hl.field"() {sym_name = "_mode", type = si32} : () -> ()
+    "hl.field"() {sym_name = "_unused2", type = !hl.array<20, si8>} : () -> ()
+  }) {sym_name = "_IO_FILE"} : () -> ()
+  "hl.var"() ({
+  }, {
+  }) {linkage = #core.global_linkage_kind<external>, storageClass = 3 : i64, sym_name = "stdin", threadStorageClass = 0 : i64, type = !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>} : () -> ()
+  "hl.var"() ({
+  }, {
+  }) {linkage = #core.global_linkage_kind<external>, storageClass = 3 : i64, sym_name = "stdout", threadStorageClass = 0 : i64, type = !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>,  restrict >, !hl.ptr<si8,  restrict >, !hl.ptr<!hl.record<@__va_list_tag>>) -> (si32)>, linkage = #core.global_linkage_kind<external>, sym_name = "vfprintf", sym_visibility = "private"}> ({
+  }) {hl.builtin = #hl.builtin<1374>, hl.format = #hl.format<"printf">, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<external>, sym_name = "getc", sym_visibility = "private"}> ({
+  }) {hl.nonnull = #hl.nonnull} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(si32, !hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<external>, sym_name = "putc", sym_visibility = "private"}> ({
+  }) {hl.nonnull = #hl.nonnull} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<external>, sym_name = "__uflow", sym_visibility = "private"}> ({
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>>, si32) -> (si32)>, linkage = #core.global_linkage_kind<external>, sym_name = "__overflow", sym_visibility = "private"}> ({
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8,  restrict >, !hl.ptr<!hl.record<@__va_list_tag>>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "vprintf"}> ({
+  ^bb0(%arg28: !hl.ptr<si8,  restrict >, %arg29: !hl.ptr<!hl.record<@__va_list_tag>>):
+    %564 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__fmt", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<si8,  restrict >>
+    %565 = "ll.cell_init"(%564, %arg28) : (!hl.lvalue<!hl.ptr<si8,  restrict >>, !hl.ptr<si8,  restrict >) -> !hl.lvalue<!hl.ptr<si8,  restrict >>
+    %566 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__arg", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>
+    %567 = "ll.cell_init"(%566, %arg29) : (!hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>, !hl.ptr<!hl.record<@__va_list_tag>>) -> !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>
+    %568 = "hl.ref"() {name = @stdout} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %569 = "hl.implicit_cast"(%568) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+    %570 = "hl.implicit_cast"(%564) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<si8,  restrict >>) -> !hl.ptr<si8>
+    %571 = "hl.implicit_cast"(%566) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.ptr<!hl.record<@__va_list_tag>>
+    %572 = "hl.call"(%569, %570, %571) {callee = @vfprintf} : (!hl.ptr<!hl.record<@_IO_FILE>>, !hl.ptr<si8>, !hl.ptr<!hl.record<@__va_list_tag>>) -> si32
+    "ll.return"(%572) : (si32) -> ()
+  }) {hl.builtin = #hl.builtin<1359>, hl.format = #hl.format<"printf">, hl.gnu_inline = #hl.gnu_inline, hl.nothrow = #hl.nothrow} : () -> ()
+  "ll.func"() <{function_type = !core.fn<() -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "getchar"}> ({
+    %561 = "hl.ref"() {name = @stdin} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %562 = "hl.implicit_cast"(%561) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+    %563 = "hl.call"(%562) {callee = @getc} : (!hl.ptr<!hl.record<@_IO_FILE>>) -> si32
+    "ll.return"(%563) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "fgetc_unlocked"}> ({
+  ^bb0(%arg27: !hl.ptr<!hl.record<@_IO_FILE>>):
+    %533 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__fp", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %534 = "ll.cell_init"(%533, %arg27) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>, !hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %535 = "hl.expr"() ({
+      %536 = "hl.cond"() ({
+        %547 = "hl.expr"() ({
+          %552 = "hl.expr"() ({
+            "hl.value.yield"(%533) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %553 = "hl.implicit_cast"(%552) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %554 = "ll.gep"(%553) <{field = @_IO_read_ptr, idx = 1 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %555 = "hl.implicit_cast"(%554) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %556 = "hl.expr"() ({
+            "hl.value.yield"(%533) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %557 = "hl.implicit_cast"(%556) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %558 = "ll.gep"(%557) <{field = @_IO_read_end, idx = 2 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %559 = "hl.implicit_cast"(%558) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %560 = "hl.cmp"(%555, %559) {predicate = 9 : i64} : (!hl.ptr<si8>, !hl.ptr<si8>) -> si32
+          "hl.value.yield"(%560) : (si32) -> ()
+        }) : () -> si32
+        %548 = "hl.implicit_cast"(%547) {kind = 26 : i64} : (si32) -> si64
+        %549 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+        %550 = "hl.implicit_cast"(%549) {kind = 26 : i64} : (si32) -> si64
+        %551 = "hl.call"(%548, %550) {callee = @__builtin_expect} : (si64, si64) -> si64
+        "hl.cond.yield"(%551) : (si64) -> ()
+      }, {
+        %545 = "hl.implicit_cast"(%533) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %546 = "hl.call"(%545) {callee = @__uflow} : (!hl.ptr<!hl.record<@_IO_FILE>>) -> si32
+        "hl.value.yield"(%546) : (si32) -> ()
+      }, {
+        %537 = "hl.expr"() ({
+          "hl.value.yield"(%533) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+        }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+        %538 = "hl.implicit_cast"(%537) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %539 = "ll.gep"(%538) <{field = @_IO_read_ptr, idx = 1 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+        %540 = "hl.post.inc"(%539) : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+        %541 = "hl.cstyle_cast"(%540) {kind = 1 : i64} : (!hl.ptr<si8>) -> !hl.ptr<ui8>
+        %542 = "hl.deref"(%541) : (!hl.ptr<ui8>) -> !hl.lvalue<ui8>
+        %543 = "hl.implicit_cast"(%542) {kind = 4 : i64} : (!hl.lvalue<ui8>) -> ui8
+        %544 = "hl.implicit_cast"(%543) {kind = 26 : i64} : (ui8) -> si32
+        "hl.value.yield"(%544) : (si32) -> ()
+      }) : () -> si32
+      "hl.value.yield"(%536) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%535) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "getc_unlocked"}> ({
+  ^bb0(%arg26: !hl.ptr<!hl.record<@_IO_FILE>>):
+    %505 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__fp", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %506 = "ll.cell_init"(%505, %arg26) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>, !hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %507 = "hl.expr"() ({
+      %508 = "hl.cond"() ({
+        %519 = "hl.expr"() ({
+          %524 = "hl.expr"() ({
+            "hl.value.yield"(%505) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %525 = "hl.implicit_cast"(%524) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %526 = "ll.gep"(%525) <{field = @_IO_read_ptr, idx = 1 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %527 = "hl.implicit_cast"(%526) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %528 = "hl.expr"() ({
+            "hl.value.yield"(%505) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %529 = "hl.implicit_cast"(%528) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %530 = "ll.gep"(%529) <{field = @_IO_read_end, idx = 2 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %531 = "hl.implicit_cast"(%530) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %532 = "hl.cmp"(%527, %531) {predicate = 9 : i64} : (!hl.ptr<si8>, !hl.ptr<si8>) -> si32
+          "hl.value.yield"(%532) : (si32) -> ()
+        }) : () -> si32
+        %520 = "hl.implicit_cast"(%519) {kind = 26 : i64} : (si32) -> si64
+        %521 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+        %522 = "hl.implicit_cast"(%521) {kind = 26 : i64} : (si32) -> si64
+        %523 = "hl.call"(%520, %522) {callee = @__builtin_expect} : (si64, si64) -> si64
+        "hl.cond.yield"(%523) : (si64) -> ()
+      }, {
+        %517 = "hl.implicit_cast"(%505) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %518 = "hl.call"(%517) {callee = @__uflow} : (!hl.ptr<!hl.record<@_IO_FILE>>) -> si32
+        "hl.value.yield"(%518) : (si32) -> ()
+      }, {
+        %509 = "hl.expr"() ({
+          "hl.value.yield"(%505) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+        }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+        %510 = "hl.implicit_cast"(%509) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %511 = "ll.gep"(%510) <{field = @_IO_read_ptr, idx = 1 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+        %512 = "hl.post.inc"(%511) : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+        %513 = "hl.cstyle_cast"(%512) {kind = 1 : i64} : (!hl.ptr<si8>) -> !hl.ptr<ui8>
+        %514 = "hl.deref"(%513) : (!hl.ptr<ui8>) -> !hl.lvalue<ui8>
+        %515 = "hl.implicit_cast"(%514) {kind = 4 : i64} : (!hl.lvalue<ui8>) -> ui8
+        %516 = "hl.implicit_cast"(%515) {kind = 26 : i64} : (ui8) -> si32
+        "hl.value.yield"(%516) : (si32) -> ()
+      }) : () -> si32
+      "hl.value.yield"(%508) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%507) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} : () -> ()
+  "ll.func"() <{function_type = !core.fn<() -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "getchar_unlocked"}> ({
+    %475 = "hl.expr"() ({
+      %476 = "hl.cond"() ({
+        %489 = "hl.expr"() ({
+          %494 = "hl.expr"() ({
+            %504 = "hl.ref"() {name = @stdin} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+            "hl.value.yield"(%504) : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %495 = "hl.implicit_cast"(%494) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %496 = "ll.gep"(%495) <{field = @_IO_read_ptr, idx = 1 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %497 = "hl.implicit_cast"(%496) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %498 = "hl.expr"() ({
+            %503 = "hl.ref"() {name = @stdin} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+            "hl.value.yield"(%503) : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %499 = "hl.implicit_cast"(%498) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %500 = "ll.gep"(%499) <{field = @_IO_read_end, idx = 2 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %501 = "hl.implicit_cast"(%500) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %502 = "hl.cmp"(%497, %501) {predicate = 9 : i64} : (!hl.ptr<si8>, !hl.ptr<si8>) -> si32
+          "hl.value.yield"(%502) : (si32) -> ()
+        }) : () -> si32
+        %490 = "hl.implicit_cast"(%489) {kind = 26 : i64} : (si32) -> si64
+        %491 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+        %492 = "hl.implicit_cast"(%491) {kind = 26 : i64} : (si32) -> si64
+        %493 = "hl.call"(%490, %492) {callee = @__builtin_expect} : (si64, si64) -> si64
+        "hl.cond.yield"(%493) : (si64) -> ()
+      }, {
+        %486 = "hl.ref"() {name = @stdin} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+        %487 = "hl.implicit_cast"(%486) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %488 = "hl.call"(%487) {callee = @__uflow} : (!hl.ptr<!hl.record<@_IO_FILE>>) -> si32
+        "hl.value.yield"(%488) : (si32) -> ()
+      }, {
+        %477 = "hl.expr"() ({
+          %485 = "hl.ref"() {name = @stdin} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+          "hl.value.yield"(%485) : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+        }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+        %478 = "hl.implicit_cast"(%477) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %479 = "ll.gep"(%478) <{field = @_IO_read_ptr, idx = 1 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+        %480 = "hl.post.inc"(%479) : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+        %481 = "hl.cstyle_cast"(%480) {kind = 1 : i64} : (!hl.ptr<si8>) -> !hl.ptr<ui8>
+        %482 = "hl.deref"(%481) : (!hl.ptr<ui8>) -> !hl.lvalue<ui8>
+        %483 = "hl.implicit_cast"(%482) {kind = 4 : i64} : (!hl.lvalue<ui8>) -> ui8
+        %484 = "hl.implicit_cast"(%483) {kind = 26 : i64} : (ui8) -> si32
+        "hl.value.yield"(%484) : (si32) -> ()
+      }) : () -> si32
+      "hl.value.yield"(%476) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%475) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(si32) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "putchar"}> ({
+  ^bb0(%arg25: si32):
+    %469 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__c", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %470 = "ll.cell_init"(%469, %arg25) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %471 = "hl.implicit_cast"(%469) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+    %472 = "hl.ref"() {name = @stdout} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %473 = "hl.implicit_cast"(%472) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+    %474 = "hl.call"(%471, %473) {callee = @putc} : (si32, !hl.ptr<!hl.record<@_IO_FILE>>) -> si32
+    "ll.return"(%474) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(si32, !hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "fputc_unlocked"}> ({
+  ^bb0(%arg23: si32, %arg24: !hl.ptr<!hl.record<@_IO_FILE>>):
+    %431 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__c", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %432 = "ll.cell_init"(%431, %arg23) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %433 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__stream", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %434 = "ll.cell_init"(%433, %arg24) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>, !hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %435 = "hl.expr"() ({
+      %436 = "hl.cond"() ({
+        %455 = "hl.expr"() ({
+          %460 = "hl.expr"() ({
+            "hl.value.yield"(%433) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %461 = "hl.implicit_cast"(%460) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %462 = "ll.gep"(%461) <{field = @_IO_write_ptr, idx = 5 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %463 = "hl.implicit_cast"(%462) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %464 = "hl.expr"() ({
+            "hl.value.yield"(%433) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %465 = "hl.implicit_cast"(%464) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %466 = "ll.gep"(%465) <{field = @_IO_write_end, idx = 6 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %467 = "hl.implicit_cast"(%466) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %468 = "hl.cmp"(%463, %467) {predicate = 9 : i64} : (!hl.ptr<si8>, !hl.ptr<si8>) -> si32
+          "hl.value.yield"(%468) : (si32) -> ()
+        }) : () -> si32
+        %456 = "hl.implicit_cast"(%455) {kind = 26 : i64} : (si32) -> si64
+        %457 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+        %458 = "hl.implicit_cast"(%457) {kind = 26 : i64} : (si32) -> si64
+        %459 = "hl.call"(%456, %458) {callee = @__builtin_expect} : (si64, si64) -> si64
+        "hl.cond.yield"(%459) : (si64) -> ()
+      }, {
+        %449 = "hl.implicit_cast"(%433) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %450 = "hl.expr"() ({
+          "hl.value.yield"(%431) : (!hl.lvalue<si32>) -> ()
+        }) : () -> !hl.lvalue<si32>
+        %451 = "hl.implicit_cast"(%450) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+        %452 = "hl.cstyle_cast"(%451) {kind = 26 : i64} : (si32) -> ui8
+        %453 = "hl.implicit_cast"(%452) {kind = 26 : i64} : (ui8) -> si32
+        %454 = "hl.call"(%449, %453) {callee = @__overflow} : (!hl.ptr<!hl.record<@_IO_FILE>>, si32) -> si32
+        "hl.value.yield"(%454) : (si32) -> ()
+      }, {
+        %437 = "hl.expr"() ({
+          %440 = "hl.expr"() ({
+            "hl.value.yield"(%433) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %441 = "hl.implicit_cast"(%440) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %442 = "ll.gep"(%441) <{field = @_IO_write_ptr, idx = 5 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %443 = "hl.post.inc"(%442) : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %444 = "hl.deref"(%443) : (!hl.ptr<si8>) -> !hl.lvalue<si8>
+          %445 = "hl.expr"() ({
+            "hl.value.yield"(%431) : (!hl.lvalue<si32>) -> ()
+          }) : () -> !hl.lvalue<si32>
+          %446 = "hl.implicit_cast"(%445) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+          %447 = "hl.implicit_cast"(%446) {kind = 26 : i64} : (si32) -> si8
+          %448 = "hl.assign"(%447, %444) : (si8, !hl.lvalue<si8>) -> si8
+          "hl.value.yield"(%448) : (si8) -> ()
+        }) : () -> si8
+        %438 = "hl.cstyle_cast"(%437) {kind = 26 : i64} : (si8) -> ui8
+        %439 = "hl.implicit_cast"(%438) {kind = 26 : i64} : (ui8) -> si32
+        "hl.value.yield"(%439) : (si32) -> ()
+      }) : () -> si32
+      "hl.value.yield"(%436) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%435) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(si32, !hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "putc_unlocked"}> ({
+  ^bb0(%arg21: si32, %arg22: !hl.ptr<!hl.record<@_IO_FILE>>):
+    %393 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__c", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %394 = "ll.cell_init"(%393, %arg21) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %395 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__stream", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %396 = "ll.cell_init"(%395, %arg22) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>, !hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %397 = "hl.expr"() ({
+      %398 = "hl.cond"() ({
+        %417 = "hl.expr"() ({
+          %422 = "hl.expr"() ({
+            "hl.value.yield"(%395) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %423 = "hl.implicit_cast"(%422) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %424 = "ll.gep"(%423) <{field = @_IO_write_ptr, idx = 5 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %425 = "hl.implicit_cast"(%424) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %426 = "hl.expr"() ({
+            "hl.value.yield"(%395) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %427 = "hl.implicit_cast"(%426) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %428 = "ll.gep"(%427) <{field = @_IO_write_end, idx = 6 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %429 = "hl.implicit_cast"(%428) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %430 = "hl.cmp"(%425, %429) {predicate = 9 : i64} : (!hl.ptr<si8>, !hl.ptr<si8>) -> si32
+          "hl.value.yield"(%430) : (si32) -> ()
+        }) : () -> si32
+        %418 = "hl.implicit_cast"(%417) {kind = 26 : i64} : (si32) -> si64
+        %419 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+        %420 = "hl.implicit_cast"(%419) {kind = 26 : i64} : (si32) -> si64
+        %421 = "hl.call"(%418, %420) {callee = @__builtin_expect} : (si64, si64) -> si64
+        "hl.cond.yield"(%421) : (si64) -> ()
+      }, {
+        %411 = "hl.implicit_cast"(%395) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %412 = "hl.expr"() ({
+          "hl.value.yield"(%393) : (!hl.lvalue<si32>) -> ()
+        }) : () -> !hl.lvalue<si32>
+        %413 = "hl.implicit_cast"(%412) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+        %414 = "hl.cstyle_cast"(%413) {kind = 26 : i64} : (si32) -> ui8
+        %415 = "hl.implicit_cast"(%414) {kind = 26 : i64} : (ui8) -> si32
+        %416 = "hl.call"(%411, %415) {callee = @__overflow} : (!hl.ptr<!hl.record<@_IO_FILE>>, si32) -> si32
+        "hl.value.yield"(%416) : (si32) -> ()
+      }, {
+        %399 = "hl.expr"() ({
+          %402 = "hl.expr"() ({
+            "hl.value.yield"(%395) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %403 = "hl.implicit_cast"(%402) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %404 = "ll.gep"(%403) <{field = @_IO_write_ptr, idx = 5 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %405 = "hl.post.inc"(%404) : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %406 = "hl.deref"(%405) : (!hl.ptr<si8>) -> !hl.lvalue<si8>
+          %407 = "hl.expr"() ({
+            "hl.value.yield"(%393) : (!hl.lvalue<si32>) -> ()
+          }) : () -> !hl.lvalue<si32>
+          %408 = "hl.implicit_cast"(%407) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+          %409 = "hl.implicit_cast"(%408) {kind = 26 : i64} : (si32) -> si8
+          %410 = "hl.assign"(%409, %406) : (si8, !hl.lvalue<si8>) -> si8
+          "hl.value.yield"(%410) : (si8) -> ()
+        }) : () -> si8
+        %400 = "hl.cstyle_cast"(%399) {kind = 26 : i64} : (si8) -> ui8
+        %401 = "hl.implicit_cast"(%400) {kind = 26 : i64} : (ui8) -> si32
+        "hl.value.yield"(%401) : (si32) -> ()
+      }) : () -> si32
+      "hl.value.yield"(%398) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%397) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(si32) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "putchar_unlocked"}> ({
+  ^bb0(%arg20: si32):
+    %353 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__c", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %354 = "ll.cell_init"(%353, %arg20) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %355 = "hl.expr"() ({
+      %356 = "hl.cond"() ({
+        %377 = "hl.expr"() ({
+          %382 = "hl.expr"() ({
+            %392 = "hl.ref"() {name = @stdout} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+            "hl.value.yield"(%392) : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %383 = "hl.implicit_cast"(%382) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %384 = "ll.gep"(%383) <{field = @_IO_write_ptr, idx = 5 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %385 = "hl.implicit_cast"(%384) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %386 = "hl.expr"() ({
+            %391 = "hl.ref"() {name = @stdout} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+            "hl.value.yield"(%391) : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %387 = "hl.implicit_cast"(%386) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %388 = "ll.gep"(%387) <{field = @_IO_write_end, idx = 6 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %389 = "hl.implicit_cast"(%388) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %390 = "hl.cmp"(%385, %389) {predicate = 9 : i64} : (!hl.ptr<si8>, !hl.ptr<si8>) -> si32
+          "hl.value.yield"(%390) : (si32) -> ()
+        }) : () -> si32
+        %378 = "hl.implicit_cast"(%377) {kind = 26 : i64} : (si32) -> si64
+        %379 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+        %380 = "hl.implicit_cast"(%379) {kind = 26 : i64} : (si32) -> si64
+        %381 = "hl.call"(%378, %380) {callee = @__builtin_expect} : (si64, si64) -> si64
+        "hl.cond.yield"(%381) : (si64) -> ()
+      }, {
+        %370 = "hl.ref"() {name = @stdout} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+        %371 = "hl.implicit_cast"(%370) {kind = 4 : i64} : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %372 = "hl.expr"() ({
+          "hl.value.yield"(%353) : (!hl.lvalue<si32>) -> ()
+        }) : () -> !hl.lvalue<si32>
+        %373 = "hl.implicit_cast"(%372) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+        %374 = "hl.cstyle_cast"(%373) {kind = 26 : i64} : (si32) -> ui8
+        %375 = "hl.implicit_cast"(%374) {kind = 26 : i64} : (ui8) -> si32
+        %376 = "hl.call"(%371, %375) {callee = @__overflow} : (!hl.ptr<!hl.record<@_IO_FILE>>, si32) -> si32
+        "hl.value.yield"(%376) : (si32) -> ()
+      }, {
+        %357 = "hl.expr"() ({
+          %360 = "hl.expr"() ({
+            %369 = "hl.ref"() {name = @stdout} : () -> !hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>
+            "hl.value.yield"(%369) : (!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+          }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+          %361 = "hl.implicit_cast"(%360) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+          %362 = "ll.gep"(%361) <{field = @_IO_write_ptr, idx = 5 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<!hl.ptr<si8>>
+          %363 = "hl.post.inc"(%362) : (!hl.ptr<!hl.ptr<si8>>) -> !hl.ptr<si8>
+          %364 = "hl.deref"(%363) : (!hl.ptr<si8>) -> !hl.lvalue<si8>
+          %365 = "hl.expr"() ({
+            "hl.value.yield"(%353) : (!hl.lvalue<si32>) -> ()
+          }) : () -> !hl.lvalue<si32>
+          %366 = "hl.implicit_cast"(%365) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+          %367 = "hl.implicit_cast"(%366) {kind = 26 : i64} : (si32) -> si8
+          %368 = "hl.assign"(%367, %364) : (si8, !hl.lvalue<si8>) -> si8
+          "hl.value.yield"(%368) : (si8) -> ()
+        }) : () -> si8
+        %358 = "hl.cstyle_cast"(%357) {kind = 26 : i64} : (si8) -> ui8
+        %359 = "hl.implicit_cast"(%358) {kind = 26 : i64} : (ui8) -> si32
+        "hl.value.yield"(%359) : (si32) -> ()
+      }) : () -> si32
+      "hl.value.yield"(%356) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%355) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "feof_unlocked"}> ({
+  ^bb0(%arg19: !hl.ptr<!hl.record<@_IO_FILE>>):
+    %341 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__stream", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %342 = "ll.cell_init"(%341, %arg19) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>, !hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %343 = "hl.expr"() ({
+      %344 = "hl.expr"() ({
+        %347 = "hl.expr"() ({
+          "hl.value.yield"(%341) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+        }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+        %348 = "hl.implicit_cast"(%347) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %349 = "ll.gep"(%348) <{field = @_flags, idx = 0 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<si32>
+        %350 = "hl.implicit_cast"(%349) {kind = 4 : i64} : (!hl.ptr<si32>) -> si32
+        %351 = "hl.const"() {value = #core.integer<16> : si32} : () -> si32
+        %352 = "hl.bin.and"(%350, %351) : (si32, si32) -> si32
+        "hl.value.yield"(%352) : (si32) -> ()
+      }) : () -> si32
+      %345 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %346 = "hl.cmp"(%344, %345) {predicate = 1 : i64} : (si32, si32) -> si32
+      "hl.value.yield"(%346) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%343) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<!hl.record<@_IO_FILE>>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "ferror_unlocked"}> ({
+  ^bb0(%arg18: !hl.ptr<!hl.record<@_IO_FILE>>):
+    %329 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__stream", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %330 = "ll.cell_init"(%329, %arg18) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>, !hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+    %331 = "hl.expr"() ({
+      %332 = "hl.expr"() ({
+        %335 = "hl.expr"() ({
+          "hl.value.yield"(%329) : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> ()
+        }) : () -> !hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>
+        %336 = "hl.implicit_cast"(%335) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!hl.record<@_IO_FILE>>>) -> !hl.ptr<!hl.record<@_IO_FILE>>
+        %337 = "ll.gep"(%336) <{field = @_flags, idx = 0 : i32}> : (!hl.ptr<!hl.record<@_IO_FILE>>) -> !hl.ptr<si32>
+        %338 = "hl.implicit_cast"(%337) {kind = 4 : i64} : (!hl.ptr<si32>) -> si32
+        %339 = "hl.const"() {value = #core.integer<32> : si32} : () -> si32
+        %340 = "hl.bin.and"(%338, %339) : (si32, si32) -> si32
+        "hl.value.yield"(%340) : (si32) -> ()
+      }) : () -> si32
+      %333 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %334 = "hl.cmp"(%332, %333) {predicate = 1 : i64} : (si32, si32) -> si32
+      "hl.value.yield"(%334) : (si32) -> ()
+    }) : () -> si32
+    "ll.return"(%331) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8>, !hl.ptr<!hl.ptr<si8>>) -> (f64)>, linkage = #core.global_linkage_kind<external>, sym_name = "strtod", sym_visibility = "private"}> ({
+  }) {hl.builtin = #hl.builtin<1159>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8>, !hl.ptr<!hl.ptr<si8>>, si32) -> (si64)>, linkage = #core.global_linkage_kind<external>, sym_name = "strtol", sym_visibility = "private"}> ({
+  }) {hl.builtin = #hl.builtin<1161>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8>, !hl.ptr<!hl.ptr<si8>>, si32) -> (si64)>, linkage = #core.global_linkage_kind<external>, sym_name = "strtoll", sym_visibility = "private"}> ({
+  }) {hl.builtin = #hl.builtin<1162>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8>) -> (si32)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "atoi"}> ({
+  ^bb0(%arg17: !hl.ptr<si8>):
+    %319 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__nptr", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<si8>>
+    %320 = "ll.cell_init"(%319, %arg17) : (!hl.lvalue<!hl.ptr<si8>>, !hl.ptr<si8>) -> !hl.lvalue<!hl.ptr<si8>>
+    %321 = "hl.implicit_cast"(%319) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<si8>>) -> !hl.ptr<si8>
+    %322 = "hl.expr"() ({
+      %327 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %328 = "hl.cstyle_cast"(%327) {kind = 13 : i64} : (si32) -> !hl.ptr<ui8>
+      "hl.value.yield"(%328) : (!hl.ptr<ui8>) -> ()
+    }) : () -> !hl.ptr<ui8>
+    %323 = "hl.cstyle_cast"(%322) {kind = 1 : i64} : (!hl.ptr<ui8>) -> !hl.ptr<!hl.ptr<si8>>
+    %324 = "hl.const"() {value = #core.integer<10> : si32} : () -> si32
+    %325 = "hl.call"(%321, %323, %324) {callee = @strtol} : (!hl.ptr<si8>, !hl.ptr<!hl.ptr<si8>>, si32) -> si64
+    %326 = "hl.cstyle_cast"(%325) {kind = 26 : i64} : (si64) -> si32
+    "ll.return"(%326) : (si32) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8>) -> (si64)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "atol"}> ({
+  ^bb0(%arg16: !hl.ptr<si8>):
+    %310 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__nptr", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<si8>>
+    %311 = "ll.cell_init"(%310, %arg16) : (!hl.lvalue<!hl.ptr<si8>>, !hl.ptr<si8>) -> !hl.lvalue<!hl.ptr<si8>>
+    %312 = "hl.implicit_cast"(%310) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<si8>>) -> !hl.ptr<si8>
+    %313 = "hl.expr"() ({
+      %317 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %318 = "hl.cstyle_cast"(%317) {kind = 13 : i64} : (si32) -> !hl.ptr<ui8>
+      "hl.value.yield"(%318) : (!hl.ptr<ui8>) -> ()
+    }) : () -> !hl.ptr<ui8>
+    %314 = "hl.cstyle_cast"(%313) {kind = 1 : i64} : (!hl.ptr<ui8>) -> !hl.ptr<!hl.ptr<si8>>
+    %315 = "hl.const"() {value = #core.integer<10> : si32} : () -> si32
+    %316 = "hl.call"(%312, %314, %315) {callee = @strtol} : (!hl.ptr<si8>, !hl.ptr<!hl.ptr<si8>>, si32) -> si64
+    "ll.return"(%316) : (si64) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8>) -> (si64)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "atoll"}> ({
+  ^bb0(%arg15: !hl.ptr<si8>):
+    %301 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__nptr", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<si8>>
+    %302 = "ll.cell_init"(%301, %arg15) : (!hl.lvalue<!hl.ptr<si8>>, !hl.ptr<si8>) -> !hl.lvalue<!hl.ptr<si8>>
+    %303 = "hl.implicit_cast"(%301) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<si8>>) -> !hl.ptr<si8>
+    %304 = "hl.expr"() ({
+      %308 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %309 = "hl.cstyle_cast"(%308) {kind = 13 : i64} : (si32) -> !hl.ptr<ui8>
+      "hl.value.yield"(%309) : (!hl.ptr<ui8>) -> ()
+    }) : () -> !hl.ptr<ui8>
+    %305 = "hl.cstyle_cast"(%304) {kind = 1 : i64} : (!hl.ptr<ui8>) -> !hl.ptr<!hl.ptr<si8>>
+    %306 = "hl.const"() {value = #core.integer<10> : si32} : () -> si32
+    %307 = "hl.call"(%303, %305, %306) {callee = @strtoll} : (!hl.ptr<si8>, !hl.ptr<!hl.ptr<si8>>, si32) -> si64
+    "ll.return"(%307) : (si64) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(ui16) -> (ui16)>, linkage = #core.global_linkage_kind<internal>, sym_name = "__bswap_16", sym_visibility = "private"}> ({
+  ^bb0(%arg14: ui16):
+    %277 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__bsx", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui16>
+    %278 = "ll.cell_init"(%277, %arg14) : (!hl.lvalue<ui16>, ui16) -> !hl.lvalue<ui16>
+    %279 = "hl.expr"() ({
+      %280 = "hl.expr"() ({
+        %282 = "hl.expr"() ({
+          %293 = "hl.expr"() ({
+            %296 = "hl.expr"() ({
+              "hl.value.yield"(%277) : (!hl.lvalue<ui16>) -> ()
+            }) : () -> !hl.lvalue<ui16>
+            %297 = "hl.implicit_cast"(%296) {kind = 4 : i64} : (!hl.lvalue<ui16>) -> ui16
+            %298 = "hl.implicit_cast"(%297) {kind = 26 : i64} : (ui16) -> si32
+            %299 = "hl.const"() {value = #core.integer<8> : si32} : () -> si32
+            %300 = "hl.bin.ashr"(%298, %299) : (si32, si32) -> si32
+            "hl.value.yield"(%300) : (si32) -> ()
+          }) : () -> si32
+          %294 = "hl.const"() {value = #core.integer<255> : si32} : () -> si32
+          %295 = "hl.bin.and"(%293, %294) : (si32, si32) -> si32
+          "hl.value.yield"(%295) : (si32) -> ()
+        }) : () -> si32
+        %283 = "hl.expr"() ({
+          %285 = "hl.expr"() ({
+            %288 = "hl.expr"() ({
+              "hl.value.yield"(%277) : (!hl.lvalue<ui16>) -> ()
+            }) : () -> !hl.lvalue<ui16>
+            %289 = "hl.implicit_cast"(%288) {kind = 4 : i64} : (!hl.lvalue<ui16>) -> ui16
+            %290 = "hl.implicit_cast"(%289) {kind = 26 : i64} : (ui16) -> si32
+            %291 = "hl.const"() {value = #core.integer<255> : si32} : () -> si32
+            %292 = "hl.bin.and"(%290, %291) : (si32, si32) -> si32
+            "hl.value.yield"(%292) : (si32) -> ()
+          }) : () -> si32
+          %286 = "hl.const"() {value = #core.integer<8> : si32} : () -> si32
+          %287 = "hl.bin.shl"(%285, %286) : (si32, si32) -> si32
+          "hl.value.yield"(%287) : (si32) -> ()
+        }) : () -> si32
+        %284 = "hl.bin.or"(%282, %283) : (si32, si32) -> si32
+        "hl.value.yield"(%284) : (si32) -> ()
+      }) : () -> si32
+      %281 = "hl.cstyle_cast"(%280) {kind = 26 : i64} : (si32) -> ui16
+      "hl.value.yield"(%281) : (ui16) -> ()
+    }) : () -> ui16
+    "ll.return"(%279) : (ui16) -> ()
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(ui32) -> (ui32)>, linkage = #core.global_linkage_kind<internal>, sym_name = "__bswap_32", sym_visibility = "private"}> ({
+  ^bb0(%arg13: ui32):
+    %239 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__bsx", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui32>
+    %240 = "ll.cell_init"(%239, %arg13) : (!hl.lvalue<ui32>, ui32) -> !hl.lvalue<ui32>
+    %241 = "hl.expr"() ({
+      %242 = "hl.expr"() ({
+        %270 = "hl.expr"() ({
+          %273 = "hl.expr"() ({
+            "hl.value.yield"(%239) : (!hl.lvalue<ui32>) -> ()
+          }) : () -> !hl.lvalue<ui32>
+          %274 = "hl.implicit_cast"(%273) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+          %275 = "hl.const"() {value = #core.integer<-16777216> : ui32} : () -> ui32
+          %276 = "hl.bin.and"(%274, %275) : (ui32, ui32) -> ui32
+          "hl.value.yield"(%276) : (ui32) -> ()
+        }) : () -> ui32
+        %271 = "hl.const"() {value = #core.integer<24> : si32} : () -> si32
+        %272 = "hl.bin.lshr"(%270, %271) : (ui32, si32) -> ui32
+        "hl.value.yield"(%272) : (ui32) -> ()
+      }) : () -> ui32
+      %243 = "hl.expr"() ({
+        %263 = "hl.expr"() ({
+          %266 = "hl.expr"() ({
+            "hl.value.yield"(%239) : (!hl.lvalue<ui32>) -> ()
+          }) : () -> !hl.lvalue<ui32>
+          %267 = "hl.implicit_cast"(%266) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+          %268 = "hl.const"() {value = #core.integer<16711680> : ui32} : () -> ui32
+          %269 = "hl.bin.and"(%267, %268) : (ui32, ui32) -> ui32
+          "hl.value.yield"(%269) : (ui32) -> ()
+        }) : () -> ui32
+        %264 = "hl.const"() {value = #core.integer<8> : si32} : () -> si32
+        %265 = "hl.bin.lshr"(%263, %264) : (ui32, si32) -> ui32
+        "hl.value.yield"(%265) : (ui32) -> ()
+      }) : () -> ui32
+      %244 = "hl.bin.or"(%242, %243) : (ui32, ui32) -> ui32
+      %245 = "hl.expr"() ({
+        %256 = "hl.expr"() ({
+          %259 = "hl.expr"() ({
+            "hl.value.yield"(%239) : (!hl.lvalue<ui32>) -> ()
+          }) : () -> !hl.lvalue<ui32>
+          %260 = "hl.implicit_cast"(%259) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+          %261 = "hl.const"() {value = #core.integer<65280> : ui32} : () -> ui32
+          %262 = "hl.bin.and"(%260, %261) : (ui32, ui32) -> ui32
+          "hl.value.yield"(%262) : (ui32) -> ()
+        }) : () -> ui32
+        %257 = "hl.const"() {value = #core.integer<8> : si32} : () -> si32
+        %258 = "hl.bin.shl"(%256, %257) : (ui32, si32) -> ui32
+        "hl.value.yield"(%258) : (ui32) -> ()
+      }) : () -> ui32
+      %246 = "hl.bin.or"(%244, %245) : (ui32, ui32) -> ui32
+      %247 = "hl.expr"() ({
+        %249 = "hl.expr"() ({
+          %252 = "hl.expr"() ({
+            "hl.value.yield"(%239) : (!hl.lvalue<ui32>) -> ()
+          }) : () -> !hl.lvalue<ui32>
+          %253 = "hl.implicit_cast"(%252) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+          %254 = "hl.const"() {value = #core.integer<255> : ui32} : () -> ui32
+          %255 = "hl.bin.and"(%253, %254) : (ui32, ui32) -> ui32
+          "hl.value.yield"(%255) : (ui32) -> ()
+        }) : () -> ui32
+        %250 = "hl.const"() {value = #core.integer<24> : si32} : () -> si32
+        %251 = "hl.bin.shl"(%249, %250) : (ui32, si32) -> ui32
+        "hl.value.yield"(%251) : (ui32) -> ()
+      }) : () -> ui32
+      %248 = "hl.bin.or"(%246, %247) : (ui32, ui32) -> ui32
+      "hl.value.yield"(%248) : (ui32) -> ()
+    }) : () -> ui32
+    "ll.return"(%241) : (ui32) -> ()
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(ui64) -> (ui64)>, linkage = #core.global_linkage_kind<internal>, sym_name = "__bswap_64", sym_visibility = "private"}> ({
+  ^bb0(%arg12: ui64):
+    %165 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__bsx", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui64>
+    %166 = "ll.cell_init"(%165, %arg12) : (!hl.lvalue<ui64>, ui64) -> !hl.lvalue<ui64>
+    %167 = "hl.expr"() ({
+      %168 = "hl.expr"() ({
+        %232 = "hl.expr"() ({
+          %235 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %236 = "hl.implicit_cast"(%235) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %237 = "hl.const"() {value = #core.integer<-72057594037927936> : ui64} : () -> ui64
+          %238 = "hl.bin.and"(%236, %237) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%238) : (ui64) -> ()
+        }) : () -> ui64
+        %233 = "hl.const"() {value = #core.integer<56> : si32} : () -> si32
+        %234 = "hl.bin.lshr"(%232, %233) : (ui64, si32) -> ui64
+        "hl.value.yield"(%234) : (ui64) -> ()
+      }) : () -> ui64
+      %169 = "hl.expr"() ({
+        %225 = "hl.expr"() ({
+          %228 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %229 = "hl.implicit_cast"(%228) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %230 = "hl.const"() {value = #core.integer<71776119061217280> : ui64} : () -> ui64
+          %231 = "hl.bin.and"(%229, %230) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%231) : (ui64) -> ()
+        }) : () -> ui64
+        %226 = "hl.const"() {value = #core.integer<40> : si32} : () -> si32
+        %227 = "hl.bin.lshr"(%225, %226) : (ui64, si32) -> ui64
+        "hl.value.yield"(%227) : (ui64) -> ()
+      }) : () -> ui64
+      %170 = "hl.bin.or"(%168, %169) : (ui64, ui64) -> ui64
+      %171 = "hl.expr"() ({
+        %218 = "hl.expr"() ({
+          %221 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %222 = "hl.implicit_cast"(%221) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %223 = "hl.const"() {value = #core.integer<280375465082880> : ui64} : () -> ui64
+          %224 = "hl.bin.and"(%222, %223) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%224) : (ui64) -> ()
+        }) : () -> ui64
+        %219 = "hl.const"() {value = #core.integer<24> : si32} : () -> si32
+        %220 = "hl.bin.lshr"(%218, %219) : (ui64, si32) -> ui64
+        "hl.value.yield"(%220) : (ui64) -> ()
+      }) : () -> ui64
+      %172 = "hl.bin.or"(%170, %171) : (ui64, ui64) -> ui64
+      %173 = "hl.expr"() ({
+        %211 = "hl.expr"() ({
+          %214 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %215 = "hl.implicit_cast"(%214) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %216 = "hl.const"() {value = #core.integer<1095216660480> : ui64} : () -> ui64
+          %217 = "hl.bin.and"(%215, %216) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%217) : (ui64) -> ()
+        }) : () -> ui64
+        %212 = "hl.const"() {value = #core.integer<8> : si32} : () -> si32
+        %213 = "hl.bin.lshr"(%211, %212) : (ui64, si32) -> ui64
+        "hl.value.yield"(%213) : (ui64) -> ()
+      }) : () -> ui64
+      %174 = "hl.bin.or"(%172, %173) : (ui64, ui64) -> ui64
+      %175 = "hl.expr"() ({
+        %204 = "hl.expr"() ({
+          %207 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %208 = "hl.implicit_cast"(%207) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %209 = "hl.const"() {value = #core.integer<4278190080> : ui64} : () -> ui64
+          %210 = "hl.bin.and"(%208, %209) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%210) : (ui64) -> ()
+        }) : () -> ui64
+        %205 = "hl.const"() {value = #core.integer<8> : si32} : () -> si32
+        %206 = "hl.bin.shl"(%204, %205) : (ui64, si32) -> ui64
+        "hl.value.yield"(%206) : (ui64) -> ()
+      }) : () -> ui64
+      %176 = "hl.bin.or"(%174, %175) : (ui64, ui64) -> ui64
+      %177 = "hl.expr"() ({
+        %197 = "hl.expr"() ({
+          %200 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %201 = "hl.implicit_cast"(%200) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %202 = "hl.const"() {value = #core.integer<16711680> : ui64} : () -> ui64
+          %203 = "hl.bin.and"(%201, %202) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%203) : (ui64) -> ()
+        }) : () -> ui64
+        %198 = "hl.const"() {value = #core.integer<24> : si32} : () -> si32
+        %199 = "hl.bin.shl"(%197, %198) : (ui64, si32) -> ui64
+        "hl.value.yield"(%199) : (ui64) -> ()
+      }) : () -> ui64
+      %178 = "hl.bin.or"(%176, %177) : (ui64, ui64) -> ui64
+      %179 = "hl.expr"() ({
+        %190 = "hl.expr"() ({
+          %193 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %194 = "hl.implicit_cast"(%193) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %195 = "hl.const"() {value = #core.integer<65280> : ui64} : () -> ui64
+          %196 = "hl.bin.and"(%194, %195) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%196) : (ui64) -> ()
+        }) : () -> ui64
+        %191 = "hl.const"() {value = #core.integer<40> : si32} : () -> si32
+        %192 = "hl.bin.shl"(%190, %191) : (ui64, si32) -> ui64
+        "hl.value.yield"(%192) : (ui64) -> ()
+      }) : () -> ui64
+      %180 = "hl.bin.or"(%178, %179) : (ui64, ui64) -> ui64
+      %181 = "hl.expr"() ({
+        %183 = "hl.expr"() ({
+          %186 = "hl.expr"() ({
+            "hl.value.yield"(%165) : (!hl.lvalue<ui64>) -> ()
+          }) : () -> !hl.lvalue<ui64>
+          %187 = "hl.implicit_cast"(%186) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %188 = "hl.const"() {value = #core.integer<255> : ui64} : () -> ui64
+          %189 = "hl.bin.and"(%187, %188) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%189) : (ui64) -> ()
+        }) : () -> ui64
+        %184 = "hl.const"() {value = #core.integer<56> : si32} : () -> si32
+        %185 = "hl.bin.shl"(%183, %184) : (ui64, si32) -> ui64
+        "hl.value.yield"(%185) : (ui64) -> ()
+      }) : () -> ui64
+      %182 = "hl.bin.or"(%180, %181) : (ui64, ui64) -> ui64
+      "hl.value.yield"(%182) : (ui64) -> ()
+    }) : () -> ui64
+    "ll.return"(%167) : (ui64) -> ()
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(ui16) -> (ui16)>, linkage = #core.global_linkage_kind<internal>, sym_name = "__uint16_identity", sym_visibility = "private"}> ({
+  ^bb0(%arg11: ui16):
+    %162 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__x", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui16>
+    %163 = "ll.cell_init"(%162, %arg11) : (!hl.lvalue<ui16>, ui16) -> !hl.lvalue<ui16>
+    %164 = "hl.implicit_cast"(%162) {kind = 4 : i64} : (!hl.lvalue<ui16>) -> ui16
+    "ll.return"(%164) : (ui16) -> ()
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(ui32) -> (ui32)>, linkage = #core.global_linkage_kind<internal>, sym_name = "__uint32_identity", sym_visibility = "private"}> ({
+  ^bb0(%arg10: ui32):
+    %159 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__x", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui32>
+    %160 = "ll.cell_init"(%159, %arg10) : (!hl.lvalue<ui32>, ui32) -> !hl.lvalue<ui32>
+    %161 = "hl.implicit_cast"(%159) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+    "ll.return"(%161) : (ui32) -> ()
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(ui64) -> (ui64)>, linkage = #core.global_linkage_kind<internal>, sym_name = "__uint64_identity", sym_visibility = "private"}> ({
+  ^bb0(%arg9: ui64):
+    %156 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__x", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui64>
+    %157 = "ll.cell_init"(%156, %arg9) : (!hl.lvalue<ui64>, ui64) -> !hl.lvalue<ui64>
+    %158 = "hl.implicit_cast"(%156) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+    "ll.return"(%158) : (ui64) -> ()
+  }) : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<ui8>, !hl.ptr<ui8>, ui64, ui64, !hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>) -> (!hl.ptr<ui8>)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "bsearch"}> ({
+  ^bb0(%arg4: !hl.ptr<ui8>, %arg5: !hl.ptr<ui8>, %arg6: ui64, %arg7: ui64, %arg8: !hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>):
+    %85 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__key", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<ui8>>
+    %86 = "ll.cell_init"(%85, %arg4) : (!hl.lvalue<!hl.ptr<ui8>>, !hl.ptr<ui8>) -> !hl.lvalue<!hl.ptr<ui8>>
+    %87 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__base", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<ui8>>
+    %88 = "ll.cell_init"(%87, %arg5) : (!hl.lvalue<!hl.ptr<ui8>>, !hl.ptr<ui8>) -> !hl.lvalue<!hl.ptr<ui8>>
+    %89 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__nmemb", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui64>
+    %90 = "ll.cell_init"(%89, %arg6) : (!hl.lvalue<ui64>, ui64) -> !hl.lvalue<ui64>
+    %91 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__size", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui64>
+    %92 = "ll.cell_init"(%91, %arg7) : (!hl.lvalue<ui64>, ui64) -> !hl.lvalue<ui64>
+    %93 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__compar", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>>
+    %94 = "ll.cell_init"(%93, %arg8) : (!hl.lvalue<!hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>>, !hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>) -> !hl.ptr<!hl.ptr<!core.fn<(!hl.ptr<!hl.ptr<ui8>>, !hl.ptr<!hl.ptr<ui8>>) -> (si32)>>>
+    %95 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__l", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui64>
+    %96 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__u", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui64>
+    %97 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__idx", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui64>
+    %98 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__p", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<ui8>>
+    %99 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__comparison", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %100 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+    %101 = "hl.implicit_cast"(%100) {kind = 26 : i64} : (si32) -> ui64
+    %102 = "hl.assign"(%101, %95) : (ui64, !hl.lvalue<ui64>) -> ui64
+    %103 = "hl.implicit_cast"(%89) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+    %104 = "hl.assign"(%103, %96) : (ui64, !hl.lvalue<ui64>) -> ui64
+    "core.scope"() ({
+      "ll.br"()[^bb1] : () -> ()
+    ^bb1:  // 2 preds: ^bb0, ^bb8
+      %108 = "hl.implicit_cast"(%95) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+      %109 = "hl.implicit_cast"(%96) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+      %110 = "hl.cmp"(%108, %109) {predicate = 6 : i64} : (ui64, ui64) -> si32
+      %111 = "hl.implicit_cast"(%110) {kind = 26 : i64} : (si32) -> i1
+      "ll.cond_scope_ret"(%111)[^bb2] : (i1) -> ()
+    ^bb2:  // pred: ^bb1
+      %112 = "hl.expr"() ({
+        %153 = "hl.implicit_cast"(%95) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+        %154 = "hl.implicit_cast"(%96) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+        %155 = "hl.add"(%153, %154) : (ui64, ui64) -> ui64
+        "hl.value.yield"(%155) : (ui64) -> ()
+      }) : () -> ui64
+      %113 = "hl.const"() {value = #core.integer<2> : si32} : () -> si32
+      %114 = "hl.implicit_cast"(%113) {kind = 26 : i64} : (si32) -> ui64
+      %115 = "hl.udiv"(%112, %114) : (ui64, ui64) -> ui64
+      %116 = "hl.assign"(%115, %97) : (ui64, !hl.lvalue<ui64>) -> ui64
+      %117 = "hl.expr"() ({
+        %145 = "hl.expr"() ({
+          %151 = "hl.implicit_cast"(%87) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<ui8>>) -> !hl.ptr<ui8>
+          %152 = "hl.cstyle_cast"(%151) {kind = 1 : i64} : (!hl.ptr<ui8>) -> !hl.ptr<si8>
+          "hl.value.yield"(%152) : (!hl.ptr<si8>) -> ()
+        }) : () -> !hl.ptr<si8>
+        %146 = "hl.expr"() ({
+          %148 = "hl.implicit_cast"(%97) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %149 = "hl.implicit_cast"(%91) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+          %150 = "hl.mul"(%148, %149) : (ui64, ui64) -> ui64
+          "hl.value.yield"(%150) : (ui64) -> ()
+        }) : () -> ui64
+        %147 = "hl.add"(%145, %146) : (!hl.ptr<si8>, ui64) -> !hl.ptr<si8>
+        "hl.value.yield"(%147) : (!hl.ptr<si8>) -> ()
+      }) : () -> !hl.ptr<si8>
+      %118 = "hl.cstyle_cast"(%117) {kind = 1 : i64} : (!hl.ptr<si8>) -> !hl.ptr<ui8>
+      %119 = "hl.assign"(%118, %98) : (!hl.ptr<ui8>, !hl.lvalue<!hl.ptr<ui8>>) -> !hl.ptr<ui8>
+      %120 = "hl.expr"() ({
+        %143 = "hl.implicit_cast"(%93) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>>) -> !hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>
+        %144 = "hl.deref"(%143) : (!hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>) -> !hl.lvalue<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>
+        "hl.value.yield"(%144) : (!hl.lvalue<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>) -> ()
+      }) : () -> !core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>
+      %121 = "hl.implicit_cast"(%120) {kind = 12 : i64} : (!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>) -> !hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>
+      %122 = "hl.implicit_cast"(%85) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<ui8>>) -> !hl.ptr<ui8>
+      %123 = "hl.implicit_cast"(%98) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<ui8>>) -> !hl.ptr<ui8>
+      %124 = "hl.indirect_call"(%121, %122, %123) : (!hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>, !hl.ptr<ui8>, !hl.ptr<ui8>) -> si32
+      %125 = "hl.assign"(%124, %99) : (si32, !hl.lvalue<si32>) -> si32
+      %126 = "hl.implicit_cast"(%99) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+      %127 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %128 = "hl.cmp"(%126, %127) {predicate = 2 : i64} : (si32, si32) -> si32
+      %129 = "hl.implicit_cast"(%128) {kind = 26 : i64} : (si32) -> i1
+      "ll.cond_br"(%129)[^bb7, ^bb3] <{operandSegmentSizes = array<i32: 1, 0, 0>}> : (i1) -> ()
+    ^bb3:  // pred: ^bb2
+      %130 = "hl.implicit_cast"(%99) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+      %131 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %132 = "hl.cmp"(%130, %131) {predicate = 4 : i64} : (si32, si32) -> si32
+      %133 = "hl.implicit_cast"(%132) {kind = 26 : i64} : (si32) -> i1
+      "ll.cond_br"(%133)[^bb5, ^bb4] <{operandSegmentSizes = array<i32: 1, 0, 0>}> : (i1) -> ()
+    ^bb4:  // pred: ^bb3
+      %134 = "hl.implicit_cast"(%98) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<ui8>>) -> !hl.ptr<ui8>
+      %135 = "hl.cstyle_cast"(%134) {kind = 5 : i64} : (!hl.ptr<ui8>) -> !hl.ptr<ui8>
+      "ll.return"(%135) : (!hl.ptr<ui8>) -> ()
+    ^bb5:  // pred: ^bb3
+      %136 = "hl.implicit_cast"(%97) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+      %137 = "hl.const"() {value = #core.integer<1> : si32} : () -> si32
+      %138 = "hl.implicit_cast"(%137) {kind = 26 : i64} : (si32) -> ui64
+      %139 = "hl.add"(%136, %138) : (ui64, ui64) -> ui64
+      %140 = "hl.assign"(%139, %95) : (ui64, !hl.lvalue<ui64>) -> ui64
+      "ll.br"()[^bb6] : () -> ()
+    ^bb6:  // pred: ^bb5
+      "ll.br"()[^bb8] : () -> ()
+    ^bb7:  // pred: ^bb2
+      %141 = "hl.implicit_cast"(%97) {kind = 4 : i64} : (!hl.lvalue<ui64>) -> ui64
+      %142 = "hl.assign"(%141, %96) : (ui64, !hl.lvalue<ui64>) -> ui64
+      "ll.br"()[^bb8] : () -> ()
+    ^bb8:  // 2 preds: ^bb6, ^bb7
+      "ll.br"()[^bb1] : () -> ()
+    }) : () -> ()
+    %105 = "hl.expr"() ({
+      %106 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %107 = "hl.cstyle_cast"(%106) {kind = 13 : i64} : (si32) -> !hl.ptr<ui8>
+      "hl.value.yield"(%107) : (!hl.ptr<ui8>) -> ()
+    }) : () -> !hl.ptr<ui8>
+    "ll.return"(%105) : (!hl.ptr<ui8>) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(!hl.ptr<si8>) -> (f64)>, linkage = #core.global_linkage_kind<available_externally>, sym_name = "atof"}> ({
+  ^bb0(%arg3: !hl.ptr<si8>):
+    %77 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "__nptr", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<si8>>
+    %78 = "ll.cell_init"(%77, %arg3) : (!hl.lvalue<!hl.ptr<si8>>, !hl.ptr<si8>) -> !hl.lvalue<!hl.ptr<si8>>
+    %79 = "hl.implicit_cast"(%77) {kind = 4 : i64} : (!hl.lvalue<!hl.ptr<si8>>) -> !hl.ptr<si8>
+    %80 = "hl.expr"() ({
+      %83 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+      %84 = "hl.cstyle_cast"(%83) {kind = 13 : i64} : (si32) -> !hl.ptr<ui8>
+      "hl.value.yield"(%84) : (!hl.ptr<ui8>) -> ()
+    }) : () -> !hl.ptr<ui8>
+    %81 = "hl.cstyle_cast"(%80) {kind = 1 : i64} : (!hl.ptr<ui8>) -> !hl.ptr<!hl.ptr<si8>>
+    %82 = "hl.call"(%79, %81) {callee = @strtod} : (!hl.ptr<si8>, !hl.ptr<!hl.ptr<si8>>) -> f64
+    "ll.return"(%82) : (f64) -> ()
+  }) {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} : () -> ()
+  "hl.struct"() ({
+    "hl.field"() {sym_name = "p1", type = si32} : () -> ()
+    "hl.field"() {sym_name = "p2", type = si32} : () -> ()
+    "hl.field"() {sym_name = "p3", type = si32} : () -> ()
+    "hl.field"() {sym_name = "p4", type = si32} : () -> ()
+  }) {sym_name = "dude"} : () -> ()
+  "hl.var"() ({
+  }, {
+  }) {linkage = #core.global_linkage_kind<external>, storageClass = 0 : i64, sym_name = "arr", threadStorageClass = 0 : i64, type = !hl.lvalue<!hl.array<65536, !hl.record<@dude>>>} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(si32) -> (si32)>, linkage = #core.global_linkage_kind<external>, sym_name = "loop"}> ({
+  ^bb0(%arg2: si32):
+    %14 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "zero", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %15 = "ll.cell_init"(%14, %arg2) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %16 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "t", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %17 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+    %18 = "ll.cell_init"(%16, %17) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %19 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "count", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %20 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+    %21 = "ll.cell_init"(%19, %20) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %22 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "lfsr", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<ui32>
+    %23 = "hl.const"() {value = #core.integer<44257> : ui32} : () -> ui32
+    %24 = "ll.cell_init"(%22, %23) : (!hl.lvalue<ui32>, ui32) -> !hl.lvalue<ui32>
+    "core.scope"() ({
+      "ll.br"()[^bb2] : () -> ()
+    ^bb1:  // pred: ^bb2
+      %26 = "hl.pre.inc"(%19) : (!hl.lvalue<si32>) -> si32
+      %27 = "hl.const"() {value = #core.integer<65536> : si32} : () -> si32
+      %28 = "hl.cmp"(%26, %27) {predicate = 2 : i64} : (si32, si32) -> si32
+      %29 = "hl.implicit_cast"(%28) {kind = 26 : i64} : (si32) -> i1
+      "ll.cond_scope_ret"(%29)[^bb2] : (i1) -> ()
+    ^bb2:  // 2 preds: ^bb0, ^bb1
+      %30 = "hl.post.inc"(%19) : (!hl.lvalue<si32>) -> si32
+      %31 = "hl.expr"() ({
+        %74 = "hl.implicit_cast"(%22) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+        %75 = "hl.const"() {value = #core.integer<1> : si32} : () -> si32
+        %76 = "hl.bin.lshr"(%74, %75) : (ui32, si32) -> ui32
+        "hl.value.yield"(%76) : (ui32) -> ()
+      }) : () -> ui32
+      %32 = "hl.expr"() ({
+        %67 = "hl.expr"() ({
+          %71 = "hl.implicit_cast"(%22) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+          %72 = "hl.const"() {value = #core.integer<1> : ui32} : () -> ui32
+          %73 = "hl.bin.and"(%71, %72) : (ui32, ui32) -> ui32
+          "hl.value.yield"(%73) : (ui32) -> ()
+        }) : () -> ui32
+        %68 = "hl.minus"(%67) : (ui32) -> ui32
+        %69 = "hl.const"() {value = #core.integer<46080> : ui32} : () -> ui32
+        %70 = "hl.bin.and"(%68, %69) : (ui32, ui32) -> ui32
+        "hl.value.yield"(%70) : (ui32) -> ()
+      }) : () -> ui32
+      %33 = "hl.bin.xor"(%31, %32) : (ui32, ui32) -> ui32
+      %34 = "hl.assign"(%33, %22) : (ui32, !hl.lvalue<ui32>) -> ui32
+      %35 = "hl.ref"() {name = @arr} : () -> !hl.lvalue<!hl.array<65536, !hl.record<@dude>>>
+      %36 = "hl.implicit_cast"(%35) {kind = 11 : i64} : (!hl.lvalue<!hl.array<65536, !hl.record<@dude>>>) -> !hl.ptr<!hl.record<@dude>>
+      %37 = "hl.implicit_cast"(%22) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+      %38 = "hl.subscript"(%36, %37) : (!hl.ptr<!hl.record<@dude>>, ui32) -> !hl.lvalue<!hl.record<@dude>>
+      %39 = "ll.gep"(%38) <{field = @p4, idx = 3 : i32}> : (!hl.lvalue<!hl.record<@dude>>) -> !hl.lvalue<si32>
+      %40 = "hl.implicit_cast"(%22) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+      %41 = "hl.ref"() {name = @arr} : () -> !hl.lvalue<!hl.array<65536, !hl.record<@dude>>>
+      %42 = "hl.implicit_cast"(%41) {kind = 11 : i64} : (!hl.lvalue<!hl.array<65536, !hl.record<@dude>>>) -> !hl.ptr<!hl.record<@dude>>
+      %43 = "hl.implicit_cast"(%22) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+      %44 = "hl.subscript"(%42, %43) : (!hl.ptr<!hl.record<@dude>>, ui32) -> !hl.lvalue<!hl.record<@dude>>
+      %45 = "ll.gep"(%44) <{field = @p1, idx = 0 : i32}> : (!hl.lvalue<!hl.record<@dude>>) -> !hl.lvalue<si32>
+      %46 = "hl.implicit_cast"(%45) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+      %47 = "hl.implicit_cast"(%46) {kind = 26 : i64} : (si32) -> ui32
+      %48 = "hl.add"(%40, %47) : (ui32, ui32) -> ui32
+      %49 = "hl.ref"() {name = @arr} : () -> !hl.lvalue<!hl.array<65536, !hl.record<@dude>>>
+      %50 = "hl.implicit_cast"(%49) {kind = 11 : i64} : (!hl.lvalue<!hl.array<65536, !hl.record<@dude>>>) -> !hl.ptr<!hl.record<@dude>>
+      %51 = "hl.implicit_cast"(%22) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+      %52 = "hl.subscript"(%50, %51) : (!hl.ptr<!hl.record<@dude>>, ui32) -> !hl.lvalue<!hl.record<@dude>>
+      %53 = "ll.gep"(%52) <{field = @p2, idx = 1 : i32}> : (!hl.lvalue<!hl.record<@dude>>) -> !hl.lvalue<si32>
+      %54 = "hl.implicit_cast"(%53) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+      %55 = "hl.implicit_cast"(%54) {kind = 26 : i64} : (si32) -> ui32
+      %56 = "hl.add"(%48, %55) : (ui32, ui32) -> ui32
+      %57 = "hl.ref"() {name = @arr} : () -> !hl.lvalue<!hl.array<65536, !hl.record<@dude>>>
+      %58 = "hl.implicit_cast"(%57) {kind = 11 : i64} : (!hl.lvalue<!hl.array<65536, !hl.record<@dude>>>) -> !hl.ptr<!hl.record<@dude>>
+      %59 = "hl.implicit_cast"(%22) {kind = 4 : i64} : (!hl.lvalue<ui32>) -> ui32
+      %60 = "hl.subscript"(%58, %59) : (!hl.ptr<!hl.record<@dude>>, ui32) -> !hl.lvalue<!hl.record<@dude>>
+      %61 = "ll.gep"(%60) <{field = @p3, idx = 2 : i32}> : (!hl.lvalue<!hl.record<@dude>>) -> !hl.lvalue<si32>
+      %62 = "hl.implicit_cast"(%61) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+      %63 = "hl.implicit_cast"(%62) {kind = 26 : i64} : (si32) -> ui32
+      %64 = "hl.add"(%56, %63) : (ui32, ui32) -> ui32
+      %65 = "hl.implicit_cast"(%64) {kind = 26 : i64} : (ui32) -> si32
+      %66 = "hl.assign"(%65, %39) : (si32, !hl.lvalue<si32>) -> si32
+      "ll.br"()[^bb1] : () -> ()
+    }) : () -> ()
+    %25 = "hl.implicit_cast"(%16) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+    "ll.return"(%25) : (si32) -> ()
+  }) {hl.noinline = #hl.noinline} : () -> ()
+  "ll.func"() <{function_type = !core.fn<(si32, !hl.ptr<!hl.ptr<si8>>) -> (si32)>, linkage = #core.global_linkage_kind<external>, sym_name = "main"}> ({
+  ^bb0(%arg0: si32, %arg1: !hl.ptr<!hl.ptr<si8>>):
+    %0 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "argc", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+    %1 = "ll.cell_init"(%0, %arg0) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    %2 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "argv", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<!hl.ptr<!hl.ptr<si8>>>
+    %3 = "ll.cell_init"(%2, %arg1) : (!hl.lvalue<!hl.ptr<!hl.ptr<si8>>>, !hl.ptr<!hl.ptr<si8>>) -> !hl.lvalue<!hl.ptr<!hl.ptr<si8>>>
+    "core.scope"() ({
+      %5 = "hl.const"() {value = #core.integer<10000> : si32} : () -> si32
+      %6 = "hl.assign.bin.and"(%5, %0) : (si32, !hl.lvalue<si32>) -> si32
+      "hl.asm"() {asm_template = "xchg %bx,%bx", is_volatile, operandSegmentSizes = array<i32: 0, 0, 0>} : () -> ()
+      "hl.null"() : () -> ()
+      %7 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "t", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+      %8 = "hl.implicit_cast"(%0) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+      %9 = "hl.call"(%8) {callee = @loop} : (si32) -> si32
+      %10 = "ll.cell_init"(%7, %9) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+      "hl.asm"() {asm_template = "xchg %cx,%cx", is_volatile, operandSegmentSizes = array<i32: 0, 0, 0>} : () -> ()
+      "hl.null"() : () -> ()
+      %11 = "ll.cell"() <{storageClass = 0 : i64, sym_name = "a", threadStorageClass = 0 : i64}> : () -> !hl.lvalue<si32>
+      %12 = "hl.implicit_cast"(%7) {kind = 4 : i64} : (!hl.lvalue<si32>) -> si32
+      %13 = "ll.cell_init"(%11, %12) : (!hl.lvalue<si32>, si32) -> !hl.lvalue<si32>
+    }) : () -> ()
+    %4 = "hl.const"() {value = #core.integer<0> : si32} : () -> si32
+    "ll.return"(%4) : (si32) -> ()
+  }) : () -> ()
+}) {dlti.dl_spec = #dlti.dl_spec<#dlti.dl_entry<!hl.ptr<!hl.record<@_IO_FILE>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[20933]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<20, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 160 : i32}>, #dlti.dl_entry<!hl.ptr<!core.fn<(!hl.lvalue<si32>, !hl.lvalue<!hl.ptr<ui8>>) -> (none)>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<16, ui64>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.record<@_IO_FILE>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.record<@_IO_FILE>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@_IO_codecvt>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@_IO_wide_data>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@_IO_marker>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@_IO_FILE>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[1637]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<ui8,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<1, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.ptr<f64,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<ui8>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<32, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.ptr<si64,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<si8>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<si8>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!core.fn<(!hl.lvalue<!hl.ptr<ui8>>, !hl.lvalue<!hl.ptr<ui8>>) -> (si32)>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<2, ui32>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<si8,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<7, ui8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 56 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@dude>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@dude>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<ui16>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<65536, !hl.record<@dude>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 8388608 : i32}>, #dlti.dl_entry<!hl.ptr<si32,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<56, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.array<4, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@__va_list_tag>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<si8>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<ui32>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<2, si32>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<3, ui16>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 48 : i32}>, #dlti.dl_entry<!hl.array<40, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 320 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<si8,  const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<si8,  const >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!core.fn<() -> (none)>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<f64>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<ui64,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<si64>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<ui64>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<48, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<ui8>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<8, si8>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@__va_list_tag>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.array<1, !hl.record<@__va_list_tag>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>>, vast.core.lang = #core<lang c>, vast.core.target_triple = "x86_64-pc-linux-gnu"} : () -> ()
+
+[VAST fatal] MLIR pass manager failed when running vast passes
+PLEASE submit a bug report to https://github.com/trailofbits/vast/issues and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front -O3 -DMAGIC -I../ bench.c -vast-emit-mlir=llvm -o bench.llvm
+1.	<eof> parser at end of file
+ #0 0x00007b4142a1a730 llvm::sys::PrintStackTrace(llvm::raw_ostream&, int) /usr/src/debug/llvm/llvm-19.1.6.src/lib/Support/Unix/Signals.inc:723:22
+ #1 0x00007b4142a17bf5 llvm::sys::RunSignalHandlers() /usr/src/debug/llvm/llvm-19.1.6.src/lib/Support/Signals.cpp:105:20
+ #2 0x00007b4142a17bf5 llvm::sys::CleanupOnSignal(unsigned long) /usr/src/debug/llvm/llvm-19.1.6.src/lib/Support/Unix/Signals.inc:367:31
+ #3 0x00007b4142901319 HandleCrash /usr/src/debug/llvm/llvm-19.1.6.src/lib/Support/CrashRecoveryContext.cpp:73:5
+ #4 0x00007b4142901319 CrashRecoverySignalHandler /usr/src/debug/llvm/llvm-19.1.6.src/lib/Support/CrashRecoveryContext.cpp:390:62
+ #5 0x00007b4141c4c1d0 (/usr/lib/libc.so.6+0x3d1d0)
+ #6 0x00005e6e53bf9da4 vast::cc::vast_stream_consumer::process_mlir_module(vast::cc::target_dialect, mlir::ModuleOp) (/home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front+0xbe5da4)
+ #7 0x00005e6e53bf94ca vast::cc::vast_stream_consumer::emit_mlir_output(vast::cc::target_dialect, mlir::OwningOpRef<mlir::ModuleOp>) (/home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front+0xbe54ca)
+ #8 0x00005e6e53bf915a vast::cc::vast_stream_consumer::HandleTranslationUnit(clang::ASTContext&) (/home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front+0xbe515a)
+ #9 0x00007b414afd9c86 __gnu_cxx::__normal_iterator<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>*, std::vector<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>, std::allocator<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>>>>::__normal_iterator(std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>* const&) /usr/include/c++/14.2.1/bits/stl_iterator.h:1068:0
+#10 0x00007b414afd9c86 std::vector<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>, std::allocator<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>>>::begin() /usr/include/c++/14.2.1/bits/stl_vector.h:874:0
+#11 0x00007b414afd9c86 void clang::finalize<std::vector<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>, std::allocator<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>>>>(std::vector<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>, std::allocator<std::unique_ptr<clang::TemplateInstantiationCallback, std::default_delete<clang::TemplateInstantiationCallback>>>>&, clang::Sema const&) /usr/src/debug/clang/clang-19.1.6.src/include/clang/Sema/TemplateInstCallback.h:54:0
+#12 0x00007b414afd9c86 clang::ParseAST(clang::Sema&, bool, bool) /usr/src/debug/clang/clang-19.1.6.src/lib/Parse/ParseAST.cpp:191:0
+#13 0x00007b414ccf97e1 clang::FrontendAction::Execute() /usr/src/debug/clang/clang-19.1.6.src/lib/Frontend/FrontendAction.cpp:1078:21
+#14 0x00007b414cc8f64f llvm::Error::getPtr() const /usr/include/llvm/Support/Error.h:282:12
+#15 0x00007b414cc8f64f llvm::Error::operator bool() /usr/include/llvm/Support/Error.h:242:22
+#16 0x00007b414cc8f64f clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) /usr/src/debug/clang/clang-19.1.6.src/lib/Frontend/CompilerInstance.cpp:1061:42
+#17 0x00005e6e53a2591f vast::cc::execute_compiler_invocation(clang::CompilerInstance*, vast::cc::vast_args const&) (/home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front+0xa1191f)
+#18 0x00005e6e53a2a0a7 vast::cc::cc1(vast::cc::vast_args const&, llvm::ArrayRef<char const*>, char const*, void*) (/home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front+0xa160a7)
+#19 0x00005e6e53a26bfe execute_cc1_tool(llvm::SmallVectorImpl<char const*>&) driver.cpp:0:0
+#20 0x00007b414c9642b5 operator() /usr/src/debug/clang/clang-19.1.6.src/lib/Driver/Job.cpp:440:32
+#21 0x00007b414c9642b5 callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef> >, std::string*, bool*) const::<lambda()> > /usr/include/llvm/ADT/STLFunctionalExtras.h:45:52
+#22 0x00007b414290176a llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>) /usr/src/debug/llvm/llvm-19.1.6.src/lib/Support/CrashRecoveryContext.cpp:428:1
+#23 0x00007b414c96b276 clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const /usr/src/debug/clang/clang-19.1.6.src/lib/Driver/Job.cpp:444:10
+#24 0x00007b414c921e09 clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const /usr/src/debug/clang/clang-19.1.6.src/lib/Driver/Compilation.cpp:200:3
+#25 0x00007b414c9221fc clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const /usr/src/debug/clang/clang-19.1.6.src/lib/Driver/Compilation.cpp:253:5
+#26 0x00007b414c992164 llvm::SmallVectorBase<unsigned int>::empty() const /usr/include/llvm/ADT/SmallVector.h:95:46
+#27 0x00007b414c992164 clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&) /usr/src/debug/clang/clang-19.1.6.src/lib/Driver/Driver.cpp:1946:28
+#28 0x00005e6e53a27137 vast::cc::driver::execute() driver.cpp:0:0
+#29 0x00005e6e53a26592 main (/home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front+0xa12592)
+#30 0x00007b4141c34e08 __libc_start_call_main /usr/src/debug/glibc/glibc/csu/../sysdeps/nptl/libc_start_call_main.h:74:3
+#31 0x00007b4141c34ecc call_init /usr/src/debug/glibc/glibc/csu/../csu/libc-start.c:128:20
+#32 0x00007b4141c34ecc __libc_start_main /usr/src/debug/glibc/glibc/csu/../csu/libc-start.c:347:5
+#33 0x00005e6e53a253e5 _start (/home/ando/projects/mlir-df/vast//builds/default/tools/vast-front/Release/vast-front+0xa113e5)
+vast-front: error: clang frontend command failed with exit code 132 (use -v to see invocation)
+clang version 19.1.6
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /home/ando/projects/mlir-df/vast/builds/default/tools/vast-front/Release
+vast-front: error: unable to execute command: Illegal instruction (core dumped)
+vast-front: note: diagnostic msg: Error generating preprocessed source(s).

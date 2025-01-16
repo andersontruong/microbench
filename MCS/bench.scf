@@ -1,0 +1,81 @@
+module attributes {dlti.dl_spec = #dlti.dl_spec<#dlti.dl_entry<f80, dense<128> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr<272>, dense<64> : vector<4xi32>>, #dlti.dl_entry<i64, dense<64> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr<271>, dense<32> : vector<4xi32>>, #dlti.dl_entry<f128, dense<128> : vector<2xi32>>, #dlti.dl_entry<f16, dense<16> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr<270>, dense<32> : vector<4xi32>>, #dlti.dl_entry<f64, dense<64> : vector<2xi32>>, #dlti.dl_entry<i32, dense<32> : vector<2xi32>>, #dlti.dl_entry<i8, dense<8> : vector<2xi32>>, #dlti.dl_entry<i16, dense<16> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr, dense<64> : vector<4xi32>>, #dlti.dl_entry<i1, dense<8> : vector<2xi32>>, #dlti.dl_entry<"dlti.endianness", "little">, #dlti.dl_entry<"dlti.stack_alignment", 128 : i32>>, llvm.data_layout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128", llvm.target_triple = "x86_64-unknown-linux-gnu", "polygeist.target-cpu" = "x86-64", "polygeist.target-features" = "+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87", "polygeist.tune-cpu" = "generic"} {
+  llvm.mlir.global internal constant @str0("_ticks: %llu\0A\00") {addr_space = 0 : i32}
+  llvm.func @printf(!llvm.ptr, ...) -> i32
+  memref.global @arr9 : memref<8192xf32> = uninitialized
+  memref.global @arr8 : memref<8192xf32> = uninitialized
+  memref.global @arr7 : memref<8192xf32> = uninitialized
+  memref.global @arr6 : memref<8192xf32> = uninitialized
+  memref.global @arr5 : memref<8192xf32> = uninitialized
+  memref.global @arr4 : memref<8192xf32> = uninitialized
+  memref.global @arr3 : memref<8192xf32> = uninitialized
+  memref.global @arr2 : memref<8192xf32> = uninitialized
+  memref.global @arr1 : memref<8192xf32> = uninitialized
+  func.func @loop3(%arg0: i32) -> f32 attributes {llvm.linkage = #llvm.linkage<external>} {
+    %c8192 = arith.constant 8192 : index
+    %c0 = arith.constant 0 : index
+    %c1 = arith.constant 1 : index
+    %c127_i32 = arith.constant 127 : i32
+    %cst = arith.constant 0.000000e+00 : f32
+    %0 = memref.get_global @arr1 : memref<8192xf32>
+    %1 = memref.get_global @arr2 : memref<8192xf32>
+    %2 = memref.get_global @arr3 : memref<8192xf32>
+    %3 = memref.get_global @arr4 : memref<8192xf32>
+    %4 = memref.get_global @arr5 : memref<8192xf32>
+    %5 = memref.get_global @arr6 : memref<8192xf32>
+    %6 = memref.get_global @arr7 : memref<8192xf32>
+    %7 = memref.get_global @arr8 : memref<8192xf32>
+    %8 = memref.get_global @arr9 : memref<8192xf32>
+    scf.for %arg1 = %c0 to %c8192 step %c1 {
+      %9 = arith.index_cast %arg1 : index to i32
+      %10 = arith.andi %9, %c127_i32 : i32
+      %11 = arith.index_cast %10 : i32 to index
+      %12 = arith.sitofp %9 : i32 to f32
+      memref.store %12, %0[%11] : memref<8192xf32>
+      memref.store %12, %1[%11] : memref<8192xf32>
+      memref.store %12, %2[%11] : memref<8192xf32>
+      memref.store %12, %3[%11] : memref<8192xf32>
+      memref.store %12, %4[%11] : memref<8192xf32>
+      memref.store %12, %5[%11] : memref<8192xf32>
+      memref.store %12, %6[%11] : memref<8192xf32>
+      memref.store %12, %7[%11] : memref<8192xf32>
+      memref.store %12, %8[%11] : memref<8192xf32>
+    }
+    return %cst : f32
+  }
+  func.func @main(%arg0: i32, %arg1: memref<?xmemref<?xi8>>) -> i32 attributes {llvm.linkage = #llvm.linkage<external>} {
+    %c0_i64 = arith.constant 0 : i64
+    %c127_i32 = arith.constant 127 : i32
+    %c1 = arith.constant 1 : index
+    %c0 = arith.constant 0 : index
+    %c8192 = arith.constant 8192 : index
+    %0 = llvm.mlir.undef : i32
+    %1 = memref.get_global @arr1 : memref<8192xf32>
+    %2 = memref.get_global @arr2 : memref<8192xf32>
+    %3 = memref.get_global @arr3 : memref<8192xf32>
+    %4 = memref.get_global @arr4 : memref<8192xf32>
+    %5 = memref.get_global @arr5 : memref<8192xf32>
+    %6 = memref.get_global @arr6 : memref<8192xf32>
+    %7 = memref.get_global @arr7 : memref<8192xf32>
+    %8 = memref.get_global @arr8 : memref<8192xf32>
+    %9 = memref.get_global @arr9 : memref<8192xf32>
+    scf.for %arg2 = %c0 to %c8192 step %c1 {
+      %13 = arith.index_cast %arg2 : index to i32
+      %14 = arith.andi %13, %c127_i32 : i32
+      %15 = arith.index_cast %14 : i32 to index
+      %16 = arith.sitofp %13 : i32 to f32
+      memref.store %16, %1[%15] : memref<8192xf32>
+      memref.store %16, %2[%15] : memref<8192xf32>
+      memref.store %16, %3[%15] : memref<8192xf32>
+      memref.store %16, %4[%15] : memref<8192xf32>
+      memref.store %16, %5[%15] : memref<8192xf32>
+      memref.store %16, %6[%15] : memref<8192xf32>
+      memref.store %16, %7[%15] : memref<8192xf32>
+      memref.store %16, %8[%15] : memref<8192xf32>
+      memref.store %16, %9[%15] : memref<8192xf32>
+    }
+    %10 = llvm.mlir.addressof @str0 : !llvm.ptr
+    %11 = llvm.getelementptr %10[0, 0] : (!llvm.ptr) -> !llvm.ptr, !llvm.array<14 x i8>
+    %12 = llvm.call @printf(%11, %c0_i64) vararg(!llvm.func<i32 (ptr, ...)>) : (!llvm.ptr, i64) -> i32
+    return %0 : i32
+  }
+}

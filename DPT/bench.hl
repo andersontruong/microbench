@@ -1,0 +1,1232 @@
+module {
+  core.module @"/home/ando/projects/mlir-df/microbench/DPT/bench.c" attributes {dlti.dl_spec = #dlti.dl_spec<#dlti.dl_entry<!hl.typedef<@size_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<20, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 160 : i32}>, #dlti.dl_entry<!hl.longdouble, {vast.abi_align.key = 128 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.double, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.float, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@size_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__ssize_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.char< const >, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char< const >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.double>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__ssize_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@__off64_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.void< const >, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void< const >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.char>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_read_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.int>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_write_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void< const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_seek_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_IO_cookie_io_functions_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.record<@_IO_cookie_io_functions_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_close_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__fpos_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@__va_list_tag>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__gnuc_va_list>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.typedef<@__gnuc_va_list>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@fpos_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@FILE>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@FILE>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.typedef<@fpos_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__fpos_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.typedef<@FILE>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.float>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@fpos_t>,  const >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>,  const >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.char>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.char>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.longlong, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<1, !hl.record<@__va_list_tag>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.record<@__va_list_tag>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.typedef<@cookie_io_functions_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.long< unsigned >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__builtin_va_list>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__builtin_va_list>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.char< unsigned >, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@cookie_io_functions_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.int< unsigned >, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.char, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.short, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.int, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.long, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__int8_t>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int8_t>>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char< const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint8_t>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint8_t>>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.short< unsigned >, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.typedef<@__int16_t>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.typedef<@FILE>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int16_t>>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.longdouble>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint16_t>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint16_t>>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.typedef<@__int32_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int32_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint32_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint32_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__int64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<2, !hl.int>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[1122]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.void, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[1122]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__off64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__off64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<4, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[1637]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[1637]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[1603]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__off_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[1603]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__mbstate_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__off_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.float< volatile >, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@_G_fpos_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__mbstate_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@_G_fpos64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_G_fpos_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char< unsigned >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_G_fpos64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_IO_FILE>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.array<1024, !hl.float>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32768 : i32}>, #dlti.dl_entry<!hl.record<@_IO_FILE>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.array<1, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.ptr<!hl.char>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_marker>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@_IO_lock_t>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@_IO_lock_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@_IO_lock_t>>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_codecvt>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_wide_data>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>>, vast.core.lang = #core<lang c>, vast.core.target_triple = "x86_64-pc-linux-gnu"} {
+    hl.func @__builtin_expect external (!hl.lvalue<!hl.long>, !hl.lvalue<!hl.long>) -> !hl.long attributes {hl.builtin = #hl.builtin<528>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.typedef @size_t : !hl.long< unsigned >
+    hl.typedef @__builtin_va_list : !hl.array<1, !hl.record<@__va_list_tag>>
+    hl.typedef @__gnuc_va_list : !hl.elaborated<!hl.typedef<@__builtin_va_list>>
+    hl.typedef @__u_char : !hl.char< unsigned >
+    hl.typedef @__u_short : !hl.short< unsigned >
+    hl.typedef @__u_int : !hl.int< unsigned >
+    hl.typedef @__u_long : !hl.long< unsigned >
+    hl.typedef @__int8_t : !hl.char
+    hl.typedef @__uint8_t : !hl.char< unsigned >
+    hl.typedef @__int16_t : !hl.short
+    hl.typedef @__uint16_t : !hl.short< unsigned >
+    hl.typedef @__int32_t : !hl.int
+    hl.typedef @__uint32_t : !hl.int< unsigned >
+    hl.typedef @__int64_t : !hl.long
+    hl.typedef @__uint64_t : !hl.long< unsigned >
+    hl.typedef @__int_least8_t : !hl.elaborated<!hl.typedef<@__int8_t>>
+    hl.typedef @__uint_least8_t : !hl.elaborated<!hl.typedef<@__uint8_t>>
+    hl.typedef @__int_least16_t : !hl.elaborated<!hl.typedef<@__int16_t>>
+    hl.typedef @__uint_least16_t : !hl.elaborated<!hl.typedef<@__uint16_t>>
+    hl.typedef @__int_least32_t : !hl.elaborated<!hl.typedef<@__int32_t>>
+    hl.typedef @__uint_least32_t : !hl.elaborated<!hl.typedef<@__uint32_t>>
+    hl.typedef @__int_least64_t : !hl.elaborated<!hl.typedef<@__int64_t>>
+    hl.typedef @__uint_least64_t : !hl.elaborated<!hl.typedef<@__uint64_t>>
+    hl.typedef @__quad_t : !hl.long
+    hl.typedef @__u_quad_t : !hl.long< unsigned >
+    hl.typedef @__intmax_t : !hl.long
+    hl.typedef @__uintmax_t : !hl.long< unsigned >
+    hl.typedef @__dev_t : !hl.long< unsigned >
+    hl.typedef @__uid_t : !hl.int< unsigned >
+    hl.typedef @__gid_t : !hl.int< unsigned >
+    hl.typedef @__ino_t : !hl.long< unsigned >
+    hl.typedef @__ino64_t : !hl.long< unsigned >
+    hl.typedef @__mode_t : !hl.int< unsigned >
+    hl.typedef @__nlink_t : !hl.long< unsigned >
+    hl.typedef @__off_t : !hl.long
+    hl.typedef @__off64_t : !hl.long
+    hl.typedef @__pid_t : !hl.int
+    hl.struct @"anonymous[1122]" : {
+      hl.field @__val : !hl.array<2, !hl.int>
+    }
+    hl.typedef @__fsid_t : !hl.elaborated<!hl.record<@"anonymous[1122]">>
+    hl.typedef @__clock_t : !hl.long
+    hl.typedef @__rlim_t : !hl.long< unsigned >
+    hl.typedef @__rlim64_t : !hl.long< unsigned >
+    hl.typedef @__id_t : !hl.int< unsigned >
+    hl.typedef @__time_t : !hl.long
+    hl.typedef @__useconds_t : !hl.int< unsigned >
+    hl.typedef @__suseconds_t : !hl.long
+    hl.typedef @__suseconds64_t : !hl.long
+    hl.typedef @__daddr_t : !hl.int
+    hl.typedef @__key_t : !hl.int
+    hl.typedef @__clockid_t : !hl.int
+    hl.typedef @__timer_t : !hl.ptr<!hl.void>
+    hl.typedef @__blksize_t : !hl.long
+    hl.typedef @__blkcnt_t : !hl.long
+    hl.typedef @__blkcnt64_t : !hl.long
+    hl.typedef @__fsblkcnt_t : !hl.long< unsigned >
+    hl.typedef @__fsblkcnt64_t : !hl.long< unsigned >
+    hl.typedef @__fsfilcnt_t : !hl.long< unsigned >
+    hl.typedef @__fsfilcnt64_t : !hl.long< unsigned >
+    hl.typedef @__fsword_t : !hl.long
+    hl.typedef @__ssize_t : !hl.long
+    hl.typedef @__syscall_slong_t : !hl.long
+    hl.typedef @__syscall_ulong_t : !hl.long< unsigned >
+    hl.typedef @__loff_t : !hl.elaborated<!hl.typedef<@__off64_t>>
+    hl.typedef @__caddr_t : !hl.ptr<!hl.char>
+    hl.typedef @__intptr_t : !hl.long
+    hl.typedef @__socklen_t : !hl.int< unsigned >
+    hl.typedef @__sig_atomic_t : !hl.int
+    hl.struct @"anonymous[1603]" : {
+      hl.field @__count : !hl.int
+      hl.union @"anonymous[1637]" : {
+        hl.field @__wch : !hl.int< unsigned >
+        hl.field @__wchb : !hl.array<4, !hl.char>
+      }
+      hl.field @__value : !hl.elaborated<!hl.record<@"anonymous[1637]">>
+    }
+    hl.typedef @__mbstate_t : !hl.elaborated<!hl.record<@"anonymous[1603]">>
+    hl.struct @_G_fpos_t : {
+      hl.field @__pos : !hl.elaborated<!hl.typedef<@__off_t>>
+      hl.field @__state : !hl.elaborated<!hl.typedef<@__mbstate_t>>
+    }
+    hl.typedef @__fpos_t : !hl.elaborated<!hl.record<@_G_fpos_t>>
+    hl.struct @_G_fpos64_t : {
+      hl.field @__pos : !hl.elaborated<!hl.typedef<@__off64_t>>
+      hl.field @__state : !hl.elaborated<!hl.typedef<@__mbstate_t>>
+    }
+    hl.typedef @__fpos64_t : !hl.elaborated<!hl.record<@_G_fpos64_t>>
+    hl.struct @_IO_FILE : {
+    }
+    hl.typedef @__FILE : !hl.elaborated<!hl.record<@_IO_FILE>>
+    hl.struct @_IO_FILE : {
+    }
+    hl.typedef @FILE : !hl.elaborated<!hl.record<@_IO_FILE>>
+    hl.struct @_IO_FILE : {
+    }
+    hl.struct @_IO_marker : {
+    }
+    hl.struct @_IO_codecvt : {
+    }
+    hl.struct @_IO_wide_data : {
+    }
+    hl.typedef @_IO_lock_t : !hl.void
+    hl.struct @_IO_FILE : {
+      hl.field @_flags : !hl.int
+      hl.field @_IO_read_ptr : !hl.ptr<!hl.char>
+      hl.field @_IO_read_end : !hl.ptr<!hl.char>
+      hl.field @_IO_read_base : !hl.ptr<!hl.char>
+      hl.field @_IO_write_base : !hl.ptr<!hl.char>
+      hl.field @_IO_write_ptr : !hl.ptr<!hl.char>
+      hl.field @_IO_write_end : !hl.ptr<!hl.char>
+      hl.field @_IO_buf_base : !hl.ptr<!hl.char>
+      hl.field @_IO_buf_end : !hl.ptr<!hl.char>
+      hl.field @_IO_save_base : !hl.ptr<!hl.char>
+      hl.field @_IO_backup_base : !hl.ptr<!hl.char>
+      hl.field @_IO_save_end : !hl.ptr<!hl.char>
+      hl.field @_markers : !hl.ptr<!hl.elaborated<!hl.record<@_IO_marker>>>
+      hl.field @_chain : !hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>
+      hl.field @_fileno : !hl.int
+      hl.field @_flags2 : !hl.int
+      hl.field @_old_offset : !hl.elaborated<!hl.typedef<@__off_t>>
+      hl.field @_cur_column : !hl.short< unsigned >
+      hl.field @_vtable_offset : !hl.char
+      hl.field @_shortbuf : !hl.array<1, !hl.char>
+      hl.field @_lock : !hl.ptr<!hl.elaborated<!hl.typedef<@_IO_lock_t>>>
+      hl.field @_offset : !hl.elaborated<!hl.typedef<@__off64_t>>
+      hl.field @_codecvt : !hl.ptr<!hl.elaborated<!hl.record<@_IO_codecvt>>>
+      hl.field @_wide_data : !hl.ptr<!hl.elaborated<!hl.record<@_IO_wide_data>>>
+      hl.field @_freeres_list : !hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>
+      hl.field @_freeres_buf : !hl.ptr<!hl.void>
+      hl.field @_prevchain : !hl.ptr<!hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>>
+      hl.field @_mode : !hl.int
+      hl.field @_unused2 : !hl.array<20, !hl.char>
+    }
+    hl.typedef @cookie_read_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.ptr<!hl.char>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> (!hl.elaborated<!hl.typedef<@__ssize_t>>)>
+    hl.typedef @cookie_write_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> (!hl.elaborated<!hl.typedef<@__ssize_t>>)>
+    hl.typedef @cookie_seek_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@__off64_t>>>>, !hl.lvalue<!hl.int>) -> (!hl.int)>
+    hl.typedef @cookie_close_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>) -> (!hl.int)>
+    hl.struct @_IO_cookie_io_functions_t : {
+      hl.field @read : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_read_function_t>>>
+      hl.field @write : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_write_function_t>>>
+      hl.field @seek : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_seek_function_t>>>
+      hl.field @close : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_close_function_t>>>
+    }
+    hl.typedef @cookie_io_functions_t : !hl.elaborated<!hl.record<@_IO_cookie_io_functions_t>>
+    hl.typedef @__builtin_va_list : !hl.array<1, !hl.record<@__va_list_tag>>
+    hl.typedef @va_list : !hl.elaborated<!hl.typedef<@__gnuc_va_list>>
+    hl.typedef @off_t : !hl.elaborated<!hl.typedef<@__off_t>>
+    hl.typedef @ssize_t : !hl.elaborated<!hl.typedef<@__ssize_t>>
+    hl.typedef @fpos_t : !hl.elaborated<!hl.typedef<@__fpos_t>>
+    hl.var @stdin, <external>  sc_extern : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+    hl.var @stdout, <external>  sc_extern : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+    hl.var @stderr, <external>  sc_extern : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+    hl.func @remove external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rename external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @renameat external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fclose external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @tmpfile external () -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @tmpnam external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.char>>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tmpnam_r external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.char>>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tempnam external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @fflush external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fflush_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fopen external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.typedef<@FILE>> attributes {hl.builtin = #hl.builtin<607>, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @freopen external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fdopen external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @fopencookie external (!hl.lvalue<!hl.ptr<!hl.void,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@cookie_io_functions_t>>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @fmemopen external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @open_memstream external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @setbuf external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setvbuf external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setbuffer external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setlinebuf external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fprintf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<544>, hl.format = #hl.format<"printf">, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @printf external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<977>, hl.format = #hl.format<"printf">, sym_visibility = "private"}
+    hl.func @sprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1058>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vfprintf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1374>, hl.format = #hl.format<"printf">, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vprintf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1359>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vsprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1376>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @snprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1114>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vsnprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1378>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vasprintf external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>>) -> !hl.int attributes {hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asprintf external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asprintf external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vdprintf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>>) -> !hl.int attributes {hl.format = #hl.format<"printf">, sym_visibility = "private"}
+    hl.func @dprintf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.format = #hl.format<"printf">, sym_visibility = "private"}
+    hl.func @fscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<547>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @scanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1079>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @sscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1061>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.typedef @_Float32 : !hl.float
+    hl.typedef @_Float64 : !hl.double
+    hl.typedef @_Float32x : !hl.double
+    hl.typedef @_Float64x : !hl.longdouble
+    hl.func @fscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_fscanf", true>, hl.builtin = #hl.builtin<547>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @scanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_scanf", true>, hl.builtin = #hl.builtin<1079>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @sscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_sscanf", true>, hl.builtin = #hl.builtin<1061>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vfscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1356>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @vscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1366>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @vsscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1364>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vfscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_vfscanf", true>, hl.builtin = #hl.builtin<1356>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @vscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_vscanf", true>, hl.builtin = #hl.builtin<1366>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @vsscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_vsscanf", true>, hl.builtin = #hl.builtin<1364>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fgetc external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getc external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getchar external () -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @getc_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getchar_unlocked external () -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fgetc_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fputc external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putc external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putchar external (!hl.lvalue<!hl.int>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fputc_unlocked external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putc_unlocked external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putchar_unlocked external (!hl.lvalue<!hl.int>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @getw external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putw external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fgets external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @__getdelim external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@__ssize_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getdelim external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@__ssize_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getline external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@__ssize_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fputs external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @puts external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @ungetc external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fread external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.typedef<@FILE>>>) -> !hl.long< unsigned > attributes {hl.builtin = #hl.builtin<611>, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fwrite external (!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.typedef<@FILE>>>) -> !hl.long< unsigned > attributes {hl.builtin = #hl.builtin<622>, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fread_unlocked external (!hl.lvalue<!hl.ptr<!hl.void,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@size_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fwrite_unlocked external (!hl.lvalue<!hl.ptr<!hl.void< const >,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@size_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fseek external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.long>, !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @ftell external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.long attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @rewind external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fseeko external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@__off_t>>>, !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @ftello external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.elaborated<!hl.typedef<@__off_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fgetpos external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fsetpos external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>,  const >>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @clearerr external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @feof external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ferror external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @clearerr_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @feof_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ferror_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @perror external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.void attributes {hl.cold = #hl.cold, sym_visibility = "private"}
+    hl.func @fileno external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fileno_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @pclose external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @popen external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @ctermid external (!hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @flockfile external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ftrylockfile external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @funlockfile external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__uflow external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @__overflow external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.int>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @vprintf available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, %arg1: !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1359>, hl.format = #hl.format<"printf">, hl.gnu_inline = #hl.gnu_inline, hl.nothrow = #hl.nothrow} {
+      hl.param @__fmt = %arg0 : !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>
+      hl.param @__arg = %arg1 : !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>
+      %0 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+      %2 = hl.ref @__fmt : !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>
+      %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >> -> !hl.ptr<!hl.char< const >>
+      %4 = hl.ref @__arg : !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>>
+      %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>> -> !hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>
+      %6 = hl.call @vfprintf(%1, %3, %5) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.ptr<!hl.char< const >>, !hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int
+      hl.return %6 : !hl.int
+    }
+    hl.func @getchar available_externally () -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      %0 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+      %2 = hl.call @getc(%1) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+      hl.return %2 : !hl.int
+    }
+    hl.func @fgetc_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__fp = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_read_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.call @__uflow(%3) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+          hl.value.yield %4 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.member %3 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+          %5 = hl.post.inc %4 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+          %6 = hl.cstyle_cast %5 BitCast : !hl.ptr<!hl.char> -> !hl.ptr<!hl.char< unsigned >>
+          %7 = hl.deref %6 : !hl.ptr<!hl.char< unsigned >> -> !hl.lvalue<!hl.char< unsigned >>
+          %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.char< unsigned >> -> !hl.char< unsigned >
+          %9 = hl.implicit_cast %8 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @getc_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__fp = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_read_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.call @__uflow(%3) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+          hl.value.yield %4 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.member %3 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+          %5 = hl.post.inc %4 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+          %6 = hl.cstyle_cast %5 BitCast : !hl.ptr<!hl.char> -> !hl.ptr<!hl.char< unsigned >>
+          %7 = hl.deref %6 : !hl.ptr<!hl.char< unsigned >> -> !hl.lvalue<!hl.char< unsigned >>
+          %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.char< unsigned >> -> !hl.char< unsigned >
+          %9 = hl.implicit_cast %8 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @getchar_unlocked available_externally () -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_read_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.call @__uflow(%3) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+          hl.value.yield %4 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.member %3 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+          %5 = hl.post.inc %4 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+          %6 = hl.cstyle_cast %5 BitCast : !hl.ptr<!hl.char> -> !hl.ptr<!hl.char< unsigned >>
+          %7 = hl.deref %6 : !hl.ptr<!hl.char< unsigned >> -> !hl.lvalue<!hl.char< unsigned >>
+          %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.char< unsigned >> -> !hl.char< unsigned >
+          %9 = hl.implicit_cast %8 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @putchar available_externally (%arg0: !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      %0 = hl.ref @__c : !hl.lvalue<!hl.int>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+      %2 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+      %4 = hl.call @putc(%1, %3) : (!hl.int, !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+      hl.return %4 : !hl.int
+    }
+    hl.func @fputc_unlocked available_externally (%arg0: !hl.lvalue<!hl.int>, %arg1: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      hl.param @__stream = %arg1 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_write_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.expr : !hl.lvalue<!hl.int> {
+            %9 = hl.ref @__c : !hl.lvalue<!hl.int>
+            hl.value.yield %9 : !hl.lvalue<!hl.int>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.cstyle_cast %5 IntegralCast : !hl.int -> !hl.char< unsigned >
+          %7 = hl.implicit_cast %6 IntegralCast : !hl.char< unsigned > -> !hl.int
+          %8 = hl.call @__overflow(%3, %7) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.int) -> !hl.int
+          hl.value.yield %8 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.char {
+            %5 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %14 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %14 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %6 = hl.implicit_cast %5 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %7 = hl.member %6 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %8 = hl.post.inc %7 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %9 = hl.deref %8 : !hl.ptr<!hl.char> -> !hl.lvalue<!hl.char>
+            %10 = hl.expr : !hl.lvalue<!hl.int> {
+              %14 = hl.ref @__c : !hl.lvalue<!hl.int>
+              hl.value.yield %14 : !hl.lvalue<!hl.int>
+            }
+            %11 = hl.implicit_cast %10 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+            %12 = hl.implicit_cast %11 IntegralCast : !hl.int -> !hl.char
+            %13 = hl.assign %12 to %9 : !hl.char, !hl.lvalue<!hl.char> -> !hl.char
+            hl.value.yield %13 : !hl.char
+          }
+          %3 = hl.cstyle_cast %2 IntegralCast : !hl.char -> !hl.char< unsigned >
+          %4 = hl.implicit_cast %3 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %4 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @putc_unlocked available_externally (%arg0: !hl.lvalue<!hl.int>, %arg1: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      hl.param @__stream = %arg1 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_write_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.expr : !hl.lvalue<!hl.int> {
+            %9 = hl.ref @__c : !hl.lvalue<!hl.int>
+            hl.value.yield %9 : !hl.lvalue<!hl.int>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.cstyle_cast %5 IntegralCast : !hl.int -> !hl.char< unsigned >
+          %7 = hl.implicit_cast %6 IntegralCast : !hl.char< unsigned > -> !hl.int
+          %8 = hl.call @__overflow(%3, %7) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.int) -> !hl.int
+          hl.value.yield %8 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.char {
+            %5 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %14 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %14 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %6 = hl.implicit_cast %5 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %7 = hl.member %6 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %8 = hl.post.inc %7 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %9 = hl.deref %8 : !hl.ptr<!hl.char> -> !hl.lvalue<!hl.char>
+            %10 = hl.expr : !hl.lvalue<!hl.int> {
+              %14 = hl.ref @__c : !hl.lvalue<!hl.int>
+              hl.value.yield %14 : !hl.lvalue<!hl.int>
+            }
+            %11 = hl.implicit_cast %10 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+            %12 = hl.implicit_cast %11 IntegralCast : !hl.int -> !hl.char
+            %13 = hl.assign %12 to %9 : !hl.char, !hl.lvalue<!hl.char> -> !hl.char
+            hl.value.yield %13 : !hl.char
+          }
+          %3 = hl.cstyle_cast %2 IntegralCast : !hl.char -> !hl.char< unsigned >
+          %4 = hl.implicit_cast %3 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %4 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @putchar_unlocked available_externally (%arg0: !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_write_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.expr : !hl.lvalue<!hl.int> {
+            %9 = hl.ref @__c : !hl.lvalue<!hl.int>
+            hl.value.yield %9 : !hl.lvalue<!hl.int>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.cstyle_cast %5 IntegralCast : !hl.int -> !hl.char< unsigned >
+          %7 = hl.implicit_cast %6 IntegralCast : !hl.char< unsigned > -> !hl.int
+          %8 = hl.call @__overflow(%3, %7) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.int) -> !hl.int
+          hl.value.yield %8 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.char {
+            %5 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %14 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %14 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %6 = hl.implicit_cast %5 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %7 = hl.member %6 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %8 = hl.post.inc %7 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %9 = hl.deref %8 : !hl.ptr<!hl.char> -> !hl.lvalue<!hl.char>
+            %10 = hl.expr : !hl.lvalue<!hl.int> {
+              %14 = hl.ref @__c : !hl.lvalue<!hl.int>
+              hl.value.yield %14 : !hl.lvalue<!hl.int>
+            }
+            %11 = hl.implicit_cast %10 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+            %12 = hl.implicit_cast %11 IntegralCast : !hl.int -> !hl.char
+            %13 = hl.assign %12 to %9 : !hl.char, !hl.lvalue<!hl.char> -> !hl.char
+            hl.value.yield %13 : !hl.char
+          }
+          %3 = hl.cstyle_cast %2 IntegralCast : !hl.char -> !hl.char< unsigned >
+          %4 = hl.implicit_cast %3 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %4 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @feof_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} {
+      hl.param @__stream = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.expr : !hl.int {
+          %4 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %6 = hl.member %5 at @_flags : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.int>
+          %7 = hl.implicit_cast %6 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %8 = hl.const #core.integer<16> : !hl.int
+          %9 = hl.bin.and %7, %8 : (!hl.int, !hl.int) -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        %2 = hl.const #core.integer<0> : !hl.int
+        %3 = hl.cmp ne %1, %2 : !hl.int, !hl.int -> !hl.int
+        hl.value.yield %3 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @ferror_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} {
+      hl.param @__stream = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.expr : !hl.int {
+          %4 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %6 = hl.member %5 at @_flags : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.int>
+          %7 = hl.implicit_cast %6 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %8 = hl.const #core.integer<32> : !hl.int
+          %9 = hl.bin.and %7, %8 : (!hl.int, !hl.int) -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        %2 = hl.const #core.integer<0> : !hl.int
+        %3 = hl.cmp ne %1, %2 : !hl.int, !hl.int -> !hl.int
+        hl.value.yield %3 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.typedef @float_t {hl.available_only_in_default_eval_method = #hl.available_only_in_default_eval_method} : !hl.float
+    hl.typedef @double_t {hl.available_only_in_default_eval_method = #hl.available_only_in_default_eval_method} : !hl.double
+    hl.func @__fpclassify external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__signbit external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__isinf external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__finite external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.builtin = #hl.builtin<933>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__isnan external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__iseqsig external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__issignaling external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @acos external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<101>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__acos external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asin external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<136>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asin external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atan external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<153>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atan external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atan2 external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<159>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atan2 external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @cos external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<379>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__cos external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sin external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1095>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sin external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tan external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1305>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tan external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @cosh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<387>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__cosh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sinh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1103>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sinh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tanh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1313>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tanh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @acosh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<109>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__acosh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asinh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<144>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asinh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atanh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<168>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atanh external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @exp external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<510>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__exp external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @frexp external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.double attributes {hl.builtin = #hl.builtin<616>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__frexp external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ldexp external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>) -> !hl.double attributes {hl.builtin = #hl.builtin<760>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ldexp external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<789>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log10 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<810>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log10 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @modf external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.double>>) -> !hl.double attributes {hl.builtin = #hl.builtin<881>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__modf external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.double>>) -> !hl.double attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @expm1 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<533>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__expm1 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log1p external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<795>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log1p external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @logb external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<820>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__logb external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @exp2 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<516>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__exp2 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log2 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<802>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log2 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @pow external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<968>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__pow external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sqrt external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1118>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sqrt external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @hypot external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<659>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__hypot external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @cbrt external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<294>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__cbrt external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ceil external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<313>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ceil external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fabs external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<551>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fabs external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @floor external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<570>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__floor external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmod external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<602>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmod external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @isinf external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @finite external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.builtin = #hl.builtin<565>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @drem external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__drem external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @significand external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__significand external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @copysign external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<357>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__copysign external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nan external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.double attributes {hl.builtin = #hl.builtin<893>, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.func @__nan external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @isnan external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @j0 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__j0 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @j1 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__j1 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @jn external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__jn external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @y0 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__y0 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @y1 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__y1 external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @yn external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__yn external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erf external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<490>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__erf external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erfc external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<497>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__erfc external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lgamma external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<768>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lgamma external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tgamma external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1323>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tgamma external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @gamma external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__gamma external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lgamma_r external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lgamma_r external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rint external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1019>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__rint external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nextafter external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<913>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nextafter external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nexttoward external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.longdouble>) -> !hl.double attributes {hl.builtin = #hl.builtin<920>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nexttoward external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.longdouble>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @remainder external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1001>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__remainder external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalbn external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>) -> !hl.double attributes {hl.builtin = #hl.builtin<1075>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalbn external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ilogb external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.builtin = #hl.builtin<667>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ilogb external (!hl.lvalue<!hl.double>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalbln external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.long>) -> !hl.double attributes {hl.builtin = #hl.builtin<1069>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalbln external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.long>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nearbyint external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<906>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nearbyint external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @round external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1043>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__round external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @trunc external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<1337>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__trunc external (!hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @remquo external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.double attributes {hl.builtin = #hl.builtin<1008>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__remquo external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lrint external (!hl.lvalue<!hl.double>) -> !hl.long attributes {hl.builtin = #hl.builtin<828>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lrint external (!hl.lvalue<!hl.double>) -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @llrint external (!hl.lvalue<!hl.double>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<775>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__llrint external (!hl.lvalue<!hl.double>) -> !hl.longlong attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lround external (!hl.lvalue<!hl.double>) -> !hl.long attributes {hl.builtin = #hl.builtin<837>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lround external (!hl.lvalue<!hl.double>) -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @llround external (!hl.lvalue<!hl.double>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<781>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__llround external (!hl.lvalue<!hl.double>) -> !hl.longlong attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fdim external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<560>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fdim external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmax external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<586>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmax external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmin external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<594>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmin external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fma external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.builtin = #hl.builtin<578>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fma external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalb external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalb external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.double>) -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fpclassifyf external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__signbitf external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__isinff external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__finitef external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.builtin = #hl.builtin<932>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__isnanf external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__iseqsigf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__issignalingf external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @acosf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<99>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__acosf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asinf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<134>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asinf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atanf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<151>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atanf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atan2f external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<157>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atan2f external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @cosf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<377>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__cosf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sinf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1093>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sinf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tanf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1303>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tanf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @coshf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<385>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__coshf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sinhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1101>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sinhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tanhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1311>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tanhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @acoshf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<107>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__acoshf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asinhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<142>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asinhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atanhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<166>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atanhf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @expf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<508>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__expf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @frexpf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.float attributes {hl.builtin = #hl.builtin<614>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__frexpf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ldexpf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.int>) -> !hl.float attributes {hl.builtin = #hl.builtin<758>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ldexpf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.int>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @logf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<787>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__logf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log10f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<808>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log10f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @modff external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.float>>) -> !hl.float attributes {hl.builtin = #hl.builtin<879>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__modff external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.float>>) -> !hl.float attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @expm1f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<531>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__expm1f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log1pf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<793>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log1pf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @logbf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<818>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__logbf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @exp2f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<514>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__exp2f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log2f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<800>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log2f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @powf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<966>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__powf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sqrtf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1116>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sqrtf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @hypotf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<657>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__hypotf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @cbrtf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<292>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__cbrtf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ceilf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<311>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ceilf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fabsf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<549>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fabsf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @floorf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<568>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__floorf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmodf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<600>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmodf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @isinff external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @finitef external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.builtin = #hl.builtin<564>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @dremf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__dremf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @significandf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__significandf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @copysignf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<355>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__copysignf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nanf external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.float attributes {hl.builtin = #hl.builtin<891>, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.func @__nanf external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @isnanf external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @j0f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__j0f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @j1f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__j1f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @jnf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__jnf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @y0f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__y0f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @y1f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__y1f external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ynf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ynf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erff external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<488>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__erff external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erfcf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<495>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__erfcf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lgammaf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<766>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lgammaf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tgammaf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1321>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tgammaf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @gammaf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__gammaf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lgammaf_r external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lgammaf_r external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rintf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1017>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__rintf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nextafterf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<911>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nextafterf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nexttowardf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.longdouble>) -> !hl.float attributes {hl.builtin = #hl.builtin<918>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nexttowardf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.longdouble>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @remainderf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<999>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__remainderf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalbnf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.int>) -> !hl.float attributes {hl.builtin = #hl.builtin<1073>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalbnf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.int>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ilogbf external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.builtin = #hl.builtin<665>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ilogbf external (!hl.lvalue<!hl.float>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalblnf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.long>) -> !hl.float attributes {hl.builtin = #hl.builtin<1067>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalblnf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.long>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nearbyintf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<904>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nearbyintf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @roundf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1041>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__roundf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @truncf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<1335>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__truncf external (!hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @remquof external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.float attributes {hl.builtin = #hl.builtin<1006>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__remquof external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lrintf external (!hl.lvalue<!hl.float>) -> !hl.long attributes {hl.builtin = #hl.builtin<826>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lrintf external (!hl.lvalue<!hl.float>) -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @llrintf external (!hl.lvalue<!hl.float>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<773>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__llrintf external (!hl.lvalue<!hl.float>) -> !hl.longlong attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lroundf external (!hl.lvalue<!hl.float>) -> !hl.long attributes {hl.builtin = #hl.builtin<835>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lroundf external (!hl.lvalue<!hl.float>) -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @llroundf external (!hl.lvalue<!hl.float>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<779>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__llroundf external (!hl.lvalue<!hl.float>) -> !hl.longlong attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fdimf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<558>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fdimf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmaxf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<584>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmaxf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fminf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<592>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fminf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmaf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.builtin = #hl.builtin<576>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmaf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalbf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalbf external (!hl.lvalue<!hl.float>, !hl.lvalue<!hl.float>) -> !hl.float attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fpclassifyl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__signbitl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__isinfl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__finitel external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.builtin = #hl.builtin<934>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__isnanl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__iseqsigl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__issignalingl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @acosl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<103>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__acosl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asinl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<138>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asinl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atanl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<155>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atanl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atan2l external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<161>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atan2l external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @cosl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<381>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__cosl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sinl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1097>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sinl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tanl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1307>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tanl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @coshl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<389>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__coshl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sinhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1105>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sinhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tanhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1315>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tanhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @acoshl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<111>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__acoshl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asinhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<146>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asinhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atanhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<170>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__atanhl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @expl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<512>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__expl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @frexpl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<618>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__frexpl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ldexpl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<762>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ldexpl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @logl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<791>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__logl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log10l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<812>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log10l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @modfl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.longdouble>>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<883>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__modfl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.longdouble>>) -> !hl.longdouble attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @expm1l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<535>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__expm1l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log1pl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<797>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log1pl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @logbl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<822>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__logbl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @exp2l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<518>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__exp2l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @log2l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<804>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__log2l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @powl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<970>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__powl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @sqrtl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1120>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__sqrtl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @hypotl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<661>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__hypotl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @cbrtl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<296>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__cbrtl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ceill external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<315>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ceill external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fabsl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<553>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fabsl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @floorl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<572>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__floorl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmodl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<604>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmodl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @isinfl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @finitel external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.builtin = #hl.builtin<566>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @dreml external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__dreml external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @significandl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__significandl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @copysignl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<359>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__copysignl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nanl external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<895>, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.func @__nanl external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @isnanl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @j0l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__j0l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @j1l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__j1l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @jnl external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__jnl external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @y0l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__y0l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @y1l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__y1l external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ynl external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ynl external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erfl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<492>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__erfl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erfcl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<499>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__erfcl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lgammal external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<770>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lgammal external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tgammal external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1325>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__tgammal external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @gammal external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__gammal external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lgammal_r external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lgammal_r external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rintl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1021>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__rintl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nextafterl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<915>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nextafterl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nexttowardl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<922>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nexttowardl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @remainderl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1003>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__remainderl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalbnl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1077>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalbnl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ilogbl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.builtin = #hl.builtin<669>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__ilogbl external (!hl.lvalue<!hl.longdouble>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalblnl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.long>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1071>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalblnl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.long>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nearbyintl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<908>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__nearbyintl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @roundl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1045>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__roundl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @truncl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1339>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__truncl external (!hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @remquol external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1010>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__remquol external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.ptr<!hl.int>>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lrintl external (!hl.lvalue<!hl.longdouble>) -> !hl.long attributes {hl.builtin = #hl.builtin<830>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lrintl external (!hl.lvalue<!hl.longdouble>) -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @llrintl external (!hl.lvalue<!hl.longdouble>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<777>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__llrintl external (!hl.lvalue<!hl.longdouble>) -> !hl.longlong attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lroundl external (!hl.lvalue<!hl.longdouble>) -> !hl.long attributes {hl.builtin = #hl.builtin<839>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__lroundl external (!hl.lvalue<!hl.longdouble>) -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @llroundl external (!hl.lvalue<!hl.longdouble>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<783>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__llroundl external (!hl.lvalue<!hl.longdouble>) -> !hl.longlong attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fdiml external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<562>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fdiml external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmaxl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<588>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmaxl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fminl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<596>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fminl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fmal external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<580>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__fmal external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @scalbl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__scalbl external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.longdouble>) -> !hl.longdouble attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.var @signgam, <external>  sc_extern : !hl.lvalue<!hl.int>
+    hl.enum @"anonymous[54759]" : !hl.int< unsigned > {
+      hl.enum.const @FP_NAN = #core.integer<0> : !hl.int init {
+        %0 = hl.const #core.integer<0> : !hl.int
+        hl.value.yield %0 : !hl.int
+      }
+      hl.enum.const @FP_INFINITE = #core.integer<1> : !hl.int init {
+        %0 = hl.const #core.integer<1> : !hl.int
+        hl.value.yield %0 : !hl.int
+      }
+      hl.enum.const @FP_ZERO = #core.integer<2> : !hl.int init {
+        %0 = hl.const #core.integer<2> : !hl.int
+        hl.value.yield %0 : !hl.int
+      }
+      hl.enum.const @FP_SUBNORMAL = #core.integer<3> : !hl.int init {
+        %0 = hl.const #core.integer<3> : !hl.int
+        hl.value.yield %0 : !hl.int
+      }
+      hl.enum.const @FP_NORMAL = #core.integer<4> : !hl.int init {
+        %0 = hl.const #core.integer<4> : !hl.int
+        hl.value.yield %0 : !hl.int
+      }
+    }
+    hl.var @arrA, <external>  : !hl.lvalue<!hl.array<1024, !hl.float>>
+    hl.var @arrB, <external>  : !hl.lvalue<!hl.array<1024, !hl.float>>
+    hl.func @loop external (%arg0: !hl.lvalue<!hl.int>) -> !hl.float attributes {hl.noinline = #hl.noinline} {
+      hl.param @zero = %arg0 : !hl.lvalue<!hl.int>
+      hl.var @i  : !hl.lvalue<!hl.int>
+      hl.var @iters  : !hl.lvalue<!hl.int>
+      hl.var @t1  : !hl.lvalue<!hl.float>
+      %0 = hl.ref @iters : !hl.lvalue<!hl.int>
+      %1 = hl.ref @zero : !hl.lvalue<!hl.int>
+      %2 = hl.implicit_cast %1 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+      %3 = hl.assign %2 to %0 : !hl.int, !hl.lvalue<!hl.int> -> !hl.int
+      hl.for {
+        %6 = hl.ref @iters : !hl.lvalue<!hl.int>
+        %7 = hl.implicit_cast %6 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+        %8 = hl.const #core.integer<4> : !hl.int
+        %9 = hl.cmp slt %7, %8 : !hl.int, !hl.int -> !hl.int
+        hl.cond.yield %9 : !hl.int
+      } incr {
+        %6 = hl.ref @iters : !hl.lvalue<!hl.int>
+        %7 = hl.const #core.integer<1> : !hl.int
+        %8 = hl.assign.add %7 to %6 : !hl.int, !hl.lvalue<!hl.int> -> !hl.int
+      } do {
+        %6 = hl.ref @i : !hl.lvalue<!hl.int>
+        %7 = hl.ref @zero : !hl.lvalue<!hl.int>
+        %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+        %9 = hl.assign %8 to %6 : !hl.int, !hl.lvalue<!hl.int> -> !hl.int
+        hl.for {
+          %19 = hl.ref @i : !hl.lvalue<!hl.int>
+          %20 = hl.implicit_cast %19 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %21 = hl.const #core.integer<1024> : !hl.int
+          %22 = hl.cmp slt %20, %21 : !hl.int, !hl.int -> !hl.int
+          hl.cond.yield %22 : !hl.int
+        } incr {
+          %19 = hl.ref @i : !hl.lvalue<!hl.int>
+          %20 = hl.const #core.integer<1> : !hl.int
+          %21 = hl.assign.add %20 to %19 : !hl.int, !hl.lvalue<!hl.int> -> !hl.int
+        } do {
+          %19 = hl.ref @arrA : !hl.lvalue<!hl.array<1024, !hl.float>>
+          %20 = hl.implicit_cast %19 ArrayToPointerDecay : !hl.lvalue<!hl.array<1024, !hl.float>> -> !hl.ptr<!hl.float>
+          %21 = hl.ref @i : !hl.lvalue<!hl.int>
+          %22 = hl.implicit_cast %21 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %23 = hl.subscript %20 at [%22 : !hl.int] : !hl.ptr<!hl.float> -> !hl.lvalue<!hl.float>
+          %24 = hl.ref @arrA : !hl.lvalue<!hl.array<1024, !hl.float>>
+          %25 = hl.implicit_cast %24 ArrayToPointerDecay : !hl.lvalue<!hl.array<1024, !hl.float>> -> !hl.ptr<!hl.float>
+          %26 = hl.ref @i : !hl.lvalue<!hl.int>
+          %27 = hl.implicit_cast %26 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %28 = hl.subscript %25 at [%27 : !hl.int] : !hl.ptr<!hl.float> -> !hl.lvalue<!hl.float>
+          %29 = hl.implicit_cast %28 LValueToRValue : !hl.lvalue<!hl.float> -> !hl.float
+          %30 = hl.implicit_cast %29 FloatingCast : !hl.float -> !hl.double
+          %31 = hl.call @sin(%30) : (!hl.double) -> !hl.double
+          %32 = hl.implicit_cast %31 FloatingCast : !hl.double -> !hl.float
+          %33 = hl.assign %32 to %23 : !hl.float, !hl.lvalue<!hl.float> -> !hl.float
+        }
+        %10 = hl.ref @t1 : !hl.lvalue<!hl.float>
+        %11 = hl.ref @arrA : !hl.lvalue<!hl.array<1024, !hl.float>>
+        %12 = hl.implicit_cast %11 ArrayToPointerDecay : !hl.lvalue<!hl.array<1024, !hl.float>> -> !hl.ptr<!hl.float>
+        %13 = hl.const #core.integer<1024> : !hl.int
+        %14 = hl.const #core.integer<1> : !hl.int
+        %15 = hl.sub %13, %14 : (!hl.int, !hl.int) -> !hl.int
+        %16 = hl.subscript %12 at [%15 : !hl.int] : !hl.ptr<!hl.float> -> !hl.lvalue<!hl.float>
+        %17 = hl.implicit_cast %16 LValueToRValue : !hl.lvalue<!hl.float> -> !hl.float
+        %18 = hl.assign.fadd %17 to %10 : !hl.float, !hl.lvalue<!hl.float> -> !hl.float
+      }
+      %4 = hl.ref @t1 : !hl.lvalue<!hl.float>
+      %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.float> -> !hl.float
+      hl.return %5 : !hl.float
+    }
+    hl.func @main external (%arg0: !hl.lvalue<!hl.int>, %arg1: !hl.lvalue<!hl.decayed<!hl.ptr<!hl.ptr<!hl.char>>>>) -> !hl.int {
+      hl.param @argc = %arg0 : !hl.lvalue<!hl.int>
+      hl.param @argv = %arg1 : !hl.lvalue<!hl.decayed<!hl.ptr<!hl.ptr<!hl.char>>>>
+      core.scope {
+        %1 = hl.ref @argc : !hl.lvalue<!hl.int>
+        %2 = hl.const #core.integer<10000> : !hl.int
+        %3 = hl.assign.bin.and %2 to %1 : !hl.int, !hl.lvalue<!hl.int> -> !hl.int
+        hl.asm {is_volatile} "xchg %bx,%bx"() () () () : () -> ()
+        hl.null
+        hl.var @t  : !hl.lvalue<!hl.int> = {
+          %4 = hl.ref @argc : !hl.lvalue<!hl.int>
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.call @loop(%5) : (!hl.int) -> !hl.float
+          %7 = hl.implicit_cast %6 FloatingToIntegral : !hl.float -> !hl.int
+          hl.value.yield %7 : !hl.int
+        }
+        hl.asm {is_volatile} "xchg %cx,%cx"() () () () : () -> ()
+        hl.null
+        hl.var @a  : !hl.lvalue<!hl.float< volatile >> = {
+          %4 = hl.ref @t : !hl.lvalue<!hl.int>
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.implicit_cast %5 IntegralToFloating : !hl.int -> !hl.float
+          hl.value.yield %6 : !hl.float
+        }
+      }
+      %0 = hl.const #core.integer<0> : !hl.int
+      core.implicit.return %0 : !hl.int
+    }
+  }
+}

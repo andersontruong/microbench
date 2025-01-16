@@ -1,0 +1,1522 @@
+module {
+  core.module @"/home/ando/projects/mlir-df/microbench/ML2/bench.c" attributes {dlti.dl_spec = #dlti.dl_spec<#dlti.dl_entry<!hl.elaborated<!hl.typedef<@__timer_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__timer_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@fpos_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__time_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__time_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__clockid_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@fpos_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__clock_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__clockid_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.array<16, !hl.long< unsigned >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char< unsigned >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__suseconds_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__blksize_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__suseconds_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@dude>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__sigset_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@__sigset_t>,  const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__sigset_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[20002]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[20002]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@timespec>,  const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__sigset_t>,  const >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.record<@timespec>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.ptr<!hl.char>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[20277]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@timespec>,  const >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@dude>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@fpos_t>,  const >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@dude>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>,  const >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@dude>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.array<16, !hl.elaborated<!hl.typedef<@__fd_mask>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.typedef<@__fd_mask>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__fd_mask>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__syscall_slong_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@timeval>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__syscall_slong_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@timeval>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__loff_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@__pthread_internal_list>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__loff_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@__pthread_internal_list>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__fsid_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@__pthread_internal_list>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[20899]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<65536, !hl.elaborated<!hl.typedef<@dude>>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 8388608 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@timeval>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__u_quad_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.double>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[20899]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[20277]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__quad_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char,  const >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__u_quad_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__fsfilcnt_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__mode_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__fsfilcnt_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__mode_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__gid_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[20933]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__gid_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__fsblkcnt_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__dev_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__dev_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__blkcnt_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[20933]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__blkcnt_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__ino_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__blksize_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__id_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[21823]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[21823]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__id_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__pid_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[21749]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__pid_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[21749]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__uid_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__fsblkcnt_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uid_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.array<2, !hl.int< unsigned >>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__nlink_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__atomic_wide_counter>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__nlink_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__atomic_wide_counter>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__key_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__clock_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<7, !hl.char< unsigned >>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 56 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__pthread_list_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__caddr_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__pthread_list_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__key_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__ino_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__daddr_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@__pthread_internal_slist>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@__pthread_internal_slist>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__caddr_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@__pthread_internal_slist>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__daddr_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.char,  const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.double>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@dude>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.char>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.longlong< unsigned >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__fsid_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__u_char>>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.typedef<@__u_char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.float, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.longdouble, {vast.abi_align.key = 128 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.double, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.int,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__u_long>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__u_int>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__quad_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@lldiv_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__u_long>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@lldiv_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__u_short>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.typedef<@ldiv_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__u_int>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@ldiv_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__u_short>>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[15546]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[15689]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@wchar_t>,  const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[15689]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.record<@__va_list_tag>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[15617]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.long< unsigned >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void< const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[15617]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.longlong, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@wchar_t>,  const >, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[15546]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@wchar_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@wchar_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void< const >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.void< const >, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.typedef<@__int16_t>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@wchar_t>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int16_t>>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint16_t>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint16_t>>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int8_t>>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint8_t>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint8_t>>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.paren<!core.fn<(!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.void>>) -> (!hl.void)>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.short< unsigned >, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.int< unsigned >, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.char, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.short, {vast.abi_align.key = 16 : i32, vast.dl.bw = 16 : i32}>, #dlti.dl_entry<!hl.int, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.long, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__int8_t>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.void>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<1, !hl.record<@__va_list_tag>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.paren<!core.fn<() -> (!hl.void)>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__builtin_va_list>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__builtin_va_list>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.char< unsigned >, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.void, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[1122]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char< const >,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.short< unsigned >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.typedef<@FILE>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__off64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__off64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<2, !hl.int>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[1122]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.void,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__uint32_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__int64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__int32_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@drand48_data>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__int32_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<3, !hl.short< unsigned >>, {vast.abi_align.key = 16 : i32, vast.dl.bw = 48 : i32}>, #dlti.dl_entry<!hl.typedef<@__uint32_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@drand48_data>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.record<@_G_fpos64_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_G_fpos_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_G_fpos64_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__mbstate_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@div_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__off_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@div_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@_G_fpos_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__mbstate_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@cookie_io_functions_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[1603]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__compar_fn_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@cookie_io_functions_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.typedef<@__compar_fn_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@__off_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[1603]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<4, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[1637]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.char>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[1637]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.typedef<@FILE>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_codecvt>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_wide_data>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@_IO_lock_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@_IO_lock_t>>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.array<1, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.record<@__va_list_tag>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@_IO_marker>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@_IO_lock_t>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 0 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_IO_FILE>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.record<@_IO_FILE>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@__off64_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[22237]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[22237]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.record<@__pthread_rwlock_arch_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@__pthread_rwlock_arch_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.char< const >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.char< const >, {vast.abi_align.key = 8 : i32, vast.dl.bw = 8 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[22361]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.array<8, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[22361]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__ssize_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[22485]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[22485]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@size_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.int< volatile >, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.typedef<@__ssize_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<32, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.typedef<@size_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.array<20, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 160 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[22591]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[22591]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[21905]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[21905]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.array<56, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_seek_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_write_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@pthread_attr_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@pthread_attr_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 448 : i32}>, #dlti.dl_entry<!hl.record<@__pthread_mutex_s>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 320 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@__pthread_mutex_s>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 320 : i32}>, #dlti.dl_entry<!hl.array<40, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 320 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_read_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[22099]">, {vast.abi_align.key = 64 : i32, vast.dl.bw = 320 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[22099]">>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 320 : i32}>, #dlti.dl_entry<!hl.record<@__pthread_cond_s>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@__pthread_cond_s>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.array<48, !hl.char>, {vast.abi_align.key = 8 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@random_data>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@FILE>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@FILE>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1728 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__fpos_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@__fpos_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 128 : i32}>, #dlti.dl_entry<!hl.typedef<@fd_set>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@fd_set>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 1024 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@fd_set>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.int< unsigned >>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@__gnuc_va_list>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.typedef<@__gnuc_va_list>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 192 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@_IO_cookie_io_functions_t>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.long,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.record<@_IO_cookie_io_functions_t>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 256 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@cookie_close_function_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@"anonymous[22679]">>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.record<@"anonymous[22679]">, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.double,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.typedef<@int32_t>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.decayed<!hl.ptr<!hl.char>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@int32_t>>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.typedef<@int32_t>>, {vast.abi_align.key = 32 : i32, vast.dl.bw = 32 : i32}>, #dlti.dl_entry<!hl.elaborated<!hl.record<@random_data>>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.record<@random_data>, {vast.abi_align.key = 64 : i32, vast.dl.bw = 384 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.typedef<@int32_t>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>, #dlti.dl_entry<!hl.ptr<!hl.elaborated<!hl.record<@random_data>>,  restrict >, {vast.abi_align.key = 64 : i32, vast.dl.bw = 64 : i32}>>, vast.core.lang = #core<lang c>, vast.core.target_triple = "x86_64-pc-linux-gnu"} {
+    hl.func @__builtin_expect external (!hl.lvalue<!hl.long>, !hl.lvalue<!hl.long>) -> !hl.long attributes {hl.builtin = #hl.builtin<528>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.typedef @size_t : !hl.long< unsigned >
+    hl.typedef @__builtin_va_list : !hl.array<1, !hl.record<@__va_list_tag>>
+    hl.typedef @__gnuc_va_list : !hl.elaborated<!hl.typedef<@__builtin_va_list>>
+    hl.typedef @__u_char : !hl.char< unsigned >
+    hl.typedef @__u_short : !hl.short< unsigned >
+    hl.typedef @__u_int : !hl.int< unsigned >
+    hl.typedef @__u_long : !hl.long< unsigned >
+    hl.typedef @__int8_t : !hl.char
+    hl.typedef @__uint8_t : !hl.char< unsigned >
+    hl.typedef @__int16_t : !hl.short
+    hl.typedef @__uint16_t : !hl.short< unsigned >
+    hl.typedef @__int32_t : !hl.int
+    hl.typedef @__uint32_t : !hl.int< unsigned >
+    hl.typedef @__int64_t : !hl.long
+    hl.typedef @__uint64_t : !hl.long< unsigned >
+    hl.typedef @__int_least8_t : !hl.elaborated<!hl.typedef<@__int8_t>>
+    hl.typedef @__uint_least8_t : !hl.elaborated<!hl.typedef<@__uint8_t>>
+    hl.typedef @__int_least16_t : !hl.elaborated<!hl.typedef<@__int16_t>>
+    hl.typedef @__uint_least16_t : !hl.elaborated<!hl.typedef<@__uint16_t>>
+    hl.typedef @__int_least32_t : !hl.elaborated<!hl.typedef<@__int32_t>>
+    hl.typedef @__uint_least32_t : !hl.elaborated<!hl.typedef<@__uint32_t>>
+    hl.typedef @__int_least64_t : !hl.elaborated<!hl.typedef<@__int64_t>>
+    hl.typedef @__uint_least64_t : !hl.elaborated<!hl.typedef<@__uint64_t>>
+    hl.typedef @__quad_t : !hl.long
+    hl.typedef @__u_quad_t : !hl.long< unsigned >
+    hl.typedef @__intmax_t : !hl.long
+    hl.typedef @__uintmax_t : !hl.long< unsigned >
+    hl.typedef @__dev_t : !hl.long< unsigned >
+    hl.typedef @__uid_t : !hl.int< unsigned >
+    hl.typedef @__gid_t : !hl.int< unsigned >
+    hl.typedef @__ino_t : !hl.long< unsigned >
+    hl.typedef @__ino64_t : !hl.long< unsigned >
+    hl.typedef @__mode_t : !hl.int< unsigned >
+    hl.typedef @__nlink_t : !hl.long< unsigned >
+    hl.typedef @__off_t : !hl.long
+    hl.typedef @__off64_t : !hl.long
+    hl.typedef @__pid_t : !hl.int
+    hl.struct @"anonymous[1122]" : {
+      hl.field @__val : !hl.array<2, !hl.int>
+    }
+    hl.typedef @__fsid_t : !hl.elaborated<!hl.record<@"anonymous[1122]">>
+    hl.typedef @__clock_t : !hl.long
+    hl.typedef @__rlim_t : !hl.long< unsigned >
+    hl.typedef @__rlim64_t : !hl.long< unsigned >
+    hl.typedef @__id_t : !hl.int< unsigned >
+    hl.typedef @__time_t : !hl.long
+    hl.typedef @__useconds_t : !hl.int< unsigned >
+    hl.typedef @__suseconds_t : !hl.long
+    hl.typedef @__suseconds64_t : !hl.long
+    hl.typedef @__daddr_t : !hl.int
+    hl.typedef @__key_t : !hl.int
+    hl.typedef @__clockid_t : !hl.int
+    hl.typedef @__timer_t : !hl.ptr<!hl.void>
+    hl.typedef @__blksize_t : !hl.long
+    hl.typedef @__blkcnt_t : !hl.long
+    hl.typedef @__blkcnt64_t : !hl.long
+    hl.typedef @__fsblkcnt_t : !hl.long< unsigned >
+    hl.typedef @__fsblkcnt64_t : !hl.long< unsigned >
+    hl.typedef @__fsfilcnt_t : !hl.long< unsigned >
+    hl.typedef @__fsfilcnt64_t : !hl.long< unsigned >
+    hl.typedef @__fsword_t : !hl.long
+    hl.typedef @__ssize_t : !hl.long
+    hl.typedef @__syscall_slong_t : !hl.long
+    hl.typedef @__syscall_ulong_t : !hl.long< unsigned >
+    hl.typedef @__loff_t : !hl.elaborated<!hl.typedef<@__off64_t>>
+    hl.typedef @__caddr_t : !hl.ptr<!hl.char>
+    hl.typedef @__intptr_t : !hl.long
+    hl.typedef @__socklen_t : !hl.int< unsigned >
+    hl.typedef @__sig_atomic_t : !hl.int
+    hl.struct @"anonymous[1603]" : {
+      hl.field @__count : !hl.int
+      hl.union @"anonymous[1637]" : {
+        hl.field @__wch : !hl.int< unsigned >
+        hl.field @__wchb : !hl.array<4, !hl.char>
+      }
+      hl.field @__value : !hl.elaborated<!hl.record<@"anonymous[1637]">>
+    }
+    hl.typedef @__mbstate_t : !hl.elaborated<!hl.record<@"anonymous[1603]">>
+    hl.struct @_G_fpos_t : {
+      hl.field @__pos : !hl.elaborated<!hl.typedef<@__off_t>>
+      hl.field @__state : !hl.elaborated<!hl.typedef<@__mbstate_t>>
+    }
+    hl.typedef @__fpos_t : !hl.elaborated<!hl.record<@_G_fpos_t>>
+    hl.struct @_G_fpos64_t : {
+      hl.field @__pos : !hl.elaborated<!hl.typedef<@__off64_t>>
+      hl.field @__state : !hl.elaborated<!hl.typedef<@__mbstate_t>>
+    }
+    hl.typedef @__fpos64_t : !hl.elaborated<!hl.record<@_G_fpos64_t>>
+    hl.struct @_IO_FILE : {
+    }
+    hl.typedef @__FILE : !hl.elaborated<!hl.record<@_IO_FILE>>
+    hl.struct @_IO_FILE : {
+    }
+    hl.typedef @FILE : !hl.elaborated<!hl.record<@_IO_FILE>>
+    hl.struct @_IO_FILE : {
+    }
+    hl.struct @_IO_marker : {
+    }
+    hl.struct @_IO_codecvt : {
+    }
+    hl.struct @_IO_wide_data : {
+    }
+    hl.typedef @_IO_lock_t : !hl.void
+    hl.struct @_IO_FILE : {
+      hl.field @_flags : !hl.int
+      hl.field @_IO_read_ptr : !hl.ptr<!hl.char>
+      hl.field @_IO_read_end : !hl.ptr<!hl.char>
+      hl.field @_IO_read_base : !hl.ptr<!hl.char>
+      hl.field @_IO_write_base : !hl.ptr<!hl.char>
+      hl.field @_IO_write_ptr : !hl.ptr<!hl.char>
+      hl.field @_IO_write_end : !hl.ptr<!hl.char>
+      hl.field @_IO_buf_base : !hl.ptr<!hl.char>
+      hl.field @_IO_buf_end : !hl.ptr<!hl.char>
+      hl.field @_IO_save_base : !hl.ptr<!hl.char>
+      hl.field @_IO_backup_base : !hl.ptr<!hl.char>
+      hl.field @_IO_save_end : !hl.ptr<!hl.char>
+      hl.field @_markers : !hl.ptr<!hl.elaborated<!hl.record<@_IO_marker>>>
+      hl.field @_chain : !hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>
+      hl.field @_fileno : !hl.int
+      hl.field @_flags2 : !hl.int
+      hl.field @_old_offset : !hl.elaborated<!hl.typedef<@__off_t>>
+      hl.field @_cur_column : !hl.short< unsigned >
+      hl.field @_vtable_offset : !hl.char
+      hl.field @_shortbuf : !hl.array<1, !hl.char>
+      hl.field @_lock : !hl.ptr<!hl.elaborated<!hl.typedef<@_IO_lock_t>>>
+      hl.field @_offset : !hl.elaborated<!hl.typedef<@__off64_t>>
+      hl.field @_codecvt : !hl.ptr<!hl.elaborated<!hl.record<@_IO_codecvt>>>
+      hl.field @_wide_data : !hl.ptr<!hl.elaborated<!hl.record<@_IO_wide_data>>>
+      hl.field @_freeres_list : !hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>
+      hl.field @_freeres_buf : !hl.ptr<!hl.void>
+      hl.field @_prevchain : !hl.ptr<!hl.ptr<!hl.elaborated<!hl.record<@_IO_FILE>>>>
+      hl.field @_mode : !hl.int
+      hl.field @_unused2 : !hl.array<20, !hl.char>
+    }
+    hl.typedef @cookie_read_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.ptr<!hl.char>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> (!hl.elaborated<!hl.typedef<@__ssize_t>>)>
+    hl.typedef @cookie_write_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> (!hl.elaborated<!hl.typedef<@__ssize_t>>)>
+    hl.typedef @cookie_seek_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@__off64_t>>>>, !hl.lvalue<!hl.int>) -> (!hl.int)>
+    hl.typedef @cookie_close_function_t : !core.fn<(!hl.lvalue<!hl.ptr<!hl.void>>) -> (!hl.int)>
+    hl.struct @_IO_cookie_io_functions_t : {
+      hl.field @read : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_read_function_t>>>
+      hl.field @write : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_write_function_t>>>
+      hl.field @seek : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_seek_function_t>>>
+      hl.field @close : !hl.ptr<!hl.elaborated<!hl.typedef<@cookie_close_function_t>>>
+    }
+    hl.typedef @cookie_io_functions_t : !hl.elaborated<!hl.record<@_IO_cookie_io_functions_t>>
+    hl.typedef @__builtin_va_list : !hl.array<1, !hl.record<@__va_list_tag>>
+    hl.typedef @va_list : !hl.elaborated<!hl.typedef<@__gnuc_va_list>>
+    hl.typedef @off_t : !hl.elaborated<!hl.typedef<@__off_t>>
+    hl.typedef @ssize_t : !hl.elaborated<!hl.typedef<@__ssize_t>>
+    hl.typedef @fpos_t : !hl.elaborated<!hl.typedef<@__fpos_t>>
+    hl.var @stdin, <external>  sc_extern : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+    hl.var @stdout, <external>  sc_extern : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+    hl.var @stderr, <external>  sc_extern : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+    hl.func @remove external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rename external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @renameat external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fclose external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @tmpfile external () -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @tmpnam external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.char>>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tmpnam_r external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.char>>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @tempnam external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @fflush external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fflush_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fopen external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.typedef<@FILE>> attributes {hl.builtin = #hl.builtin<607>, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @freopen external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fdopen external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @fopencookie external (!hl.lvalue<!hl.ptr<!hl.void,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@cookie_io_functions_t>>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @fmemopen external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @open_memstream external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @setbuf external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setvbuf external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setbuffer external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setlinebuf external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fprintf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<544>, hl.format = #hl.format<"printf">, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @printf external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<977>, hl.format = #hl.format<"printf">, sym_visibility = "private"}
+    hl.func @sprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1058>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vfprintf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1374>, hl.format = #hl.format<"printf">, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vprintf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1359>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vsprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1376>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @snprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1114>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vsnprintf external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1378>, hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vasprintf external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>>) -> !hl.int attributes {hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__asprintf external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @asprintf external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.format = #hl.format<"printf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vdprintf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>>) -> !hl.int attributes {hl.format = #hl.format<"printf">, sym_visibility = "private"}
+    hl.func @dprintf external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.format = #hl.format<"printf">, sym_visibility = "private"}
+    hl.func @fscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<547>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @scanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1079>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @sscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.builtin = #hl.builtin<1061>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.typedef @_Float32 : !hl.float
+    hl.typedef @_Float64 : !hl.double
+    hl.typedef @_Float32x : !hl.double
+    hl.typedef @_Float64x : !hl.longdouble
+    hl.func @fscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_fscanf", true>, hl.builtin = #hl.builtin<547>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @scanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_scanf", true>, hl.builtin = #hl.builtin<1079>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @sscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, ...) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_sscanf", true>, hl.builtin = #hl.builtin<1061>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vfscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1356>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @vscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1366>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @vsscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1364>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @vfscanf external (!hl.lvalue<!hl.ptr<!hl.typedef<@FILE>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_vfscanf", true>, hl.builtin = #hl.builtin<1356>, hl.format = #hl.format<"scanf">, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @vscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_vscanf", true>, hl.builtin = #hl.builtin<1366>, hl.format = #hl.format<"scanf">, sym_visibility = "private"}
+    hl.func @vsscanf external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.asm = #hl.asm<"__isoc99_vsscanf", true>, hl.builtin = #hl.builtin<1364>, hl.format = #hl.format<"scanf">, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fgetc external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getc external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getchar external () -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @getc_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getchar_unlocked external () -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fgetc_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fputc external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putc external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putchar external (!hl.lvalue<!hl.int>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @fputc_unlocked external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putc_unlocked external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putchar_unlocked external (!hl.lvalue<!hl.int>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @getw external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @putw external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fgets external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @__getdelim external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@__ssize_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getdelim external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@__ssize_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @getline external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@size_t>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@__ssize_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fputs external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @puts external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @ungetc external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fread external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.typedef<@FILE>>>) -> !hl.long< unsigned > attributes {hl.builtin = #hl.builtin<611>, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fwrite external (!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.ptr<!hl.typedef<@FILE>>>) -> !hl.long< unsigned > attributes {hl.builtin = #hl.builtin<622>, hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fread_unlocked external (!hl.lvalue<!hl.ptr<!hl.void,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@size_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fwrite_unlocked external (!hl.lvalue<!hl.ptr<!hl.void< const >,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>) -> !hl.elaborated<!hl.typedef<@size_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fseek external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.long>, !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @ftell external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.long attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @rewind external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fseeko external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@__off_t>>>, !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @ftello external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.elaborated<!hl.typedef<@__off_t>> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fgetpos external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @fsetpos external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fpos_t>,  const >>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @clearerr external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @feof external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ferror external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @clearerr_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @feof_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ferror_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @perror external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.void attributes {hl.cold = #hl.cold, sym_visibility = "private"}
+    hl.func @fileno external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fileno_unlocked external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @pclose external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @popen external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> attributes {hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @ctermid external (!hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @flockfile external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ftrylockfile external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @funlockfile external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @__uflow external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @__overflow external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>, !hl.lvalue<!hl.int>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @vprintf available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, %arg1: !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int attributes {hl.builtin = #hl.builtin<1359>, hl.format = #hl.format<"printf">, hl.gnu_inline = #hl.gnu_inline, hl.nothrow = #hl.nothrow} {
+      hl.param @__fmt = %arg0 : !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>
+      hl.param @__arg = %arg1 : !hl.lvalue<!hl.ptr<!hl.record<@__va_list_tag>>>
+      %0 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+      %2 = hl.ref @__fmt : !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>
+      %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >> -> !hl.ptr<!hl.char< const >>
+      %4 = hl.ref @__arg : !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>>
+      %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>> -> !hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>
+      %6 = hl.call @vfprintf(%1, %3, %5) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.ptr<!hl.char< const >>, !hl.decayed<!hl.ptr<!hl.record<@__va_list_tag>>>) -> !hl.int
+      hl.return %6 : !hl.int
+    }
+    hl.func @getchar available_externally () -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      %0 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+      %2 = hl.call @getc(%1) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+      hl.return %2 : !hl.int
+    }
+    hl.func @fgetc_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__fp = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_read_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.call @__uflow(%3) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+          hl.value.yield %4 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.member %3 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+          %5 = hl.post.inc %4 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+          %6 = hl.cstyle_cast %5 BitCast : !hl.ptr<!hl.char> -> !hl.ptr<!hl.char< unsigned >>
+          %7 = hl.deref %6 : !hl.ptr<!hl.char< unsigned >> -> !hl.lvalue<!hl.char< unsigned >>
+          %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.char< unsigned >> -> !hl.char< unsigned >
+          %9 = hl.implicit_cast %8 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @getc_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__fp = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_read_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.call @__uflow(%3) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+          hl.value.yield %4 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__fp : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.member %3 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+          %5 = hl.post.inc %4 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+          %6 = hl.cstyle_cast %5 BitCast : !hl.ptr<!hl.char> -> !hl.ptr<!hl.char< unsigned >>
+          %7 = hl.deref %6 : !hl.ptr<!hl.char< unsigned >> -> !hl.lvalue<!hl.char< unsigned >>
+          %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.char< unsigned >> -> !hl.char< unsigned >
+          %9 = hl.implicit_cast %8 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @getchar_unlocked available_externally () -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_read_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.call @__uflow(%3) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+          hl.value.yield %4 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @stdin : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.member %3 at @_IO_read_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+          %5 = hl.post.inc %4 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+          %6 = hl.cstyle_cast %5 BitCast : !hl.ptr<!hl.char> -> !hl.ptr<!hl.char< unsigned >>
+          %7 = hl.deref %6 : !hl.ptr<!hl.char< unsigned >> -> !hl.lvalue<!hl.char< unsigned >>
+          %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.char< unsigned >> -> !hl.char< unsigned >
+          %9 = hl.implicit_cast %8 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @putchar available_externally (%arg0: !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      %0 = hl.ref @__c : !hl.lvalue<!hl.int>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+      %2 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+      %4 = hl.call @putc(%1, %3) : (!hl.int, !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>) -> !hl.int
+      hl.return %4 : !hl.int
+    }
+    hl.func @fputc_unlocked available_externally (%arg0: !hl.lvalue<!hl.int>, %arg1: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      hl.param @__stream = %arg1 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_write_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.expr : !hl.lvalue<!hl.int> {
+            %9 = hl.ref @__c : !hl.lvalue<!hl.int>
+            hl.value.yield %9 : !hl.lvalue<!hl.int>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.cstyle_cast %5 IntegralCast : !hl.int -> !hl.char< unsigned >
+          %7 = hl.implicit_cast %6 IntegralCast : !hl.char< unsigned > -> !hl.int
+          %8 = hl.call @__overflow(%3, %7) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.int) -> !hl.int
+          hl.value.yield %8 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.char {
+            %5 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %14 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %14 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %6 = hl.implicit_cast %5 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %7 = hl.member %6 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %8 = hl.post.inc %7 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %9 = hl.deref %8 : !hl.ptr<!hl.char> -> !hl.lvalue<!hl.char>
+            %10 = hl.expr : !hl.lvalue<!hl.int> {
+              %14 = hl.ref @__c : !hl.lvalue<!hl.int>
+              hl.value.yield %14 : !hl.lvalue<!hl.int>
+            }
+            %11 = hl.implicit_cast %10 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+            %12 = hl.implicit_cast %11 IntegralCast : !hl.int -> !hl.char
+            %13 = hl.assign %12 to %9 : !hl.char, !hl.lvalue<!hl.char> -> !hl.char
+            hl.value.yield %13 : !hl.char
+          }
+          %3 = hl.cstyle_cast %2 IntegralCast : !hl.char -> !hl.char< unsigned >
+          %4 = hl.implicit_cast %3 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %4 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @putc_unlocked available_externally (%arg0: !hl.lvalue<!hl.int>, %arg1: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      hl.param @__stream = %arg1 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_write_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.expr : !hl.lvalue<!hl.int> {
+            %9 = hl.ref @__c : !hl.lvalue<!hl.int>
+            hl.value.yield %9 : !hl.lvalue<!hl.int>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.cstyle_cast %5 IntegralCast : !hl.int -> !hl.char< unsigned >
+          %7 = hl.implicit_cast %6 IntegralCast : !hl.char< unsigned > -> !hl.int
+          %8 = hl.call @__overflow(%3, %7) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.int) -> !hl.int
+          hl.value.yield %8 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.char {
+            %5 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %14 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %14 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %6 = hl.implicit_cast %5 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %7 = hl.member %6 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %8 = hl.post.inc %7 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %9 = hl.deref %8 : !hl.ptr<!hl.char> -> !hl.lvalue<!hl.char>
+            %10 = hl.expr : !hl.lvalue<!hl.int> {
+              %14 = hl.ref @__c : !hl.lvalue<!hl.int>
+              hl.value.yield %14 : !hl.lvalue<!hl.int>
+            }
+            %11 = hl.implicit_cast %10 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+            %12 = hl.implicit_cast %11 IntegralCast : !hl.int -> !hl.char
+            %13 = hl.assign %12 to %9 : !hl.char, !hl.lvalue<!hl.char> -> !hl.char
+            hl.value.yield %13 : !hl.char
+          }
+          %3 = hl.cstyle_cast %2 IntegralCast : !hl.char -> !hl.char< unsigned >
+          %4 = hl.implicit_cast %3 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %4 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @putchar_unlocked available_externally (%arg0: !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline} {
+      hl.param @__c = %arg0 : !hl.lvalue<!hl.int>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.cond : !hl.int {
+          %2 = hl.expr : !hl.int {
+            %7 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %8 = hl.implicit_cast %7 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %9 = hl.member %8 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %11 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %16 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %16 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %13 = hl.member %12 at @_IO_write_end : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %14 = hl.implicit_cast %13 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %15 = hl.cmp uge %10, %14 : !hl.ptr<!hl.char>, !hl.ptr<!hl.char> -> !hl.int
+            hl.value.yield %15 : !hl.int
+          }
+          %3 = hl.implicit_cast %2 IntegralCast : !hl.int -> !hl.long
+          %4 = hl.const #core.integer<0> : !hl.int
+          %5 = hl.implicit_cast %4 IntegralCast : !hl.int -> !hl.long
+          %6 = hl.call @__builtin_expect(%3, %5) : (!hl.long, !hl.long) -> !hl.long
+          hl.cond.yield %6 : !hl.long
+        } ? {
+          %2 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %4 = hl.expr : !hl.lvalue<!hl.int> {
+            %9 = hl.ref @__c : !hl.lvalue<!hl.int>
+            hl.value.yield %9 : !hl.lvalue<!hl.int>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.cstyle_cast %5 IntegralCast : !hl.int -> !hl.char< unsigned >
+          %7 = hl.implicit_cast %6 IntegralCast : !hl.char< unsigned > -> !hl.int
+          %8 = hl.call @__overflow(%3, %7) : (!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>, !hl.int) -> !hl.int
+          hl.value.yield %8 : !hl.int
+        } : {
+          %2 = hl.expr : !hl.char {
+            %5 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+              %14 = hl.ref @stdout : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+              hl.value.yield %14 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            }
+            %6 = hl.implicit_cast %5 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+            %7 = hl.member %6 at @_IO_write_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.ptr<!hl.char>>
+            %8 = hl.post.inc %7 : !hl.lvalue<!hl.ptr<!hl.char>> -> !hl.ptr<!hl.char>
+            %9 = hl.deref %8 : !hl.ptr<!hl.char> -> !hl.lvalue<!hl.char>
+            %10 = hl.expr : !hl.lvalue<!hl.int> {
+              %14 = hl.ref @__c : !hl.lvalue<!hl.int>
+              hl.value.yield %14 : !hl.lvalue<!hl.int>
+            }
+            %11 = hl.implicit_cast %10 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+            %12 = hl.implicit_cast %11 IntegralCast : !hl.int -> !hl.char
+            %13 = hl.assign %12 to %9 : !hl.char, !hl.lvalue<!hl.char> -> !hl.char
+            hl.value.yield %13 : !hl.char
+          }
+          %3 = hl.cstyle_cast %2 IntegralCast : !hl.char -> !hl.char< unsigned >
+          %4 = hl.implicit_cast %3 IntegralCast : !hl.char< unsigned > -> !hl.int
+          hl.value.yield %4 : !hl.int
+        }
+        hl.value.yield %1 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @feof_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} {
+      hl.param @__stream = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.expr : !hl.int {
+          %4 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %6 = hl.member %5 at @_flags : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.int>
+          %7 = hl.implicit_cast %6 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %8 = hl.const #core.integer<16> : !hl.int
+          %9 = hl.bin.and %7, %8 : (!hl.int, !hl.int) -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        %2 = hl.const #core.integer<0> : !hl.int
+        %3 = hl.cmp ne %1, %2 : !hl.int, !hl.int -> !hl.int
+        hl.value.yield %3 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.func @ferror_unlocked available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow} {
+      hl.param @__stream = %arg0 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+      %0 = hl.expr : !hl.int {
+        %1 = hl.expr : !hl.int {
+          %4 = hl.expr : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> {
+            %10 = hl.ref @__stream : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+            hl.value.yield %10 : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>>
+          }
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>>
+          %6 = hl.member %5 at @_flags : !hl.ptr<!hl.elaborated<!hl.typedef<@FILE>>> -> !hl.lvalue<!hl.int>
+          %7 = hl.implicit_cast %6 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %8 = hl.const #core.integer<32> : !hl.int
+          %9 = hl.bin.and %7, %8 : (!hl.int, !hl.int) -> !hl.int
+          hl.value.yield %9 : !hl.int
+        }
+        %2 = hl.const #core.integer<0> : !hl.int
+        %3 = hl.cmp ne %1, %2 : !hl.int, !hl.int -> !hl.int
+        hl.value.yield %3 : !hl.int
+      }
+      hl.return %0 : !hl.int
+    }
+    hl.typedef @wchar_t : !hl.int
+    hl.struct @"anonymous[15546]" : {
+      hl.field @quot : !hl.int
+      hl.field @rem : !hl.int
+    }
+    hl.typedef @div_t : !hl.elaborated<!hl.record<@"anonymous[15546]">>
+    hl.struct @"anonymous[15617]" : {
+      hl.field @quot : !hl.long
+      hl.field @rem : !hl.long
+    }
+    hl.typedef @ldiv_t : !hl.elaborated<!hl.record<@"anonymous[15617]">>
+    hl.struct @"anonymous[15689]" : {
+      hl.field @quot : !hl.longlong
+      hl.field @rem : !hl.longlong
+    }
+    hl.typedef @lldiv_t : !hl.elaborated<!hl.record<@"anonymous[15689]">>
+    hl.func @__ctype_get_mb_cur_max external () -> !hl.elaborated<!hl.typedef<@size_t>> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atof external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.double attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.func @atoi external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.func @atol external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.long attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.func @atoll external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.longlong attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.func @strtod external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>) -> !hl.double attributes {hl.builtin = #hl.builtin<1159>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtof external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>) -> !hl.float attributes {hl.builtin = #hl.builtin<1160>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtold external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>) -> !hl.longdouble attributes {hl.builtin = #hl.builtin<1163>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtol external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>, !hl.lvalue<!hl.int>) -> !hl.long attributes {hl.builtin = #hl.builtin<1161>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtoul external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>, !hl.lvalue<!hl.int>) -> !hl.long< unsigned > attributes {hl.builtin = #hl.builtin<1164>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtoq external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.int>) -> !hl.longlong attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtouq external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.int>) -> !hl.longlong< unsigned > attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtoll external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>, !hl.lvalue<!hl.int>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<1162>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @strtoull external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>>>, !hl.lvalue<!hl.int>) -> !hl.longlong< unsigned > attributes {hl.builtin = #hl.builtin<1165>, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atoi available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} {
+      hl.param @__nptr = %arg0 : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %0 = hl.ref @__nptr : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char< const >>> -> !hl.ptr<!hl.char< const >>
+      %2 = hl.expr : !hl.ptr<!hl.void> {
+        %7 = hl.const #core.integer<0> : !hl.int
+        %8 = hl.cstyle_cast %7 NullToPointer : !hl.int -> !hl.ptr<!hl.void>
+        hl.value.yield %8 : !hl.ptr<!hl.void>
+      }
+      %3 = hl.cstyle_cast %2 BitCast : !hl.ptr<!hl.void> -> !hl.ptr<!hl.ptr<!hl.char>>
+      %4 = hl.const #core.integer<10> : !hl.int
+      %5 = hl.call @strtol(%1, %3, %4) : (!hl.ptr<!hl.char< const >>, !hl.ptr<!hl.ptr<!hl.char>>, !hl.int) -> !hl.long
+      %6 = hl.cstyle_cast %5 IntegralCast : !hl.long -> !hl.int
+      hl.return %6 : !hl.int
+    }
+    hl.func @atol available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.long attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} {
+      hl.param @__nptr = %arg0 : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %0 = hl.ref @__nptr : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char< const >>> -> !hl.ptr<!hl.char< const >>
+      %2 = hl.expr : !hl.ptr<!hl.void> {
+        %6 = hl.const #core.integer<0> : !hl.int
+        %7 = hl.cstyle_cast %6 NullToPointer : !hl.int -> !hl.ptr<!hl.void>
+        hl.value.yield %7 : !hl.ptr<!hl.void>
+      }
+      %3 = hl.cstyle_cast %2 BitCast : !hl.ptr<!hl.void> -> !hl.ptr<!hl.ptr<!hl.char>>
+      %4 = hl.const #core.integer<10> : !hl.int
+      %5 = hl.call @strtol(%1, %3, %4) : (!hl.ptr<!hl.char< const >>, !hl.ptr<!hl.ptr<!hl.char>>, !hl.int) -> !hl.long
+      hl.return %5 : !hl.long
+    }
+    hl.func @atoll available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.longlong attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} {
+      hl.param @__nptr = %arg0 : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %0 = hl.ref @__nptr : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char< const >>> -> !hl.ptr<!hl.char< const >>
+      %2 = hl.expr : !hl.ptr<!hl.void> {
+        %6 = hl.const #core.integer<0> : !hl.int
+        %7 = hl.cstyle_cast %6 NullToPointer : !hl.int -> !hl.ptr<!hl.void>
+        hl.value.yield %7 : !hl.ptr<!hl.void>
+      }
+      %3 = hl.cstyle_cast %2 BitCast : !hl.ptr<!hl.void> -> !hl.ptr<!hl.ptr<!hl.char>>
+      %4 = hl.const #core.integer<10> : !hl.int
+      %5 = hl.call @strtoll(%1, %3, %4) : (!hl.ptr<!hl.char< const >>, !hl.ptr<!hl.ptr<!hl.char>>, !hl.int) -> !hl.longlong
+      hl.return %5 : !hl.longlong
+    }
+    hl.func @l64a external (!hl.lvalue<!hl.long>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @a64l external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.long attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure, sym_visibility = "private"}
+    hl.typedef @u_char : !hl.elaborated<!hl.typedef<@__u_char>>
+    hl.typedef @u_short : !hl.elaborated<!hl.typedef<@__u_short>>
+    hl.typedef @u_int : !hl.elaborated<!hl.typedef<@__u_int>>
+    hl.typedef @u_long : !hl.elaborated<!hl.typedef<@__u_long>>
+    hl.typedef @quad_t : !hl.elaborated<!hl.typedef<@__quad_t>>
+    hl.typedef @u_quad_t : !hl.elaborated<!hl.typedef<@__u_quad_t>>
+    hl.typedef @fsid_t : !hl.elaborated<!hl.typedef<@__fsid_t>>
+    hl.typedef @loff_t : !hl.elaborated<!hl.typedef<@__loff_t>>
+    hl.typedef @ino_t : !hl.elaborated<!hl.typedef<@__ino_t>>
+    hl.typedef @dev_t : !hl.elaborated<!hl.typedef<@__dev_t>>
+    hl.typedef @gid_t : !hl.elaborated<!hl.typedef<@__gid_t>>
+    hl.typedef @mode_t : !hl.elaborated<!hl.typedef<@__mode_t>>
+    hl.typedef @nlink_t : !hl.elaborated<!hl.typedef<@__nlink_t>>
+    hl.typedef @uid_t : !hl.elaborated<!hl.typedef<@__uid_t>>
+    hl.typedef @pid_t : !hl.elaborated<!hl.typedef<@__pid_t>>
+    hl.typedef @id_t : !hl.elaborated<!hl.typedef<@__id_t>>
+    hl.typedef @daddr_t : !hl.elaborated<!hl.typedef<@__daddr_t>>
+    hl.typedef @caddr_t : !hl.elaborated<!hl.typedef<@__caddr_t>>
+    hl.typedef @key_t : !hl.elaborated<!hl.typedef<@__key_t>>
+    hl.typedef @clock_t : !hl.elaborated<!hl.typedef<@__clock_t>>
+    hl.typedef @clockid_t : !hl.elaborated<!hl.typedef<@__clockid_t>>
+    hl.typedef @time_t : !hl.elaborated<!hl.typedef<@__time_t>>
+    hl.typedef @timer_t : !hl.elaborated<!hl.typedef<@__timer_t>>
+    hl.typedef @ulong : !hl.long< unsigned >
+    hl.typedef @ushort : !hl.short< unsigned >
+    hl.typedef @uint : !hl.int< unsigned >
+    hl.typedef @int8_t : !hl.elaborated<!hl.typedef<@__int8_t>>
+    hl.typedef @int16_t : !hl.elaborated<!hl.typedef<@__int16_t>>
+    hl.typedef @int32_t : !hl.elaborated<!hl.typedef<@__int32_t>>
+    hl.typedef @int64_t : !hl.elaborated<!hl.typedef<@__int64_t>>
+    hl.typedef @u_int8_t : !hl.elaborated<!hl.typedef<@__uint8_t>>
+    hl.typedef @u_int16_t : !hl.elaborated<!hl.typedef<@__uint16_t>>
+    hl.typedef @u_int32_t : !hl.elaborated<!hl.typedef<@__uint32_t>>
+    hl.typedef @u_int64_t : !hl.elaborated<!hl.typedef<@__uint64_t>>
+    hl.typedef @register_t {hl.mode = #hl.mode<"__word__">} : !hl.long
+    hl.func @__bswap_16 internal (%arg0: !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>) -> !hl.elaborated<!hl.typedef<@__uint16_t>> attributes {sym_visibility = "private"} {
+      hl.param @__bsx = %arg0 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>
+      %0 = hl.expr : !hl.elaborated<!hl.typedef<@__uint16_t>> {
+        %1 = hl.expr : !hl.int {
+          %3 = hl.expr : !hl.int {
+            %6 = hl.expr : !hl.int {
+              %9 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>> {
+                %14 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>
+                hl.value.yield %14 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>
+              }
+              %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>> -> !hl.elaborated<!hl.typedef<@__uint16_t>>
+              %11 = hl.implicit_cast %10 IntegralCast : !hl.elaborated<!hl.typedef<@__uint16_t>> -> !hl.int
+              %12 = hl.const #core.integer<8> : !hl.int
+              %13 = hl.bin.ashr %11, %12 : (!hl.int, !hl.int) -> !hl.int
+              hl.value.yield %13 : !hl.int
+            }
+            %7 = hl.const #core.integer<255> : !hl.int
+            %8 = hl.bin.and %6, %7 : (!hl.int, !hl.int) -> !hl.int
+            hl.value.yield %8 : !hl.int
+          }
+          %4 = hl.expr : !hl.int {
+            %6 = hl.expr : !hl.int {
+              %9 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>> {
+                %14 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>
+                hl.value.yield %14 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>
+              }
+              %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>> -> !hl.elaborated<!hl.typedef<@__uint16_t>>
+              %11 = hl.implicit_cast %10 IntegralCast : !hl.elaborated<!hl.typedef<@__uint16_t>> -> !hl.int
+              %12 = hl.const #core.integer<255> : !hl.int
+              %13 = hl.bin.and %11, %12 : (!hl.int, !hl.int) -> !hl.int
+              hl.value.yield %13 : !hl.int
+            }
+            %7 = hl.const #core.integer<8> : !hl.int
+            %8 = hl.bin.shl %6, %7 : (!hl.int, !hl.int) -> !hl.int
+            hl.value.yield %8 : !hl.int
+          }
+          %5 = hl.bin.or %3, %4 : (!hl.int, !hl.int) -> !hl.int
+          hl.value.yield %5 : !hl.int
+        }
+        %2 = hl.cstyle_cast %1 IntegralCast : !hl.int -> !hl.elaborated<!hl.typedef<@__uint16_t>>
+        hl.value.yield %2 : !hl.elaborated<!hl.typedef<@__uint16_t>>
+      }
+      hl.return %0 : !hl.elaborated<!hl.typedef<@__uint16_t>>
+    }
+    hl.func @__bswap_32 internal (%arg0: !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>) -> !hl.elaborated<!hl.typedef<@__uint32_t>> attributes {sym_visibility = "private"} {
+      hl.param @__bsx = %arg0 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+      %0 = hl.expr : !hl.int< unsigned > {
+        %1 = hl.expr : !hl.int< unsigned > {
+          %8 = hl.expr : !hl.int< unsigned > {
+            %11 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> {
+              %15 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+              hl.value.yield %15 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> -> !hl.elaborated<!hl.typedef<@__uint32_t>>
+            %13 = hl.const #core.integer<-16777216> : !hl.int< unsigned >
+            %14 = hl.bin.and %12, %13 : (!hl.elaborated<!hl.typedef<@__uint32_t>>, !hl.int< unsigned >) -> !hl.int< unsigned >
+            hl.value.yield %14 : !hl.int< unsigned >
+          }
+          %9 = hl.const #core.integer<24> : !hl.int
+          %10 = hl.bin.lshr %8, %9 : (!hl.int< unsigned >, !hl.int) -> !hl.int< unsigned >
+          hl.value.yield %10 : !hl.int< unsigned >
+        }
+        %2 = hl.expr : !hl.int< unsigned > {
+          %8 = hl.expr : !hl.int< unsigned > {
+            %11 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> {
+              %15 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+              hl.value.yield %15 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> -> !hl.elaborated<!hl.typedef<@__uint32_t>>
+            %13 = hl.const #core.integer<16711680> : !hl.int< unsigned >
+            %14 = hl.bin.and %12, %13 : (!hl.elaborated<!hl.typedef<@__uint32_t>>, !hl.int< unsigned >) -> !hl.int< unsigned >
+            hl.value.yield %14 : !hl.int< unsigned >
+          }
+          %9 = hl.const #core.integer<8> : !hl.int
+          %10 = hl.bin.lshr %8, %9 : (!hl.int< unsigned >, !hl.int) -> !hl.int< unsigned >
+          hl.value.yield %10 : !hl.int< unsigned >
+        }
+        %3 = hl.bin.or %1, %2 : (!hl.int< unsigned >, !hl.int< unsigned >) -> !hl.int< unsigned >
+        %4 = hl.expr : !hl.int< unsigned > {
+          %8 = hl.expr : !hl.int< unsigned > {
+            %11 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> {
+              %15 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+              hl.value.yield %15 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> -> !hl.elaborated<!hl.typedef<@__uint32_t>>
+            %13 = hl.const #core.integer<65280> : !hl.int< unsigned >
+            %14 = hl.bin.and %12, %13 : (!hl.elaborated<!hl.typedef<@__uint32_t>>, !hl.int< unsigned >) -> !hl.int< unsigned >
+            hl.value.yield %14 : !hl.int< unsigned >
+          }
+          %9 = hl.const #core.integer<8> : !hl.int
+          %10 = hl.bin.shl %8, %9 : (!hl.int< unsigned >, !hl.int) -> !hl.int< unsigned >
+          hl.value.yield %10 : !hl.int< unsigned >
+        }
+        %5 = hl.bin.or %3, %4 : (!hl.int< unsigned >, !hl.int< unsigned >) -> !hl.int< unsigned >
+        %6 = hl.expr : !hl.int< unsigned > {
+          %8 = hl.expr : !hl.int< unsigned > {
+            %11 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> {
+              %15 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+              hl.value.yield %15 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+            }
+            %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> -> !hl.elaborated<!hl.typedef<@__uint32_t>>
+            %13 = hl.const #core.integer<255> : !hl.int< unsigned >
+            %14 = hl.bin.and %12, %13 : (!hl.elaborated<!hl.typedef<@__uint32_t>>, !hl.int< unsigned >) -> !hl.int< unsigned >
+            hl.value.yield %14 : !hl.int< unsigned >
+          }
+          %9 = hl.const #core.integer<24> : !hl.int
+          %10 = hl.bin.shl %8, %9 : (!hl.int< unsigned >, !hl.int) -> !hl.int< unsigned >
+          hl.value.yield %10 : !hl.int< unsigned >
+        }
+        %7 = hl.bin.or %5, %6 : (!hl.int< unsigned >, !hl.int< unsigned >) -> !hl.int< unsigned >
+        hl.value.yield %7 : !hl.int< unsigned >
+      }
+      hl.return %0 : !hl.int< unsigned >
+    }
+    hl.func @__bswap_64 internal (%arg0: !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>) -> !hl.elaborated<!hl.typedef<@__uint64_t>> attributes {sym_visibility = "private"} {
+      hl.param @__bsx = %arg0 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+      %0 = hl.expr : !hl.longlong< unsigned > {
+        %2 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<-72057594037927936> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<56> : !hl.int
+          %19 = hl.bin.lshr %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %3 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<71776119061217280> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<40> : !hl.int
+          %19 = hl.bin.lshr %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %4 = hl.bin.or %2, %3 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+        %5 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<280375465082880> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<24> : !hl.int
+          %19 = hl.bin.lshr %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %6 = hl.bin.or %4, %5 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+        %7 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<1095216660480> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<8> : !hl.int
+          %19 = hl.bin.lshr %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %8 = hl.bin.or %6, %7 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+        %9 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<4278190080> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<8> : !hl.int
+          %19 = hl.bin.shl %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %10 = hl.bin.or %8, %9 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+        %11 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<16711680> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<24> : !hl.int
+          %19 = hl.bin.shl %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %12 = hl.bin.or %10, %11 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+        %13 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<65280> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<40> : !hl.int
+          %19 = hl.bin.shl %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %14 = hl.bin.or %12, %13 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+        %15 = hl.expr : !hl.longlong< unsigned > {
+          %17 = hl.expr : !hl.longlong< unsigned > {
+            %20 = hl.expr : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> {
+              %25 = hl.ref @__bsx : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+              hl.value.yield %25 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+            }
+            %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+            %22 = hl.implicit_cast %21 IntegralCast : !hl.elaborated<!hl.typedef<@__uint64_t>> -> !hl.longlong< unsigned >
+            %23 = hl.const #core.integer<255> : !hl.longlong< unsigned >
+            %24 = hl.bin.and %22, %23 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+            hl.value.yield %24 : !hl.longlong< unsigned >
+          }
+          %18 = hl.const #core.integer<56> : !hl.int
+          %19 = hl.bin.shl %17, %18 : (!hl.longlong< unsigned >, !hl.int) -> !hl.longlong< unsigned >
+          hl.value.yield %19 : !hl.longlong< unsigned >
+        }
+        %16 = hl.bin.or %14, %15 : (!hl.longlong< unsigned >, !hl.longlong< unsigned >) -> !hl.longlong< unsigned >
+        hl.value.yield %16 : !hl.longlong< unsigned >
+      }
+      %1 = hl.implicit_cast %0 IntegralCast : !hl.longlong< unsigned > -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+      hl.return %1 : !hl.elaborated<!hl.typedef<@__uint64_t>>
+    }
+    hl.func @__uint16_identity internal (%arg0: !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>) -> !hl.elaborated<!hl.typedef<@__uint16_t>> attributes {sym_visibility = "private"} {
+      hl.param @__x = %arg0 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>
+      %0 = hl.ref @__x : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint16_t>>> -> !hl.elaborated<!hl.typedef<@__uint16_t>>
+      hl.return %1 : !hl.elaborated<!hl.typedef<@__uint16_t>>
+    }
+    hl.func @__uint32_identity internal (%arg0: !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>) -> !hl.elaborated<!hl.typedef<@__uint32_t>> attributes {sym_visibility = "private"} {
+      hl.param @__x = %arg0 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+      %0 = hl.ref @__x : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>> -> !hl.elaborated<!hl.typedef<@__uint32_t>>
+      hl.return %1 : !hl.elaborated<!hl.typedef<@__uint32_t>>
+    }
+    hl.func @__uint64_identity internal (%arg0: !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>) -> !hl.elaborated<!hl.typedef<@__uint64_t>> attributes {sym_visibility = "private"} {
+      hl.param @__x = %arg0 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+      %0 = hl.ref @__x : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__uint64_t>>> -> !hl.elaborated<!hl.typedef<@__uint64_t>>
+      hl.return %1 : !hl.elaborated<!hl.typedef<@__uint64_t>>
+    }
+    hl.struct @"anonymous[20002]" : {
+      hl.field @__val : !hl.array<16, !hl.long< unsigned >>
+    }
+    hl.typedef @__sigset_t : !hl.elaborated<!hl.record<@"anonymous[20002]">>
+    hl.typedef @sigset_t : !hl.elaborated<!hl.typedef<@__sigset_t>>
+    hl.struct @timeval : {
+      hl.field @tv_sec : !hl.elaborated<!hl.typedef<@__time_t>>
+      hl.field @tv_usec : !hl.elaborated<!hl.typedef<@__suseconds_t>>
+    }
+    hl.struct @timespec : {
+      hl.field @tv_sec : !hl.elaborated<!hl.typedef<@__time_t>>
+      hl.field @tv_nsec : !hl.elaborated<!hl.typedef<@__syscall_slong_t>>
+    }
+    hl.typedef @suseconds_t : !hl.elaborated<!hl.typedef<@__suseconds_t>>
+    hl.typedef @__fd_mask : !hl.long
+    hl.struct @"anonymous[20277]" : {
+      hl.field @__fds_bits : !hl.array<16, !hl.elaborated<!hl.typedef<@__fd_mask>>>
+    }
+    hl.typedef @fd_set : !hl.elaborated<!hl.record<@"anonymous[20277]">>
+    hl.typedef @fd_mask : !hl.elaborated<!hl.typedef<@__fd_mask>>
+    hl.func @select external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fd_set>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fd_set>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fd_set>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@timeval>>,  restrict >>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @pselect external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fd_set>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fd_set>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@fd_set>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@timespec>,  const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@__sigset_t>,  const >,  restrict >>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.typedef @blksize_t : !hl.elaborated<!hl.typedef<@__blksize_t>>
+    hl.typedef @blkcnt_t : !hl.elaborated<!hl.typedef<@__blkcnt_t>>
+    hl.typedef @fsblkcnt_t : !hl.elaborated<!hl.typedef<@__fsblkcnt_t>>
+    hl.typedef @fsfilcnt_t : !hl.elaborated<!hl.typedef<@__fsfilcnt_t>>
+    hl.union @"anonymous[20899]" : {
+      hl.field @__value64 : !hl.longlong< unsigned >
+      hl.struct @"anonymous[20933]" : {
+        hl.field @__low : !hl.int< unsigned >
+        hl.field @__high : !hl.int< unsigned >
+      }
+      hl.field @__value32 : !hl.elaborated<!hl.record<@"anonymous[20933]">>
+    }
+    hl.typedef @__atomic_wide_counter : !hl.elaborated<!hl.record<@"anonymous[20899]">>
+    hl.struct @__pthread_internal_list : {
+      hl.field @__prev : !hl.ptr<!hl.elaborated<!hl.record<@__pthread_internal_list>>>
+      hl.field @__next : !hl.ptr<!hl.elaborated<!hl.record<@__pthread_internal_list>>>
+    }
+    hl.typedef @__pthread_list_t : !hl.elaborated<!hl.record<@__pthread_internal_list>>
+    hl.struct @__pthread_internal_slist : {
+      hl.field @__next : !hl.ptr<!hl.elaborated<!hl.record<@__pthread_internal_slist>>>
+    }
+    hl.typedef @__pthread_slist_t : !hl.elaborated<!hl.record<@__pthread_internal_slist>>
+    hl.struct @__pthread_mutex_s : {
+      hl.field @__lock : !hl.int
+      hl.field @__count : !hl.int< unsigned >
+      hl.field @__owner : !hl.int
+      hl.field @__nusers : !hl.int< unsigned >
+      hl.field @__kind : !hl.int
+      hl.field @__spins : !hl.short
+      hl.field @__elision : !hl.short
+      hl.field @__list : !hl.elaborated<!hl.typedef<@__pthread_list_t>>
+    }
+    hl.struct @__pthread_rwlock_arch_t : {
+      hl.field @__readers : !hl.int< unsigned >
+      hl.field @__writers : !hl.int< unsigned >
+      hl.field @__wrphase_futex : !hl.int< unsigned >
+      hl.field @__writers_futex : !hl.int< unsigned >
+      hl.field @__pad3 : !hl.int< unsigned >
+      hl.field @__pad4 : !hl.int< unsigned >
+      hl.field @__cur_writer : !hl.int
+      hl.field @__shared : !hl.int
+      hl.field @__rwelision : !hl.char
+      hl.field @__pad1 : !hl.array<7, !hl.char< unsigned >>
+      hl.field @__pad2 : !hl.long< unsigned >
+      hl.field @__flags : !hl.int< unsigned >
+    }
+    hl.struct @__pthread_cond_s : {
+      hl.field @__wseq : !hl.elaborated<!hl.typedef<@__atomic_wide_counter>>
+      hl.field @__g1_start : !hl.elaborated<!hl.typedef<@__atomic_wide_counter>>
+      hl.field @__g_refs : !hl.array<2, !hl.int< unsigned >>
+      hl.field @__g_size : !hl.array<2, !hl.int< unsigned >>
+      hl.field @__g1_orig_size : !hl.int< unsigned >
+      hl.field @__wrefs : !hl.int< unsigned >
+      hl.field @__g_signals : !hl.array<2, !hl.int< unsigned >>
+    }
+    hl.typedef @__tss_t : !hl.int< unsigned >
+    hl.typedef @__thrd_t : !hl.long< unsigned >
+    hl.struct @"anonymous[21749]" : {
+      hl.field @__data : !hl.int
+    }
+    hl.typedef @__once_flag : !hl.elaborated<!hl.record<@"anonymous[21749]">>
+    hl.typedef @pthread_t : !hl.long< unsigned >
+    hl.union @"anonymous[21823]" : {
+      hl.field @__size : !hl.array<4, !hl.char>
+      hl.field @__align : !hl.int
+    }
+    hl.typedef @pthread_mutexattr_t : !hl.elaborated<!hl.record<@"anonymous[21823]">>
+    hl.union @"anonymous[21905]" : {
+      hl.field @__size : !hl.array<4, !hl.char>
+      hl.field @__align : !hl.int
+    }
+    hl.typedef @pthread_condattr_t : !hl.elaborated<!hl.record<@"anonymous[21905]">>
+    hl.typedef @pthread_key_t : !hl.int< unsigned >
+    hl.typedef @pthread_once_t : !hl.int
+    hl.union @pthread_attr_t : {
+      hl.field @__size : !hl.array<56, !hl.char>
+      hl.field @__align : !hl.long
+    }
+    hl.typedef @pthread_attr_t : !hl.elaborated<!hl.record<@pthread_attr_t>>
+    hl.union @"anonymous[22099]" : {
+      hl.field @__data : !hl.elaborated<!hl.record<@__pthread_mutex_s>>
+      hl.field @__size : !hl.array<40, !hl.char>
+      hl.field @__align : !hl.long
+    }
+    hl.typedef @pthread_mutex_t : !hl.elaborated<!hl.record<@"anonymous[22099]">>
+    hl.union @"anonymous[22237]" : {
+      hl.field @__data : !hl.elaborated<!hl.record<@__pthread_cond_s>>
+      hl.field @__size : !hl.array<48, !hl.char>
+      hl.field @__align : !hl.longlong
+    }
+    hl.typedef @pthread_cond_t : !hl.elaborated<!hl.record<@"anonymous[22237]">>
+    hl.union @"anonymous[22361]" : {
+      hl.field @__data : !hl.elaborated<!hl.record<@__pthread_rwlock_arch_t>>
+      hl.field @__size : !hl.array<56, !hl.char>
+      hl.field @__align : !hl.long
+    }
+    hl.typedef @pthread_rwlock_t : !hl.elaborated<!hl.record<@"anonymous[22361]">>
+    hl.union @"anonymous[22485]" : {
+      hl.field @__size : !hl.array<8, !hl.char>
+      hl.field @__align : !hl.long
+    }
+    hl.typedef @pthread_rwlockattr_t : !hl.elaborated<!hl.record<@"anonymous[22485]">>
+    hl.typedef @pthread_spinlock_t : !hl.int< volatile >
+    hl.union @"anonymous[22591]" : {
+      hl.field @__size : !hl.array<32, !hl.char>
+      hl.field @__align : !hl.long
+    }
+    hl.typedef @pthread_barrier_t : !hl.elaborated<!hl.record<@"anonymous[22591]">>
+    hl.union @"anonymous[22679]" : {
+      hl.field @__size : !hl.array<4, !hl.char>
+      hl.field @__align : !hl.int
+    }
+    hl.typedef @pthread_barrierattr_t : !hl.elaborated<!hl.record<@"anonymous[22679]">>
+    hl.func @random external () -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @srandom external (!hl.lvalue<!hl.int< unsigned >>) -> !hl.void attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @initstate external (!hl.lvalue<!hl.int< unsigned >>, !hl.lvalue<!hl.ptr<!hl.char>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setstate external (!hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.struct @random_data : {
+      hl.field @fptr : !hl.ptr<!hl.elaborated<!hl.typedef<@int32_t>>>
+      hl.field @rptr : !hl.ptr<!hl.elaborated<!hl.typedef<@int32_t>>>
+      hl.field @state : !hl.ptr<!hl.elaborated<!hl.typedef<@int32_t>>>
+      hl.field @rand_type : !hl.int
+      hl.field @rand_deg : !hl.int
+      hl.field @rand_sep : !hl.int
+      hl.field @end_ptr : !hl.ptr<!hl.elaborated<!hl.typedef<@int32_t>>>
+    }
+    hl.func @random_r external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@random_data>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@int32_t>>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @srandom_r external (!hl.lvalue<!hl.int< unsigned >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@random_data>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @initstate_r external (!hl.lvalue<!hl.int< unsigned >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@random_data>>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setstate_r external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@random_data>>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rand external () -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @srand external (!hl.lvalue<!hl.int< unsigned >>) -> !hl.void attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rand_r external (!hl.lvalue<!hl.ptr<!hl.int< unsigned >>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @drand48 external () -> !hl.double attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erand48 external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>) -> !hl.double attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lrand48 external () -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nrand48 external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>) -> !hl.long attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @mrand48 external () -> !hl.long attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @jrand48 external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>) -> !hl.long attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @srand48 external (!hl.lvalue<!hl.long>) -> !hl.void attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @seed48 external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>) -> !hl.ptr<!hl.short< unsigned >> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lcong48 external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.struct @drand48_data : {
+      hl.field @__x : !hl.array<3, !hl.short< unsigned >>
+      hl.field @__old_x : !hl.array<3, !hl.short< unsigned >>
+      hl.field @__c : !hl.short< unsigned >
+      hl.field @__init : !hl.short< unsigned >
+      hl.field @__a : !hl.longlong< unsigned >
+    }
+    hl.func @drand48_r external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.double,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @erand48_r external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.double,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lrand48_r external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.long,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @nrand48_r external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.long,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @mrand48_r external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.long,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @jrand48_r external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.long,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @srand48_r external (!hl.lvalue<!hl.long>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @seed48_r external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lcong48_r external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.short< unsigned >>>>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.record<@drand48_data>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @arc4random external () -> !hl.elaborated<!hl.typedef<@__uint32_t>> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @arc4random_buf external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @arc4random_uniform external (!hl.lvalue<!hl.elaborated<!hl.typedef<@__uint32_t>>>) -> !hl.elaborated<!hl.typedef<@__uint32_t>> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @malloc external (!hl.lvalue<!hl.long< unsigned >>) -> !hl.ptr<!hl.void> attributes {hl.alloc_size = #hl.alloc_size<size_pos : 1>, hl.builtin = #hl.builtin<857>, hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @calloc external (!hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.long< unsigned >>) -> !hl.ptr<!hl.void> attributes {hl.alloc_size = #hl.alloc_size<size_pos : 1, num_pos : 2>, hl.builtin = #hl.builtin<256>, hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @realloc external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.long< unsigned >>) -> !hl.ptr<!hl.void> attributes {hl.alloc_size = #hl.alloc_size<size_pos : 2>, hl.builtin = #hl.builtin<990>, hl.nothrow = #hl.nothrow, hl.warn_unused_result = #hl.warn_unused_result, sym_visibility = "private"}
+    hl.func @free external (!hl.lvalue<!hl.ptr<!hl.void>>) -> !hl.void attributes {hl.builtin = #hl.builtin<612>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @reallocarray external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.ptr<!hl.void> attributes {hl.nothrow = #hl.nothrow, hl.warn_unused_result = #hl.warn_unused_result, sym_visibility = "private"}
+    hl.func @reallocarray external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.ptr<!hl.void> attributes {hl.nothrow = #hl.nothrow, hl.warn_unused_result = #hl.warn_unused_result, sym_visibility = "private"}
+    hl.func @alloca external (!hl.lvalue<!hl.long< unsigned >>) -> !hl.ptr<!hl.void> attributes {hl.builtin = #hl.builtin<124>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @valloc external (!hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.ptr<!hl.void> attributes {hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @posix_memalign external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.void>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @aligned_alloc external (!hl.lvalue<!hl.long< unsigned >>, !hl.lvalue<!hl.long< unsigned >>) -> !hl.ptr<!hl.void> attributes {hl.alloc_align = #hl.alloc_align<1>, hl.alloc_size = #hl.alloc_size<size_pos : 2>, hl.builtin = #hl.builtin<122>, hl.nothrow = #hl.nothrow, hl.restrict = #hl.restrict, sym_visibility = "private"}
+    hl.func @abort external () -> !hl.void attributes {hl.builtin = #hl.builtin<91>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atexit external (!hl.lvalue<!hl.ptr<!hl.paren<!core.fn<() -> (!hl.void)>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @at_quick_exit external (!hl.lvalue<!hl.ptr<!hl.paren<!core.fn<() -> (!hl.void)>>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @on_exit external (!hl.lvalue<!hl.ptr<!hl.paren<!core.fn<(!hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.void>>) -> (!hl.void)>>>>, !hl.lvalue<!hl.ptr<!hl.void>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @exit external (!hl.lvalue<!hl.int>) -> !hl.void attributes {hl.builtin = #hl.builtin<505>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @quick_exit external (!hl.lvalue<!hl.int>) -> !hl.void attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @_Exit external (!hl.lvalue<!hl.int>) -> !hl.void attributes {hl.builtin = #hl.builtin<506>, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @getenv external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @putenv external (!hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @setenv external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @unsetenv external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @clearenv external () -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @mktemp external (!hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @mkstemp external (!hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @mkstemps external (!hl.lvalue<!hl.ptr<!hl.char>>, !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @mkdtemp external (!hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @system external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {sym_visibility = "private"}
+    hl.func @realpath external (!hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>) -> !hl.ptr<!hl.char> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.typedef @__compar_fn_t : !hl.ptr<!hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>>>
+    hl.func @bsearch external (!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@__compar_fn_t>>>) -> !hl.ptr<!hl.void> attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @bsearch available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.void< const >>>, %arg1: !hl.lvalue<!hl.ptr<!hl.void< const >>>, %arg2: !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, %arg3: !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, %arg4: !hl.lvalue<!hl.elaborated<!hl.typedef<@__compar_fn_t>>>) -> !hl.ptr<!hl.void> attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull} {
+      hl.param @__key = %arg0 : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+      hl.param @__base = %arg1 : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+      hl.param @__nmemb = %arg2 : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      hl.param @__size = %arg3 : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      hl.param @__compar = %arg4 : !hl.lvalue<!hl.elaborated<!hl.typedef<@__compar_fn_t>>>
+      hl.var @__l  : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      hl.var @__u  : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      hl.var @__idx  : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      hl.var @__p  : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+      hl.var @__comparison  : !hl.lvalue<!hl.int>
+      %0 = hl.ref @__l : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      %1 = hl.const #core.integer<0> : !hl.int
+      %2 = hl.implicit_cast %1 IntegralCast : !hl.int -> !hl.elaborated<!hl.typedef<@size_t>>
+      %3 = hl.assign %2 to %0 : !hl.elaborated<!hl.typedef<@size_t>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+      %4 = hl.ref @__u : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      %5 = hl.ref @__nmemb : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+      %6 = hl.implicit_cast %5 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+      %7 = hl.assign %6 to %4 : !hl.elaborated<!hl.typedef<@size_t>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+      hl.while {
+        %9 = hl.ref @__l : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+        %10 = hl.implicit_cast %9 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+        %11 = hl.ref @__u : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+        %12 = hl.implicit_cast %11 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+        %13 = hl.cmp ult %10, %12 : !hl.elaborated<!hl.typedef<@size_t>>, !hl.elaborated<!hl.typedef<@size_t>> -> !hl.int
+        hl.cond.yield %13 : !hl.int
+      } do {
+        %9 = hl.ref @__idx : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+        %10 = hl.expr : !hl.elaborated<!hl.typedef<@size_t>> {
+          %28 = hl.ref @__l : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+          %29 = hl.implicit_cast %28 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+          %30 = hl.ref @__u : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+          %31 = hl.implicit_cast %30 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+          %32 = hl.add %29, %31 : (!hl.elaborated<!hl.typedef<@size_t>>, !hl.elaborated<!hl.typedef<@size_t>>) -> !hl.elaborated<!hl.typedef<@size_t>>
+          hl.value.yield %32 : !hl.elaborated<!hl.typedef<@size_t>>
+        }
+        %11 = hl.const #core.integer<2> : !hl.int
+        %12 = hl.implicit_cast %11 IntegralCast : !hl.int -> !hl.elaborated<!hl.typedef<@size_t>>
+        %13 = hl.udiv %10, %12 : (!hl.elaborated<!hl.typedef<@size_t>>, !hl.elaborated<!hl.typedef<@size_t>>) -> !hl.elaborated<!hl.typedef<@size_t>>
+        %14 = hl.assign %13 to %9 : !hl.elaborated<!hl.typedef<@size_t>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+        %15 = hl.ref @__p : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+        %16 = hl.expr : !hl.ptr<!hl.char< const >> {
+          %28 = hl.expr : !hl.ptr<!hl.char< const >> {
+            %31 = hl.ref @__base : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+            %32 = hl.implicit_cast %31 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.void< const >>> -> !hl.ptr<!hl.void< const >>
+            %33 = hl.cstyle_cast %32 BitCast : !hl.ptr<!hl.void< const >> -> !hl.ptr<!hl.char< const >>
+            hl.value.yield %33 : !hl.ptr<!hl.char< const >>
+          }
+          %29 = hl.expr : !hl.elaborated<!hl.typedef<@size_t>> {
+            %31 = hl.ref @__idx : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+            %32 = hl.implicit_cast %31 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+            %33 = hl.ref @__size : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+            %34 = hl.implicit_cast %33 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+            %35 = hl.mul %32, %34 : (!hl.elaborated<!hl.typedef<@size_t>>, !hl.elaborated<!hl.typedef<@size_t>>) -> !hl.elaborated<!hl.typedef<@size_t>>
+            hl.value.yield %35 : !hl.elaborated<!hl.typedef<@size_t>>
+          }
+          %30 = hl.add %28, %29 : (!hl.ptr<!hl.char< const >>, !hl.elaborated<!hl.typedef<@size_t>>) -> !hl.ptr<!hl.char< const >>
+          hl.value.yield %30 : !hl.ptr<!hl.char< const >>
+        }
+        %17 = hl.cstyle_cast %16 BitCast : !hl.ptr<!hl.char< const >> -> !hl.ptr<!hl.void< const >>
+        %18 = hl.assign %17 to %15 : !hl.ptr<!hl.void< const >>, !hl.lvalue<!hl.ptr<!hl.void< const >>> -> !hl.ptr<!hl.void< const >>
+        %19 = hl.ref @__comparison : !hl.lvalue<!hl.int>
+        %20 = hl.expr : !hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>> {
+          %28 = hl.ref @__compar : !hl.lvalue<!hl.elaborated<!hl.typedef<@__compar_fn_t>>>
+          %29 = hl.implicit_cast %28 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@__compar_fn_t>>> -> !hl.elaborated<!hl.typedef<@__compar_fn_t>>
+          %30 = hl.deref %29 : !hl.elaborated<!hl.typedef<@__compar_fn_t>> -> !hl.lvalue<!hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>>>
+          hl.value.yield %30 : !hl.lvalue<!hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>>>
+        }
+        %21 = hl.implicit_cast %20 FunctionToPointerDecay : !hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>> -> !hl.ptr<!hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>>>
+        %22 = hl.ref @__key : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+        %23 = hl.implicit_cast %22 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.void< const >>> -> !hl.ptr<!hl.void< const >>
+        %24 = hl.ref @__p : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+        %25 = hl.implicit_cast %24 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.void< const >>> -> !hl.ptr<!hl.void< const >>
+        %26 = hl.indirect_call %21 : !hl.ptr<!hl.paren<!core.fn<(!hl.lvalue<!hl.ptr<!hl.void< const >>>, !hl.lvalue<!hl.ptr<!hl.void< const >>>) -> (!hl.int)>>>(%23, %25) : (!hl.ptr<!hl.void< const >>, !hl.ptr<!hl.void< const >>) -> !hl.int
+        %27 = hl.assign %26 to %19 : !hl.int, !hl.lvalue<!hl.int> -> !hl.int
+        hl.if {
+          %28 = hl.ref @__comparison : !hl.lvalue<!hl.int>
+          %29 = hl.implicit_cast %28 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %30 = hl.const #core.integer<0> : !hl.int
+          %31 = hl.cmp slt %29, %30 : !hl.int, !hl.int -> !hl.int
+          hl.cond.yield %31 : !hl.int
+        } then {
+          %28 = hl.ref @__u : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+          %29 = hl.ref @__idx : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+          %30 = hl.implicit_cast %29 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+          %31 = hl.assign %30 to %28 : !hl.elaborated<!hl.typedef<@size_t>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+        } else {
+          hl.if {
+            %28 = hl.ref @__comparison : !hl.lvalue<!hl.int>
+            %29 = hl.implicit_cast %28 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+            %30 = hl.const #core.integer<0> : !hl.int
+            %31 = hl.cmp sgt %29, %30 : !hl.int, !hl.int -> !hl.int
+            hl.cond.yield %31 : !hl.int
+          } then {
+            %28 = hl.ref @__l : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+            %29 = hl.ref @__idx : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>
+            %30 = hl.implicit_cast %29 LValueToRValue : !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+            %31 = hl.const #core.integer<1> : !hl.int
+            %32 = hl.implicit_cast %31 IntegralCast : !hl.int -> !hl.elaborated<!hl.typedef<@size_t>>
+            %33 = hl.add %30, %32 : (!hl.elaborated<!hl.typedef<@size_t>>, !hl.elaborated<!hl.typedef<@size_t>>) -> !hl.elaborated<!hl.typedef<@size_t>>
+            %34 = hl.assign %33 to %28 : !hl.elaborated<!hl.typedef<@size_t>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>> -> !hl.elaborated<!hl.typedef<@size_t>>
+          } else {
+            %28 = hl.ref @__p : !hl.lvalue<!hl.ptr<!hl.void< const >>>
+            %29 = hl.implicit_cast %28 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.void< const >>> -> !hl.ptr<!hl.void< const >>
+            %30 = hl.cstyle_cast %29 NoOp : !hl.ptr<!hl.void< const >> -> !hl.ptr<!hl.void< const >>
+            hl.return %30 : !hl.ptr<!hl.void< const >>
+          }
+        }
+      }
+      %8 = hl.expr : !hl.ptr<!hl.void> {
+        %9 = hl.const #core.integer<0> : !hl.int
+        %10 = hl.cstyle_cast %9 NullToPointer : !hl.int -> !hl.ptr<!hl.void>
+        hl.value.yield %10 : !hl.ptr<!hl.void>
+      }
+      hl.return %8 : !hl.ptr<!hl.void>
+    }
+    hl.func @qsort external (!hl.lvalue<!hl.ptr<!hl.void>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@__compar_fn_t>>>) -> !hl.void attributes {hl.nonnull = #hl.nonnull, sym_visibility = "private"}
+    hl.func @abs external (!hl.lvalue<!hl.int>) -> !hl.int attributes {hl.builtin = #hl.builtin<93>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @labs external (!hl.lvalue<!hl.long>) -> !hl.long attributes {hl.builtin = #hl.builtin<95>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @llabs external (!hl.lvalue<!hl.longlong>) -> !hl.longlong attributes {hl.builtin = #hl.builtin<97>, hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @div external (!hl.lvalue<!hl.int>, !hl.lvalue<!hl.int>) -> !hl.elaborated<!hl.typedef<@div_t>> attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ldiv external (!hl.lvalue<!hl.long>, !hl.lvalue<!hl.long>) -> !hl.elaborated<!hl.typedef<@ldiv_t>> attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @lldiv external (!hl.lvalue<!hl.longlong>, !hl.lvalue<!hl.longlong>) -> !hl.elaborated<!hl.typedef<@lldiv_t>> attributes {hl.const = #hl.const, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ecvt external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fcvt external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @gcvt external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @qecvt external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @qfcvt external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @qgcvt external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.char>>) -> !hl.ptr<!hl.char> attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @ecvt_r external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @fcvt_r external (!hl.lvalue<!hl.double>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @qecvt_r external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @qfcvt_r external (!hl.lvalue<!hl.longdouble>, !hl.lvalue<!hl.int>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.int,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @mblen external (!hl.lvalue<!hl.ptr<!hl.char< const >>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @mbtowc external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@wchar_t>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @wctomb external (!hl.lvalue<!hl.ptr<!hl.char>>, !hl.lvalue<!hl.elaborated<!hl.typedef<@wchar_t>>>) -> !hl.int attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @mbstowcs external (!hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@wchar_t>>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.char< const >,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.elaborated<!hl.typedef<@size_t>> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @wcstombs external (!hl.lvalue<!hl.ptr<!hl.char,  restrict >>, !hl.lvalue<!hl.ptr<!hl.elaborated<!hl.typedef<@wchar_t>,  const >,  restrict >>, !hl.lvalue<!hl.elaborated<!hl.typedef<@size_t>>>) -> !hl.elaborated<!hl.typedef<@size_t>> attributes {hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @rpmatch external (!hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @getsubopt external (!hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char,  const >,  restrict >>, !hl.lvalue<!hl.ptr<!hl.ptr<!hl.char>,  restrict >>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @getloadavg external (!hl.lvalue<!hl.decayed<!hl.ptr<!hl.double>>>, !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, sym_visibility = "private"}
+    hl.func @atof available_externally (%arg0: !hl.lvalue<!hl.ptr<!hl.char< const >>>) -> !hl.double attributes {hl.gnu_inline = #hl.gnu_inline, hl.nonnull = #hl.nonnull, hl.nothrow = #hl.nothrow, hl.pure = #hl.pure} {
+      hl.param @__nptr = %arg0 : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %0 = hl.ref @__nptr : !hl.lvalue<!hl.ptr<!hl.char< const >>>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.ptr<!hl.char< const >>> -> !hl.ptr<!hl.char< const >>
+      %2 = hl.expr : !hl.ptr<!hl.void> {
+        %5 = hl.const #core.integer<0> : !hl.int
+        %6 = hl.cstyle_cast %5 NullToPointer : !hl.int -> !hl.ptr<!hl.void>
+        hl.value.yield %6 : !hl.ptr<!hl.void>
+      }
+      %3 = hl.cstyle_cast %2 BitCast : !hl.ptr<!hl.void> -> !hl.ptr<!hl.ptr<!hl.char>>
+      %4 = hl.call @strtod(%1, %3) : (!hl.ptr<!hl.char< const >>, !hl.ptr<!hl.ptr<!hl.char>>) -> !hl.double
+      hl.return %4 : !hl.double
+    }
+    hl.struct @dude : {
+      hl.field @p1 : !hl.int
+      hl.field @p2 : !hl.int
+      hl.field @p3 : !hl.int
+      hl.field @p4 : !hl.int
+    }
+    hl.typedef @dude : !hl.elaborated<!hl.record<@dude>>
+    hl.var @arr, <external>  : !hl.lvalue<!hl.array<65536, !hl.elaborated<!hl.typedef<@dude>>>>
+    hl.func @loop external (%arg0: !hl.lvalue<!hl.int>) -> !hl.int attributes {hl.noinline = #hl.noinline} {
+      hl.param @zero = %arg0 : !hl.lvalue<!hl.int>
+      hl.var @t  : !hl.lvalue<!hl.int> = {
+        %2 = hl.const #core.integer<0> : !hl.int
+        hl.value.yield %2 : !hl.int
+      }
+      hl.var @count  : !hl.lvalue<!hl.int> = {
+        %2 = hl.const #core.integer<0> : !hl.int
+        hl.value.yield %2 : !hl.int
+      }
+      hl.var @lfsr  : !hl.lvalue<!hl.int< unsigned >> = {
+        %2 = hl.const #core.integer<44257> : !hl.int< unsigned >
+        hl.value.yield %2 : !hl.int< unsigned >
+      }
+      hl.do {
+        %2 = hl.ref @lfsr : !hl.lvalue<!hl.int< unsigned >>
+        %3 = hl.expr : !hl.int< unsigned > {
+          %20 = hl.ref @lfsr : !hl.lvalue<!hl.int< unsigned >>
+          %21 = hl.implicit_cast %20 LValueToRValue : !hl.lvalue<!hl.int< unsigned >> -> !hl.int< unsigned >
+          %22 = hl.const #core.integer<1> : !hl.int
+          %23 = hl.bin.lshr %21, %22 : (!hl.int< unsigned >, !hl.int) -> !hl.int< unsigned >
+          hl.value.yield %23 : !hl.int< unsigned >
+        }
+        %4 = hl.expr : !hl.int< unsigned > {
+          %20 = hl.expr : !hl.int< unsigned > {
+            %24 = hl.ref @lfsr : !hl.lvalue<!hl.int< unsigned >>
+            %25 = hl.implicit_cast %24 LValueToRValue : !hl.lvalue<!hl.int< unsigned >> -> !hl.int< unsigned >
+            %26 = hl.const #core.integer<1> : !hl.int< unsigned >
+            %27 = hl.bin.and %25, %26 : (!hl.int< unsigned >, !hl.int< unsigned >) -> !hl.int< unsigned >
+            hl.value.yield %27 : !hl.int< unsigned >
+          }
+          %21 = hl.minus %20 : !hl.int< unsigned >
+          %22 = hl.const #core.integer<46080> : !hl.int< unsigned >
+          %23 = hl.bin.and %21, %22 : (!hl.int< unsigned >, !hl.int< unsigned >) -> !hl.int< unsigned >
+          hl.value.yield %23 : !hl.int< unsigned >
+        }
+        %5 = hl.bin.xor %3, %4 : (!hl.int< unsigned >, !hl.int< unsigned >) -> !hl.int< unsigned >
+        %6 = hl.assign %5 to %2 : !hl.int< unsigned >, !hl.lvalue<!hl.int< unsigned >> -> !hl.int< unsigned >
+        %7 = hl.ref @lfsr : !hl.lvalue<!hl.int< unsigned >>
+        %8 = hl.ref @lfsr : !hl.lvalue<!hl.int< unsigned >>
+        %9 = hl.implicit_cast %8 LValueToRValue : !hl.lvalue<!hl.int< unsigned >> -> !hl.int< unsigned >
+        %10 = hl.ref @arr : !hl.lvalue<!hl.array<65536, !hl.elaborated<!hl.typedef<@dude>>>>
+        %11 = hl.implicit_cast %10 ArrayToPointerDecay : !hl.lvalue<!hl.array<65536, !hl.elaborated<!hl.typedef<@dude>>>> -> !hl.ptr<!hl.elaborated<!hl.typedef<@dude>>>
+        %12 = hl.ref @lfsr : !hl.lvalue<!hl.int< unsigned >>
+        %13 = hl.implicit_cast %12 LValueToRValue : !hl.lvalue<!hl.int< unsigned >> -> !hl.int< unsigned >
+        %14 = hl.subscript %11 at [%13 : !hl.int< unsigned >] : !hl.ptr<!hl.elaborated<!hl.typedef<@dude>>> -> !hl.lvalue<!hl.elaborated<!hl.typedef<@dude>>>
+        %15 = hl.member %14 at @p1 : !hl.lvalue<!hl.elaborated<!hl.typedef<@dude>>> -> !hl.lvalue<!hl.int>
+        %16 = hl.implicit_cast %15 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+        %17 = hl.implicit_cast %16 IntegralCast : !hl.int -> !hl.int< unsigned >
+        %18 = hl.add %9, %17 : (!hl.int< unsigned >, !hl.int< unsigned >) -> !hl.int< unsigned >
+        %19 = hl.assign %18 to %7 : !hl.int< unsigned >, !hl.lvalue<!hl.int< unsigned >> -> !hl.int< unsigned >
+      } while {
+        %2 = hl.ref @lfsr : !hl.lvalue<!hl.int< unsigned >>
+        %3 = hl.implicit_cast %2 LValueToRValue : !hl.lvalue<!hl.int< unsigned >> -> !hl.int< unsigned >
+        %4 = hl.const #core.integer<44257> : !hl.int< unsigned >
+        %5 = hl.cmp ne %3, %4 : !hl.int< unsigned >, !hl.int< unsigned > -> !hl.int
+        hl.cond.yield %5 : !hl.int
+      }
+      %0 = hl.ref @t : !hl.lvalue<!hl.int>
+      %1 = hl.implicit_cast %0 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+      hl.return %1 : !hl.int
+    }
+    hl.func @main external (%arg0: !hl.lvalue<!hl.int>, %arg1: !hl.lvalue<!hl.decayed<!hl.ptr<!hl.ptr<!hl.char>>>>) -> !hl.int {
+      hl.param @argc = %arg0 : !hl.lvalue<!hl.int>
+      hl.param @argv = %arg1 : !hl.lvalue<!hl.decayed<!hl.ptr<!hl.ptr<!hl.char>>>>
+      core.scope {
+        %1 = hl.ref @argc : !hl.lvalue<!hl.int>
+        %2 = hl.const #core.integer<10000> : !hl.int
+        %3 = hl.assign.bin.and %2 to %1 : !hl.int, !hl.lvalue<!hl.int> -> !hl.int
+        hl.asm {is_volatile} "xchg %bx,%bx"() () () () : () -> ()
+        hl.null
+        hl.var @t  : !hl.lvalue<!hl.int> = {
+          %4 = hl.ref @argc : !hl.lvalue<!hl.int>
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          %6 = hl.call @loop(%5) : (!hl.int) -> !hl.int
+          hl.value.yield %6 : !hl.int
+        }
+        hl.asm {is_volatile} "xchg %cx,%cx"() () () () : () -> ()
+        hl.null
+        hl.var @a  : !hl.lvalue<!hl.int< volatile >> = {
+          %4 = hl.ref @t : !hl.lvalue<!hl.int>
+          %5 = hl.implicit_cast %4 LValueToRValue : !hl.lvalue<!hl.int> -> !hl.int
+          hl.value.yield %5 : !hl.int
+        }
+      }
+      %0 = hl.const #core.integer<0> : !hl.int
+      core.implicit.return %0 : !hl.int
+    }
+  }
+}

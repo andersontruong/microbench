@@ -1,0 +1,160 @@
+CCa/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CCe/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CCh/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CCh_st/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CCl/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CCm/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CF1/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CRd/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CRf/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CRm/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CS1/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+CS3/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+DP1d/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+DP1f/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+DPT/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+DPTd/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+DPcvt/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+ED1/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+EF/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+EI/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+EM1/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+EM5/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MC/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MCS/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MD/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MI/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MIM/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MIM2/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MIP/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+ML2/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+ML2_BW_ld/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+ML2_BW_ldst/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+ML2_BW_st/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+ML2_st/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MM/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+MM_st/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+M_Dyn/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+STL2/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+STL2b/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)
+STc/:
+	CGEIST success! (SCF)
+	VAST failed! (LLVM)
+	VAST success! (HL)

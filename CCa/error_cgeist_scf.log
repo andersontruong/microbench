@@ -1,0 +1,4 @@
+In file included from bench.c:2:
+../common.h:43:1: warning: non-void function does not return a value [-Wreturn-type]
+   43 | }
+      | ^

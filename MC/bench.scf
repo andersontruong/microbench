@@ -1,0 +1,62 @@
+module attributes {dlti.dl_spec = #dlti.dl_spec<#dlti.dl_entry<!llvm.ptr<270>, dense<32> : vector<4xi32>>, #dlti.dl_entry<f128, dense<128> : vector<2xi32>>, #dlti.dl_entry<f64, dense<64> : vector<2xi32>>, #dlti.dl_entry<f16, dense<16> : vector<2xi32>>, #dlti.dl_entry<f80, dense<128> : vector<2xi32>>, #dlti.dl_entry<i64, dense<64> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr<271>, dense<32> : vector<4xi32>>, #dlti.dl_entry<!llvm.ptr<272>, dense<64> : vector<4xi32>>, #dlti.dl_entry<i1, dense<8> : vector<2xi32>>, #dlti.dl_entry<!llvm.ptr, dense<64> : vector<4xi32>>, #dlti.dl_entry<i32, dense<32> : vector<2xi32>>, #dlti.dl_entry<i16, dense<16> : vector<2xi32>>, #dlti.dl_entry<i8, dense<8> : vector<2xi32>>, #dlti.dl_entry<"dlti.endianness", "little">, #dlti.dl_entry<"dlti.stack_alignment", 128 : i32>>, llvm.data_layout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128", llvm.target_triple = "x86_64-unknown-linux-gnu", "polygeist.target-cpu" = "x86-64", "polygeist.target-features" = "+cmov,+cx8,+fxsr,+mmx,+sse,+sse2,+x87", "polygeist.tune-cpu" = "generic"} {
+  llvm.mlir.global internal constant @str0("_ticks: %llu\0A\00") {addr_space = 0 : i32}
+  llvm.func @printf(!llvm.ptr, ...) -> i32
+  memref.global @arr9 : memref<8192xf32> = uninitialized
+  memref.global @arr8 : memref<8192xf32> = uninitialized
+  memref.global @arr7 : memref<8192xf32> = uninitialized
+  memref.global @arr6 : memref<8192xf32> = uninitialized
+  memref.global @arr5 : memref<8192xf32> = uninitialized
+  memref.global @arr4 : memref<8192xf32> = uninitialized
+  memref.global @arr3 : memref<8192xf32> = uninitialized
+  memref.global @arr2 : memref<8192xf32> = uninitialized
+  memref.global @arr1 : memref<8192xf32> = uninitialized
+  func.func @loop3(%arg0: i32) -> f32 attributes {llvm.linkage = #llvm.linkage<external>} {
+    %c8192 = arith.constant 8192 : index
+    %c0 = arith.constant 0 : index
+    %c1 = arith.constant 1 : index
+    %c127_i32 = arith.constant 127 : i32
+    %cst = arith.constant 0.000000e+00 : f32
+    %0 = memref.get_global @arr1 : memref<8192xf32>
+    %1 = memref.get_global @arr2 : memref<8192xf32>
+    %2 = memref.get_global @arr3 : memref<8192xf32>
+    %3 = memref.get_global @arr4 : memref<8192xf32>
+    %4 = memref.get_global @arr5 : memref<8192xf32>
+    %5 = memref.get_global @arr6 : memref<8192xf32>
+    %6 = memref.get_global @arr7 : memref<8192xf32>
+    %7 = memref.get_global @arr8 : memref<8192xf32>
+    %8 = memref.get_global @arr9 : memref<8192xf32>
+    %9 = scf.for %arg1 = %c0 to %c8192 step %c1 iter_args(%arg2 = %cst) -> (f32) {
+      %10 = arith.index_cast %arg1 : index to i32
+      %11 = arith.andi %10, %c127_i32 : i32
+      %12 = arith.index_cast %11 : i32 to index
+      %13 = memref.load %0[%12] : memref<8192xf32>
+      %14 = arith.addf %arg2, %13 : f32
+      %15 = memref.load %1[%12] : memref<8192xf32>
+      %16 = arith.addf %14, %15 : f32
+      %17 = memref.load %2[%12] : memref<8192xf32>
+      %18 = arith.addf %16, %17 : f32
+      %19 = memref.load %3[%12] : memref<8192xf32>
+      %20 = arith.addf %18, %19 : f32
+      %21 = memref.load %4[%12] : memref<8192xf32>
+      %22 = arith.addf %20, %21 : f32
+      %23 = memref.load %5[%12] : memref<8192xf32>
+      %24 = arith.addf %22, %23 : f32
+      %25 = memref.load %6[%12] : memref<8192xf32>
+      %26 = arith.addf %24, %25 : f32
+      %27 = memref.load %7[%12] : memref<8192xf32>
+      %28 = arith.addf %26, %27 : f32
+      %29 = memref.load %8[%12] : memref<8192xf32>
+      %30 = arith.addf %28, %29 : f32
+      scf.yield %30 : f32
+    }
+    return %9 : f32
+  }
+  func.func @main(%arg0: i32, %arg1: memref<?xmemref<?xi8>>) -> i32 attributes {llvm.linkage = #llvm.linkage<external>} {
+    %c0_i64 = arith.constant 0 : i64
+    %0 = llvm.mlir.undef : i32
+    %1 = llvm.mlir.addressof @str0 : !llvm.ptr
+    %2 = llvm.getelementptr %1[0, 0] : (!llvm.ptr) -> !llvm.ptr, !llvm.array<14 x i8>
+    %3 = llvm.call @printf(%2, %c0_i64) vararg(!llvm.func<i32 (ptr, ...)>) : (!llvm.ptr, i64) -> i32
+    return %0 : i32
+  }
+}
