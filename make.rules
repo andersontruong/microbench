@@ -4,6 +4,10 @@ CC?=gcc
 OPT?=-O3
 MAGIC?=-DMAGIC
 
+VAST=$(VAST_ROOT)/builds/default/tools/vast-front/Release/vast-front
+CGEIST=$(POLYGEIST_ROOT)/build/bin/cgeist
+CLANG_INCLUDE=$(POLYGEIST_ROOT)/build/lib/clang/18/include/
+
 #-fno-tree-vectorize 
 CFLAGS+=${OPT} ${MAGIC} -I../
 
@@ -17,17 +21,22 @@ args := $(shell cat rand_arr_args.txt)
 randArr.h: rand_arr_args.txt
 	${PY} ../rand_c_arr.py $(args)
 
-pre_req: randArr.h 
+pre_req: randArr.h
 else
 pre_req:
 endif
 
 bench: bench.c pre_req
-	${CC} ${CFLAGS} bench.c --static --std=c99  -lm -o bench
+# ${CC} ${CFLAGS} bench.c --static --std=c99  -lm -o bench
+	(${CGEIST} -I../ -I$(CLANG_INCLUDE) bench.c -S >bench.scf 2>error_cgeist_scf.log && printf "\tCGEIST success! (SCF)\n") || printf "\tCGEIST failed! (SCF)\n"
+	(${VAST} ${CFLAGS} bench.c -vast-emit-mlir=llvm -o bench.llvm 2>error_vast_llvm.log && printf "\tVAST success! (LLVM)\n") || printf "\tVAST failed! (LLVM)\n"
+	(${VAST} ${CFLAGS} bench.c -vast-emit-mlir=hl -o bench.hl 2>error_vast_hl.log && printf "\tVAST success! (HL)\n") || printf "\tVAST failed! (HL)\n"
+# STD dialect just emits HL dialect, same as godbolt
+# ${VAST} vast-front ${CFLAGS} -vast-emit-mlir=llvm bench.c -o bench.hl
+# LL dialect does not work, despite what the docs say
+# ${VAST} vast-front ${CFLAGS} -vast-emit-mlir=llvm bench.c -o bench.hl
 
 clean:
-	rm -f bench
+	rm -f bench bench.llvm bench.hl bench.scf *.log randArr.h
 
 .phony : clean all
-
-

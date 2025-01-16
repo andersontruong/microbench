@@ -3,7 +3,8 @@ DIRS = $(sort $(dir $(wildcard */)))
 all:
 	@for dir in $(DIRS); do \
 		if [ -d $$dir ]; then \
-			(cd $$dir && $(MAKE)) || exit 1 ; \
+		  echo "$$dir:" ; \
+			(cd $$dir && $(MAKE)) || echo "$$dir" ; \
 		fi \
 	done
 
